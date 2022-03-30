@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "data": [
+    {
+      "label": "姓名",
+      "name": "userName",
+      "system": true
+    },
+    {
+      "label": "性别",
+      "name": "gender",
+      "uiType": "gender",
+      "system": true
+    },
+    {
+      "label": "职工号",
+      "name": "workid",
+      "system": false
+    },
+    {
+      "label": "部门",
+      "name": "depts",
+      "uiType": "depts",
+      "system": true
+    }
+  ]
+}

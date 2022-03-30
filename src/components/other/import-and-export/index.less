@@ -1,0 +1,91 @@
+.cf-import-and-export {
+  .cf-batch-card {
+    // width:1098px;
+    // height:259px;
+    margin: 16px 0 24px;
+    display: flex;
+    padding: 32px 0;
+    background: rgba(252, 252, 252, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(232, 232, 232, 1);
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      bottom: 24px;
+      left: 50%;
+      border-left: 1px dotted rgba(0, 0, 0, 0.15);
+    }
+    & > * {
+      flex: 1;
+    }
+  }
+  .cf-batch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-main-text {
+      max-width: 325px;
+      color: #000;
+      font-weight: 500;
+    }
+    &-icon-wrapper {
+      margin: 32px 0 16px;
+    }
+    &-desc-text {
+      margin-bottom: 16px;
+    }
+    &-campus-select {
+      margin-bottom: 16px;
+    }
+  }
+
+  .batch-icon {
+    height: 49px;
+  }
+
+  .record-info-wrapper {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .records-step {
+    width: 100%;
+  }
+
+  .record-time {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 4px;
+  }
+
+  .record-user {
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 20px;
+    margin-right: 16px;
+  }
+
+  .record-info {
+    margin-right: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 20px;
+  }
+
+  .record-download {
+    line-height: 20px;
+  }
+
+  .cf-batch-campus-select {
+    margin-left: 5px;
+    width: 200px;
+  }
+
+  // hard code，不知为何 antd 设死了 140 的宽度，官方 demo 没有
+  .ant-steps-item-content {
+    width: unset !important;
+  }
+}

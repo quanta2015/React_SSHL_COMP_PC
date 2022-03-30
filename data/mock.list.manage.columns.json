@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "data": [
+    {
+      "label": "头像",
+      "name": "avatar",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "所属班级",
+      "name": "depts",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "家长手机1",
+      "name": "contactUsers1",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "别名",
+      "name": "nickName",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "身份证号",
+      "name": "identityNumber",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "姓名",
+      "name": "userName",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "生日",
+      "name": "birthday",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "学号",
+      "name": "numbering",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "是否住校",
+      "name": "accomodated",
+      "system": true,
+      "uiType": null
+    },
+    {
+      "label": "测试zlm学生",
+      "name": "测试zlm学生",
+      "system": false,
+      "uiType": null
+    },
+    {
+      "label": "测试输入型",
+      "name": "测试输入型",
+      "system": false,
+      "uiType": null
+    },
+    {
+      "label": "测试手机号",
+      "name": "测试手机号",
+      "system": false,
+      "uiType": null
+    },
+    {
+      "label": "测试选项型",
+      "name": "测试选项型",
+      "system": false,
+      "uiType": null
+    },
+    {
+      "label": "关注状态",
+      "name": "qywxFollowStatus",
+      "system": true,
+      "uiType": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      { "value": 1, "label": "全部" },
+      { "value": 2, "label": "小学" },
+      { "value": 3, "label": "九年制" },
+      { "value": 4, "label": "其他" }
+    ]
+  }
+}

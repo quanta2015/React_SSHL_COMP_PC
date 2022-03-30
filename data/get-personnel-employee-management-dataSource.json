@@ -1,0 +1,79 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "id": "10001",
+        "sortNum": 1,
+        "userName": "小虫学校滨江校区",
+        "birthdate": "",
+        "depts": [
+          {
+            "id": "1",
+            "name": "name"
+          }
+        ],
+        "extentUserInfoJsonStr": "{\"workid\": \"1213\"}",
+        "gender": 0,
+        "identityNumber": "",
+        "nickName": "",
+        "numbering": 0,
+        "officePhone": "",
+        "onTheJob": true,
+        "orgId": "组织 id",
+        "post": "",
+        "userId": "",
+        "userType": 0
+      },
+      {
+        "id": "10002",
+        "sortNum": 2,
+        "userName": "小虫学校余杭校区",
+        "birthdate": "",
+        "depts": [
+          {
+            "id": "",
+            "name": ""
+          }
+        ],
+        "extentUserInfoJsonStr": "{\"workid\": \"1213\"}",
+        "gender": 0,
+        "identityNumber": "",
+        "nickName": "",
+        "numbering": 0,
+        "officePhone": "",
+        "onTheJob": true,
+        "orgId": "组织 id",
+        "post": "",
+        "userId": "",
+        "userType": 0
+      },
+      {
+        "id": "10003",
+        "sortNum": 3,
+        "userName": "小虫学校拱墅校区",
+        "birthdate": "",
+        "depts": [
+          {
+            "id": "",
+            "name": ""
+          }
+        ],
+        "extentUserInfoJsonStr": "{\"workid\": \"1213\"}",
+        "gender": 0,
+        "identityNumber": "",
+        "nickName": "",
+        "numbering": 0,
+        "officePhone": "",
+        "onTheJob": true,
+        "orgId": "组织 id",
+        "post": "",
+        "userId": "",
+        "userType": 0
+      }
+    ],
+    "pagination": {
+      "total": 79
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "code": 0,
+  "data": {
+    "dataSource": [
+      { "label": "全部", "value": "all", "key": "all" },
+      { "label": "校级领导", "value": "school", "key": "school" },
+      { "label": "中层干部", "value": "middle", "key": "middle" },
+      { "label": "收发员", "value": "mailClerk", "key": "mailClerk" },
+      { "label": "教职工", "value": "employee", "key": "employee" }
+    ]
+  },
+  "errorMsg": "",
+  "success": true
+}

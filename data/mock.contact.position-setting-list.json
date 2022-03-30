@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "id": "10001",
+        "departmentName": "局领导",
+        "numberPersonnel": 100,
+        "operat": ""
+      },
+      {
+        "id": "10002",
+        "departmentName": "科室组",
+        "numberPersonnel": 120,
+        "operat": ""
+      },
+      {
+        "id": "10003",
+        "departmentName": "教育支撑机构",
+        "numberPersonnel": 92,
+        "operat": ""
+      },
+      {
+        "id": "10004",
+        "departmentName": "小虫测试管理组",
+        "numberPersonnel": 92,
+        "operat": ""
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "userId": 10001,
+      "userName": "李小双",
+      "userMobile": "15987654321",
+      "parentMobile": ["15987654321", "15987004321"],
+      "followStatus": 0
+    }, {
+      "userId": 10002,
+      "userName": "李小诗",
+      "userMobile": "15987654321",
+      "parentMobile": ["15987654321"],
+      "followStatus": 1
+    }, {
+      "userId": 10003,
+      "userName": "李小豪",
+      "userMobile": "15987654321",
+      "parentMobile": ["15987654321", "15987004321"],
+      "followStatus": 1
+    }, {
+      "userId": 10004,
+      "userName": "李小花",
+      "userMobile": "15987654321",
+      "parentMobile": ["15987654321"],
+      "followStatus": 0
+    }],
+    "pagination": {
+      "total": 12
+    }
+  }
+}

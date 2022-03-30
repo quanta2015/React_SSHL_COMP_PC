@@ -1,0 +1,78 @@
+.selected-show-pane-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  height: 100%;
+  .selected-show-pane-total {
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 99;
+    background: #fff;
+  }
+  .selected-show-pane-detail-box {
+    flex: 1;
+    overflow: auto;
+    .selected-show-pane-group:first-child .selected-show-pane-group-top {
+      margin: 8px 0 16px 0;
+    }
+    .selected-show-pane-group {
+      overflow: hidden;
+      .selected-show-pane-group-top {
+        margin: 16px 0;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        background: #f4f6f8;
+        .selected-show-pane-group-total {
+          flex: 1;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+        .selected-show-pane-group-clear {
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.45);
+          // border: 1px solid #f1f1f1;
+          // padding: 0px 12px;
+          // border-radius: 12px;
+        }
+      }
+      .selected-tag {
+        padding: 8px;
+        margin: 0 8px 8px 0px;
+        border-radius: 4px;
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 14px;
+        white-space: pre-line;
+        // height: 32px;
+        // line-height: 32px;
+        border: 1px solid #e5e8ea;
+      }
+      // .selected-show-pane-group-content {
+      //   .selected-show-pane-group-item {
+      //     float: left;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: space-between;
+      //     background-color: #f4f4f4;
+      //     padding: 0px 8px;
+      //     border-radius: 12px;
+      //     margin-top: 8px;
+      //     margin-right: 4px;
+      //     .selected-show-pane-group-item-del {
+      //       background: red;
+      //       width: 12px;
+      //       height: 12px;
+      //       margin-left: 4px;
+      //       cursor: pointer;
+      //     }
+      //   }
+      // }
+    }
+  }
+}

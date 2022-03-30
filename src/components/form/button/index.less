@@ -1,0 +1,159 @@
+.upload-container {
+  :global(.ant-upload-list) {
+    display: none;
+  }
+}
+
+:local {
+  .buttonList {
+    margin: -8px 0 0 -8px;
+    button:not(:last-child):after {
+      content: '|';
+      position: relative;
+      left: 5px;
+      color: #ddd;
+    }
+    .cfListButton {
+      margin: 8px 0 0 8px;
+      display: inline-block;
+    }
+    :global {
+      .ant-btn-link {
+        padding: 0;
+      }
+    }
+  }
+  .setting-sub {
+    display: inline-block;
+    font-weight: 400;
+    color: #1785ec;
+  }
+}
+
+.cf-button-modal-dialog {
+  :global {
+    table {
+      width: 100% !important;
+    }
+  }
+}
+
+.cf-button-modal-dialog-bind {
+  width: 1200px !important;
+  .ant-modal-body {
+    height: 600px;
+    .ss-compose-manage-container {
+      height: 100% !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+    }
+    .ant-table-wrapper {
+      height: calc(100% - 133px);
+      overflow: auto;
+    }
+  }
+}
+.cf-button-modal-dialog-rule {
+  width: 500px;
+  overflow: auto;
+  .ant-modal-body {
+    padding: 24px 24px;
+    max-height: 472px;
+    overflow: scroll;
+    .vertical {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.sub-button-modal-dialog {
+  .ant-modal-body {
+    padding: 24px 24px;
+    max-height: 472px;
+    overflow: scroll;
+    .vertical {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .ant-checkbox-group {
+    > * {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.qr-button-modal-dialog {
+  .ant-modal-body {
+    padding: 24px 24px;
+    // max-height: 672px;
+    // overflow: scroll;
+    height: 378px + 48px;
+    // box-sizing: border-box;
+  }
+}
+
+.bind-btn {
+  width: 56px;
+  height: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1785ec;
+  line-height: 22px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.device-rule-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  // flex: 1;
+}
+.device-week {
+  height: 20px;
+  font-size: 14px;
+
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+
+  margin-right: 6px;
+}
+.device-rule-type {
+  // min-width: 50px;
+  width: auto;
+  background: #d9ecff;
+  font-size: 13px;
+  // font-weight: 500;
+  color: #1785ec;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+.device-show-all {
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1786ec;
+  line-height: 20px;
+  cursor: pointer;
+}
+.device-rule-list {
+  display: flex;
+  margin-bottom: 6px;
+  min-width: 1000px;
+  align-items: center;
+
+  .device-rule-item {
+    margin-bottom: 0 !important;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.device-time {
+  margin-right: 6px;
+}

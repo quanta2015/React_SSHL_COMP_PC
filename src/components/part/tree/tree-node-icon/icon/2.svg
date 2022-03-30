@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;fill:#FFFFFF;}
+	.st1{fill:url(#Shape_2_);}
+	.st2{fill:url(#Shape_3_);}
+</style>
+<title>组icon copy 3备份</title>
+<desc>Created with Sketch.</desc>
+<g>
+	<rect class="st0" width="16" height="16"/>
+	<g id="页面-1">
+		<g id="右侧选择栏样式_x2B_下属组织选中校领导后标签内容" transform="translate(-512.000000, -529.000000)">
+			<g id="编组-8" transform="translate(424.000000, 274.000000)">
+				<g id="编组-10" transform="translate(-0.000000, 8.000000)">
+					<g id="部门_x2F_组icon_x2F_person备份-2" transform="translate(87.000000, 246.000000)">
+						
+							<linearGradient id="Shape_2_" gradientUnits="userSpaceOnUse" x1="-537.1996" y1="82.6887" x2="-536.5862" y2="83.4972" gradientTransform="matrix(7.5385 0 0 7.5385 4056.0889 -621.0126)">
+							<stop  offset="0" style="stop-color:#54ADFF"/>
+							<stop  offset="1" style="stop-color:#3297FF"/>
+						</linearGradient>
+						<path id="Shape" class="st1" d="M9,9.5c2.1,0,3.8-1.7,3.8-3.8S11.1,2,9,2S5.2,3.7,5.2,5.8S6.9,9.5,9,9.5L9,9.5z"/>
+						
+							<linearGradient id="Shape_3_" gradientUnits="userSpaceOnUse" x1="-575.2901" y1="116.1697" x2="-574.6766" y2="116.2893" gradientTransform="matrix(14 0 0 5.3846 8059 -612.3797)">
+							<stop  offset="0" style="stop-color:#54ADFF"/>
+							<stop  offset="1" style="stop-color:#3297FF"/>
+						</linearGradient>
+						<path id="Shape_1_" class="st2" d="M2.5,16h13c0.3,0,0.5-0.2,0.5-0.5c0-2.7-2.1-4.9-4.7-4.9H6.7c-2.6,0-4.7,2.2-4.7,4.9
+							C2,15.8,2.2,16,2.5,16L2.5,16z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

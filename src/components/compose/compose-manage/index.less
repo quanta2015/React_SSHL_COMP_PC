@@ -1,0 +1,148 @@
+// compose manage component
+// @author Pluto <huarse@gmail.com>
+// @create 2020/06/21 20:58
+
+@import '../table/index.less';
+
+.ss-compose-manage-container {
+  height: 100%;
+  // overflow: hidden auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  .section-alert {
+    margin-bottom: 16px;
+    .cf-manage-alert-refresh-btn {
+      margin-left: 5px;
+    }
+  }
+  .table-list .cf-compose-manage-pagination {
+    padding-bottom: 24px;
+  }
+  .caption-left-side {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-left: 8px;
+    }
+  }
+
+  .section-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .caption-filter-field {
+    flex: 0 0 auto;
+
+    .ant-form-item {
+      margin-right: 8px;
+    }
+  }
+
+  .caption-tooltip {
+    // margin-left: 24px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .cf-compose-manage-pagination {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    display: flex;
+    // TODO 这里用了 antd 的内部 className 以完成小虫的样式要求
+    .ant-pagination-total-text {
+      flex: 1;
+    }
+  }
+  .ant-table-wrapper {
+    // padding-bottom: 50px;
+  }
+  .ant-btn-link {
+    padding: 0;
+    cursor: pointer;
+    margin: 8px 0 0 8px;
+  }
+
+  .ant-input-affix-wrapper::before {
+    content: '';
+  }
+
+  .ant-alert {
+    align-items: normal;
+
+    .anticon {
+      margin-top: 4px;
+    }
+  }
+}
+
+.ss-query-filter {
+  padding: 24px 24px 0 !important;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  margin-bottom: 24px !important;
+  // .ant-input-affix-wrapper {
+  //   // padding: 0 11px;
+  // }
+  .ant-form-item-label > label {
+    padding-top: 0;
+    place-items: center;
+  }
+}
+.special-filter {
+  padding: 24px 24px 0 !important;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  margin-bottom: 24px !important;
+
+  .ant-form-item-has-success {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+  }
+  .ant-form-item-label > label {
+    min-width: 72px;
+  }
+  .ant-form-item-control {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.sortable-table {
+  tr.drop-over-downward td {
+    border-bottom: 2px dashed #1890ff;
+  }
+  tr.drop-over-upward td {
+    border-top: 2px dashed #1890ff;
+  }
+}
+
+.ss-compose-manage-container,
+.ss-biz-tree {
+  .ant-input-affix-wrapper {
+    height: 32px;
+  }
+  .ant-input {
+    // height: 30px;
+    // text-indent: 6px;
+  }
+}
+
+.cf-compose-tab {
+  .ant-tabs-top > .ant-tabs-nav::before,
+  .ant-tabs-bottom > .ant-tabs-nav::before,
+  .ant-tabs-top > div > .ant-tabs-nav::before,
+  .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    width: 100%;
+  }
+}

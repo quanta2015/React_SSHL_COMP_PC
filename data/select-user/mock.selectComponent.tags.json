@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "code":200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [{
+      "id": 1,
+      "label": "个人标签",
+      "key": "14",
+      "type": "TAG",
+      "userCount": 1,
+      "isRoot":true,
+      "children": [{
+        "id": 2,
+        "label": "个人标签01",
+        "key": "15",
+        "type": "TAG",
+        "isRoot":false,
+        "children": null
+      }]
+    }, {
+      "id": 1,
+      "label": "通用标签",
+      "key": "16",
+      "type": "TAG",
+      "userCount": 1,
+      "isRoot":true,
+      "children": [{
+        "id": 2,
+        "label": "通用标签01",
+        "key": "17",
+        "type": "TAG",
+        "isRoot":false,
+        "children": null
+      }]
+    }]
+  }
+}

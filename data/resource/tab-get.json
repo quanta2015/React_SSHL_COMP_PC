@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "资源分组管理",
+        "key": "resource_group"
+      },
+      {
+        "label": "资源点管理",
+        "key": "resource_point"
+      }
+    ]
+  }
+}

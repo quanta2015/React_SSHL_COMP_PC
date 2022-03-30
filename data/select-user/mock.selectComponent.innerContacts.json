@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "code":200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [{
+      "id": 1,
+      "label": "小虫滨江校区",
+      "key": "3",
+      "type": "DEPT",
+      "userCount": 1,
+      "children": [{
+        "id": 2,
+        "label": "人员01",
+        "key": "4",
+        "type": "USER",
+        "children": null
+      }]
+    }]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "code":200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [{
+      "id": 1,
+      "label": "所属部门01",
+      "key": "1",
+      "type": "DEPT",
+      "userCount": 1,
+      "isLeaf": false
+    }]
+  }
+}

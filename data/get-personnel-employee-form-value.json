@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "formValue": {
+      "avatar": "https://designer.mocky.io/static/media/logo-dark.2d24ebf2.png",
+      "app": "女",
+      "birthday": "1992-09-10",
+      "department": {
+        "id": "123",
+        "name": "部门名称",
+        "type": "dept"
+      },
+      "title": "文本内容",
+      "tele": "13131313131"
+    }
+  }
+}

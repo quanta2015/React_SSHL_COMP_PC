@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "id": "10001",
+        "name": "梁晓文",
+        "gender": "男",
+        "duty": "党组书记局长",
+        "businessPhone": "0571-68881234",
+        "mobilePhone1": "15068807171",
+        "mobilePhone2": "15068807171",
+        "followStatus": "已关注"
+      },
+      {
+        "id": "10002",
+        "name": "梁晓文",
+        "gender": "男",
+        "duty": "党组书记局长",
+        "businessPhone": "0571-68881234",
+        "mobilePhone1": "15068807171",
+        "mobilePhone2": "15068807171",
+        "followStatus": "已关注"
+      },
+      {
+        "id": "10003",
+        "name": "梁晓文",
+        "gender": "男",
+        "duty": "党组书记局长",
+        "businessPhone": "0571-68881234",
+        "mobilePhone1": "15068807171",
+        "mobilePhone2": "15068807171",
+        "followStatus": "已关注"
+      },
+      {
+        "id": "10003",
+        "name": "梁晓文",
+        "gender": "男",
+        "duty": "党组书记局长",
+        "businessPhone": "0571-68881234",
+        "mobilePhone1": "15068807171",
+        "mobilePhone2": "15068807171",
+        "followStatus": "已关注"
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

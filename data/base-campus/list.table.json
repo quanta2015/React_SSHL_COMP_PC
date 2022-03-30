@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "key": 10001,
+      "label": "幼儿园",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10002,
+      "label": "小学",
+      "totalStudent": 10,
+      "totalParent": 0,
+      "totalTeacher": 9
+    }, {
+      "key": 10003,
+      "label": "初中",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10004,
+      "label": "高中",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }],
+    "pagination": {
+      "total": 99
+    }
+  }
+}

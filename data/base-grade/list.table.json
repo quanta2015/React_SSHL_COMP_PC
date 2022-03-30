@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "key": 10001,
+      "label": "2019级1班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10002,
+      "label": "2019级2班",
+      "alias": "宇宙无敌🚀班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10003,
+      "label": "2019级3班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10004,
+      "label": "2019级4班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }],
+    "pagination": {
+      "total": 4
+    }
+  }
+}

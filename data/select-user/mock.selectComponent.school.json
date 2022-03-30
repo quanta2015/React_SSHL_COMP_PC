@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "code":200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [{
+      "id": 1,
+      "label": "滨江分校",
+      "key": "8",
+      "type": "GROUP",
+      "userCount": 1,
+      "children": [{
+        "id": 2,
+        "label": "天蓝蓝教育局",
+        "key": "9",
+        "type": "ORG",
+        "children": [{
+          "id": 2,
+          "label": "校级领导",
+          "key": "10",
+          "type": "DEPT",
+          "children": [{
+            "id": 2,
+            "label": "人员01",
+            "key": "11",
+            "type": "USER",
+            "children": null
+          }]
+        }]
+      }]
+    }]
+  }
+}

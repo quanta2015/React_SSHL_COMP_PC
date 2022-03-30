@@ -1,0 +1,31 @@
+  {
+    "success": true,
+    "data": {
+      "dataSource": [
+        {
+          "label": "systemTag",
+          "key": "child1",
+          "type": "contact-system-tag-system-tag",
+          "children": [
+            {
+              "label": "子部门",
+              "key": "child1-1",
+              "type": "contact-system-tag-system-tag",
+              "isLeaf": true
+            },
+            {
+              "label": "下属组织",
+              "type": "contact-system-tag-personnel-tag",
+              "key": "child1-2"
+            }
+          ]
+        },
+        {
+          "label": "personnelTag",
+          "key": "child2",
+          "type": "contact-system-tag-personnel-tag",
+          "isLeaf": true
+        }
+      ]
+    }
+  }

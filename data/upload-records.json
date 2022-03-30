@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": [{
+    "id": 0,
+    "user": "yves",
+    "time": "2020-02-02 02:02",
+    "info": "导入成功21条数据",
+    "status": true
+  }, {
+    "id": 1,
+    "user": "yves",
+    "time": "2020-02-02 02:02",
+    "info": "导入成功10条数据，导入失败11条数据",
+    "downloadUrl": "//taobao.com",
+    "status": true
+  }]
+}

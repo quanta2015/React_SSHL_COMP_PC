@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "orgId": "440101-S000011",
+        "orgName": "广州市第一学校",
+        "orgTypeName": "公办",
+        "orgTypeSection": "小学",
+        "groupName": "公办小学"
+      },
+      {
+        "orgId": "440101-S000011",
+        "orgName": "广州市第一学校",
+        "orgTypeName": "公办",
+        "orgTypeSection": "初中",
+        "groupName": "公办小学"
+      },
+      {
+        "orgId": "440101-S000011",
+        "orgName": "广州市第一学校",
+        "orgTypeName": "民办",
+        "orgTypeSection": "九年制",
+        "groupName": "公办小学"
+      },
+      {
+        "orgId": "440101-S000011",
+        "orgName": "广州市第一学校",
+        "orgTypeName": "民办",
+        "orgTypeSection": "十二年制",
+        "groupName": "公办小学"
+      }
+    ],
+    "pagination": {
+      "total": 10,
+      "pageNo": 1,
+      "pageSize": 20
+    }
+  }
+}

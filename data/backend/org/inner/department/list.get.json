@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "allDeptPersonNum": 100,
+        "allSubDeptNum": 0,
+        "attentionNum": 80,
+        "key": "11",
+        "label": "局领导",
+        "parentDeptId": "22",
+        "sortNum": 0
+      },
+      {
+        "allDeptPersonNum": 100,
+        "allSubDeptNum": 0,
+        "attentionNum": 80,
+        "key": "22",
+        "label": "科室组",
+        "parentDeptId": "22",
+        "sortNum": 0
+      },
+      {
+        "allDeptPersonNum": 100,
+        "allSubDeptNum": 0,
+        "attentionNum": 80,
+        "key": "33",
+        "label": "教育支撑机构",
+        "parentDeptId": "22",
+        "sortNum": 0
+      },
+      {
+        "allDeptPersonNum": 100,
+        "allSubDeptNum": 0,
+        "attentionNum": 80,
+        "key": "44",
+        "label": "小虫测试管理组",
+        "parentDeptId": "22",
+        "sortNum": 0
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

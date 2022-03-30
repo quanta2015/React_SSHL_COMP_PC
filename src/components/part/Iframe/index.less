@@ -1,0 +1,129 @@
+.root {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  :global {
+    .ant-card-body {
+      padding: 0;
+      height: 100%;
+    }
+    .body-padding {
+      .ant-card-body {
+        padding: 15px;
+      }
+    }
+    .ant-card {
+      &.body-width {
+        display: flex;
+        justify-content: center;
+        .ant-card-body {
+          width: 553.5px;
+        }
+      }
+    }
+    .iframe-wrapper {
+      width: 100%;
+      height: 100%;
+
+      overflow: auto;
+      // height: 2000px;
+    }
+    .btn {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding-bottom: 15px;
+      img {
+        cursor: pointer;
+      }
+    }
+
+    @font-face {
+      font-family: 'iconfont'; /* project id 1324746 */
+      src: url('//at.alicdn.com/t/font_1324746_kd622dyixya.eot');
+      src: url('//at.alicdn.com/t/font_1324746_kd622dyixya.eot?#iefix')
+          format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_1324746_kd622dyixya.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_1324746_kd622dyixya.woff') format('woff'),
+        url('//at.alicdn.com/t/font_1324746_kd622dyixya.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_1324746_kd622dyixya.svg#iconfont')
+          format('svg');
+    }
+
+    .anticon::after {
+      font-family: 'iconfont', serif !important;
+      font-size: 14px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* *******************工作流控件模版图标开始*********************** */
+
+    // 单行文本
+    .anticon-mobile-input::after {
+      content: '\e60c';
+    }
+    // 多行文本
+    .anticon-mobile-text-area::after {
+      content: '\e60f';
+    }
+    // 日期
+    .anticon-mobile-date-picker::after {
+      content: '\e607';
+    }
+    // 日期时间
+    .anticon-mobile-date-time-picker::after {
+      content: '\e622';
+    }
+    // 单选选项组
+    .anticon-mobile-radio-group::after {
+      content: '\e623';
+    }
+    // 复选框组
+    .anticon-mobile-check-box-group::after {
+      content: '\e608';
+    }
+    // 下拉框
+    .anticon-mobile-select::after {
+      content: '\e609';
+    }
+    // 下拉搜索框
+    .anticon-mobile-select-search::after {
+      content: '\e709';
+    }
+    // 数字
+    .anticon-mobile-number::after {
+      content: '\e605';
+    }
+    // 分割线
+    .anticon-mobile-divider::after {
+      content: '\e603';
+    }
+    // 图片
+    .anticon-mobile-image-upload::after {
+      content: '\e603';
+    }
+    // 选人单选
+    .anticon-mobile-select-user-single::after {
+      content: '\e60a';
+    }
+    // 选人多选
+    .anticon-mobile-select-user::after {
+      content: '\e60b';
+    }
+
+    /* *******************工作流控件模版图标结束*********************** */
+
+    // 流程复制
+    .anticon-flow-copy::after {
+      content: '\e606';
+    }
+
+    // 流程返回
+    .anticon-flow-back::after {
+      content: '\e604';
+    }
+  }
+}

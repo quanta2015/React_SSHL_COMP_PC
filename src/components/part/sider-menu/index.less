@@ -1,0 +1,86 @@
+:local {
+  // ----- css module BEGIN -----
+  .sider {
+    height: 100%;
+    max-height: 100%;
+    overflow: auto;
+    z-index: 20;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 2px 0px 6px 0px rgba(0, 21, 41, 0.12);
+    &-menu {
+      // padding: 16px 0;
+      padding-top: 20px;
+      background-color: #f9f9f9;
+      max-height: unset;
+    }
+    :global {
+      .ant-menu-inline .ant-menu-item {
+        margin-top: 0;
+        margin-bottom: 8px;
+        color: #000;
+      }
+      .menu-name-text {
+        color: #000;
+      }
+      .ant-menu-submenu .ant-menu-inline .ant-menu-item {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        color: #000;
+        background-color: #f9f9f9;
+      }
+      .ant-menu-light .ant-menu-inline .ant-menu-sub {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45) inset !important;
+      }
+      .ant-menu-light.ant-menu-light:not(.ant-menu-horizontal)
+        .ant-menu-item-selected,
+      .ant-menu-light.ant-menu-light:not(.ant-menu-horizontal)
+        li.ant-menu-item-only-child:hover {
+        color: #000;
+        background-color: #fff;
+        &:after {
+          right: unset;
+          left: 0;
+        }
+      }
+      .ant-menu.ant-menu-light,
+      .ant-menu-light .ant-menu-sub,
+      .ant-menu.ant-menu-light,
+      .ant-menu-submenu,
+      .ant-menu-submenu-selected,
+      .ant-menu-light .ant-menu-inline.ant-menu-sub {
+        color: #000;
+        background-color: #f9f9f9;
+      }
+      .ant-menu-item-only-child:hover > a > .anticon,
+      .ant-menu-item-selected > a > .anticon {
+        color: #1785ec;
+        background-color: #fff;
+      }
+      .ant-menu-inline .ant-menu-item:hover,
+      .ant-menu-item-selected {
+        .menu-name-text,
+        .anticon-menu svg {
+          color: #1785ec;
+        }
+      }
+      .ant-menu-inline .ant-menu-item:hover {
+        background-color: #FFF;
+        .menu-name-text::before {
+          position: absolute;
+          width: 3px;
+          height: 40px;
+          content: '';
+          left: 0;
+          background-color: #1785ec;
+        }
+      }
+      .ant-menu-submenu-title,
+      .ant-menu-submenu-active {
+        span {
+          color: #000;
+        }
+      }
+    }
+  }
+} // ----- css module END -----

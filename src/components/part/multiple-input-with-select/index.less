@@ -1,0 +1,39 @@
+.mul_container {
+  max-height: 416px;
+  padding-right: 30px;
+  overflow-y: auto;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+
+    &__select {
+      width: 240px !important;
+      margin-left: 8px !important;
+    }
+
+    &__del {
+      width: 70px;
+      margin-left: 12px;
+      word-break: keep-all;
+      color: #f5222d;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 32px;
+    border: 1px solid #1785ec;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #1785ec;
+    cursor: pointer;
+    user-select: none;
+  }
+}

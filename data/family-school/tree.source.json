@@ -1,0 +1,131 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "label": "家校通讯录",
+      "key": "school-01",
+      "type": "school-root",
+      "children": [{
+        "label": "小虫学校滨江校区",
+        "key": "campus-01",
+        "type": "base-campus",
+        "children": [{
+          "label": "幼儿园",
+          "key": "period-01",
+          "type": "base-period",
+          "children": [{
+            "label": "2019级",
+            "key": "grade-01-2019",
+            "type": "base-grade",
+            "children": [{
+              "label": "2019级一班",
+              "key": "class-01-2019-01",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2019级二班",
+              "key": "class-01-2019-02",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2019级三班",
+              "key": "class-01-2019-03",
+              "type": "base-class",
+              "isLeaf": true
+            }]
+          }, {
+            "label": "2018级",
+            "key": "grade-01-2018",
+            "type": "base-grade",
+            "children": [{
+              "label": "2018级一班",
+              "key": "class-01-2018-01",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2018级二班",
+              "key": "class-01-2018-02",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2018级三班",
+              "key": "class-01-2018-03",
+              "type": "base-class",
+              "isLeaf": true
+            }]
+          }]
+        }, {
+          "label": "小学",
+          "key": "period-02",
+          "type": "base-period",
+          "children": [{
+            "label": "2019级",
+            "key": "grade-02-2019",
+            "type": "base-grade",
+            "children": [{
+              "label": "2019级一班",
+              "key": "class-02-2019-01",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2019级二班",
+              "key": "class-02-2019-02",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2019级三班",
+              "key": "class-02-2019-03",
+              "type": "base-class",
+              "isLeaf": true
+            }]
+          }, {
+            "label": "2018级",
+            "key": "grade-02-2018",
+            "type": "base-grade",
+            "children": [{
+              "label": "2018级一班",
+              "key": "class-02-2018-01",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2018级二班",
+              "key": "class-02-2018-02",
+              "type": "base-class",
+              "isLeaf": true
+            }, {
+              "label": "2018级三班",
+              "key": "class-02-2018-03",
+              "type": "base-class",
+              "isLeaf": true
+            }]
+          }]
+        }]
+      }, {
+        "label": "自定义校区",
+        "key": "campus-02",
+        "type": "custom-campus",
+        "children": [{
+          "label": "化学兴趣班",
+          "key": "custom-dept-01",
+          "type": "custom-dept",
+          "children": [{
+            "label": "2019级一班",
+            "key": "custom-class-2019-01",
+            "type": "custom-class",
+            "isLeaf": true
+          }, {
+            "label": "2019级二班",
+            "key": "custom-class-2019-02",
+            "type": "custom-class",
+            "isLeaf": true
+          }, {
+            "label": "2019级三班",
+            "key": "custom-class-2019-03",
+            "type": "custom-class",
+            "isLeaf": true
+          }]
+        }]
+      }]
+    }]
+  }
+}

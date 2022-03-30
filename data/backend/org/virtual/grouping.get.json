@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "orgId": "440101-S000011",
+        "orgName": "杭州市教育局",
+        "groupPeopleNum": 100,
+        "subGroupNum": 50,
+        "attentionPeopleNum": 12
+      },
+      {
+        "orgId": "440101-S000011",
+        "orgName": "绍兴市教育局",
+        "groupPeopleNum": 100,
+        "subGroupNum": 50,
+        "attentionPeopleNum": 12
+      },
+      {
+        "orgId": "440101-S000011",
+        "orgName": "宁波市教育局",
+        "groupPeopleNum": 100,
+        "subGroupNum": 50,
+        "attentionPeopleNum": 12
+      },
+      {
+        "orgId": "440101-S000011",
+        "orgName": "温州市教育局",
+        "groupPeopleNum": 100,
+        "subGroupNum": 50,
+        "attentionPeopleNum": 12
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

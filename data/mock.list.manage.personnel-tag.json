@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "id": "10001",
+        "name": "局领导",
+        "currencyName": "组织名称1"
+      },
+      {
+        "id": "10002",
+        "name": "科室组",
+        "currencyName": "组织名称2"
+      },
+      {
+        "id": "10003",
+        "name": "教育支撑机构",
+        "currencyName": "组织名称3"
+      },
+      {
+        "id": "10004",
+        "name": "小虫测试管理组",
+        "currencyName": "组织名称4"
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

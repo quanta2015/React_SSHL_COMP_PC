@@ -1,0 +1,48 @@
+.cf-compose-form-container {
+  height: 100%;
+  // padding: 24px;
+  // overflow: hidden auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 50px;
+  .cf-compose-form-title {
+    .ant-typography {
+      // margin-top: -20px;
+      // margin-left: -16px;
+      margin: 16px 24px;
+    }
+    .ant-divider-horizontal {
+      // margin: 15px 0;
+      margin: 0;
+      margin-bottom: 24px;
+    }
+  }
+  .ant-alert {
+    margin-bottom: 24px;
+  }
+  .cf-compose-form .ant-btn {
+    margin-right: 8px;
+  }
+  .cf-form-action {
+    text-align: right;
+  }
+}
+.no-container {
+  display: none;
+}
+
+:local {
+  .fixedActionWrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 12px 24px;
+    z-index: 10;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    > * {
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "name": "avatar",
+      "uiType": "avatar"
+    }, {
+      "name": "app",
+      "label": "选项型",
+      "uiType": "radio",
+      "props": {
+        "dataSource": [{
+          "label": "男",
+          "value": "男"
+        }, {
+          "label": "女",
+          "value": "女"
+        }],
+        "autoWidth": true,
+        "rules": [{
+          "required": true
+        }]
+      }
+    }, {
+      "name": "birthday",
+      "label": "生日",
+      "uiType": "date"
+    }, {
+      "name": "department",
+      "label": "所属部门",
+      "uiType": "selectUser",
+      "props": {
+        "selectUserProps": {
+          "multiple": false
+        }
+      }
+    }, {
+      "name": "title",
+      "label": "输入型",
+      "uiType": "input",
+      "props": {}
+    }, {
+      "name": "tele",
+      "label": "手机号码",
+      "uiType": "mobilePhone",
+      "props": {}
+    }]
+  }
+}

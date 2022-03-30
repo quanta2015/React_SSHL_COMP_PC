@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      { "label": "兴趣班", "value": 1 },
+      { "label": "校友会", "value": 2 }
+    ]
+  }
+}

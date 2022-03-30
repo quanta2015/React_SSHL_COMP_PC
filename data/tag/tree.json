@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "标签",
+        "key": "people",
+        "type": "person-tag-list",
+        "children": [
+          {
+            "label": "收发员",
+            "key": "child1",
+            "type": "person-tag-detail"
+          },
+          {
+            "label": "child2",
+            "type": "person-tag-detail",
+            "key": "child2"
+          }
+        ]
+      }
+    ]
+  }
+}

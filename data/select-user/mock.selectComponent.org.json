@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "code":200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [{
+      "id": 1,
+      "label": "组织01",
+      "key": "5",
+      "type": "ORG",
+      "userCount": 1,
+      "children": [{
+        "id": 1,
+        "label": "所属部门01",
+        "key": "6",
+        "type": "DEPT",
+        "userCount": 1,
+        "children": [{
+          "id": 1,
+          "label": "人员01",
+          "key": "7",
+          "type": "USER",
+          "children": null
+        }]
+      }]
+    }]
+  }
+}

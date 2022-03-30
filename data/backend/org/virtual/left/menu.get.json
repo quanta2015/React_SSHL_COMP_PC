@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "省教育局",
+        "key": "provideEduOffice",
+        "type": "contact-virtual-org-root-manage",
+        "children": [
+          {
+            "label": "杭州市教育局",
+            "type": "contact-virtual-org-branch-manage",
+            "key": "hzEduOffice",
+            "children": [
+              {
+                "label": "拱墅区教育局",
+                "key": "hzGongShuEduOffice",
+                "type": "contact-virtual-org-leaf-manage"
+              },
+              {
+                "label": "滨江区教育局",
+                "key": "hzBinJiangEduOffice",
+                "type": "contact-virtual-org-leaf-manage"
+              }
+            ]
+          },
+          {
+            "label": "绍兴市教育局",
+            "type": "contact-virtual-org-branch-manage",
+            "key": "sxEduOffice",
+            "children": [
+              {
+                "label": "越城区教育局",
+                "key": "sxYueChengEduOffice",
+                "type": "contact-virtual-org-leaf-manage"
+              },
+              {
+                "label": "新昌区教育局",
+                "key": "sxXinChangEduOffice",
+                "type": "contact-virtual-org-leaf-manage"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

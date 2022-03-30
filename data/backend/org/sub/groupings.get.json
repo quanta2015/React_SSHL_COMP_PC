@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "groupId": "10001",
+        "groupName": "局领导",
+        "groupPeopleNum": 100,
+        "subGroupNum": 50,
+        "attentionPeopleNum": 12
+      },
+      {
+        "groupId": "10002",
+        "groupName": "科室组",
+        "groupPeopleNum": 120,
+        "subGroupNum": 60,
+        "attentionPeopleNum": 8
+      },
+      {
+        "groupId": "10003",
+        "groupName": "教育支撑机构",
+        "groupPeopleNum": 92,
+        "subGroupNum": 37,
+        "attentionPeopleNum": 19
+      },
+      {
+        "groupId": "10003",
+        "groupName": "小虫测试管理组",
+        "groupPeopleNum": 92,
+        "subGroupNum": 37,
+        "attentionPeopleNum": 19
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

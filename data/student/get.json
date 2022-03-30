@@ -1,0 +1,26 @@
+{
+  "data": {
+    "formValue": {
+      "id": "",
+      "deptList": [{ "deptId": "xxx", "deptName": "xxx" }],
+      "selectId": "27ad77ec14904a539186b45fd14c6aca-v4-330108-S000067",
+      "keptInPush": true,
+      "afterSchoolPush": true,
+      "timeList": [
+        { "startTime": "01:11", "endTime": "01:15" },
+        { "startTime": "01:19", "endTime": "02:20" }
+      ],
+      "recordPushSetting": {
+        "clockRecordPush": true,
+        "clockRecordPushPeriodFlag": true,
+        "clockRecordPushPeriod": [
+          { "startTime": "01:11", "endTime": "01:15" },
+          { "startTime": "01:19", "endTime": "02:20" }
+        ]
+      }
+    }
+  },
+  "success": true,
+  "code": "200",
+  "errorMsg": null
+}

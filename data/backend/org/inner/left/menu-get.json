@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "xxx",
+        "key": "xx1",
+        "type": "contact-internal-root-manage",
+        "children": [
+          {
+            "label": "领导办",
+            "key": "leaderOffice",
+            "type": "contact-internal-leaf-manage",
+            "isLeaf": true
+          },
+          {
+            "label": "教育科",
+            "type": "contact-internal-branch-manage",
+            "key": "eduOffice",
+            "children": [
+              {
+                "label": "教育科小学",
+                "key": "eduPrimarySchool",
+                "type": "contact-internal-leaf-manage"
+              },
+              {
+                "label": "教育科中学",
+                "key": "eduMiddleSchool",
+                "type": "contact-internal-leaf-manage"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

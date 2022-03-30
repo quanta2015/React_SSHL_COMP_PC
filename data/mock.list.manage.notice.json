@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "data": {
+    "type": "info",
+    "message": "我是异步请求中提示的内容~~",
+    "description": "我是描述文字~~我是描述文字~~我是描述文字~我是描述文字"
+  }
+}
