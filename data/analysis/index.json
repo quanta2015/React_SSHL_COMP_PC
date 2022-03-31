@@ -1,0 +1,27 @@
+{
+  "data": {
+    "dataSource": [
+      {
+        "exceptionType": 1,
+        "exceptionDeptName": "0921自定义校区233",
+        "exceptionDeptId": "733b9565dd794382a8d94a28197706f2",
+        "exceptionDeptIdPath": "330108-S000067:8bc64ec984ea4b37b53da5d29f685545"
+      },
+      {
+        "exceptionType": 2,
+        "exceptionDeptName": "未知学段",
+        "exceptionDeptId": "733b9565dd794382a8d94a28197706f288",
+        "exceptionDeptIdPath": "330108-S000067:8bc64ec984ea4b37b53da5d29f685545:d02ba4d95c3f47c6b1166a5642fc4aba"
+      },
+      {
+        "exceptionType": 3,
+        "exceptionDeptName": "未知年级",
+        "exceptionDeptId": "733b9565dd794382a8d94a28197706f2889",
+        "exceptionDeptIdPath": "330108-S000067:8bc64ec984ea4b37b53da5d29f685545:d02ba4d95c3f47c6b1166a5642fc4aba:c31d8ff2dd6b460ab711443bc3cdf0d8"
+      }
+    ]
+  },
+  "success": true,
+  "code": "200",
+  "errorMsg": null
+}

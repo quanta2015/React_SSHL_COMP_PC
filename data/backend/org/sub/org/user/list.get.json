@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "deptId": "1",
+        "deptName": "校级领导",
+        "innerOrgDeptName": "校长室",
+        "innerOrgStation": "校长",
+        "userId": "1111",
+        "userName": "张三"
+      },
+      {
+        "deptId": "1",
+        "deptName": "校级领导",
+        "innerOrgDeptName": "校长室",
+        "innerOrgStation": "校长",
+        "userId": "1111",
+        "userName": "张三"
+      },
+      {
+        "deptId": "1",
+        "deptName": "校级领导",
+        "innerOrgDeptName": "校长室",
+        "innerOrgStation": "校长",
+        "userId": "1111",
+        "userName": "张三"
+      },
+      {
+        "deptId": "1",
+        "deptName": "校级领导",
+        "innerOrgDeptName": "校长室",
+        "innerOrgStation": "校长",
+        "userId": "1111",
+        "userName": "张三"
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

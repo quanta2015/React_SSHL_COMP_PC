@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "code": "200",
+  "data": {
+    "dataSource": {
+      "tagName": "aaa",
+      "userSelect": ["customerTypeEnum", 0],
+      "orgSelect": ["regulatoryTypeEnum", 1],
+      "class": [
+        ["schoolTypeEnum", 1],
+        ["schoolYear", 2020]
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "data": {
+    "dataSource": [
+      {
+        "key": null,
+        "label": "产品校园校区",
+        "type": "base-campus",
+        "iconType": "root",
+        "isLeaf": true,
+        "params": null
+      }
+    ]
+  },
+  "success": true,
+  "code": "200",
+  "errorMsg": null
+}

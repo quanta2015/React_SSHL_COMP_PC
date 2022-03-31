@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "userId": "1",
+        "userName": "梁小文",
+        "groupingName": "局领导",
+        "gender": "性别",
+        "duty": "党组书记局长",
+        "officePhone": "0571-68881234",
+        "phone1": "15068807171",
+        "phone2": "15068807171"
+      },
+      {
+        "userId": "1",
+        "userName": "王小亮",
+        "groupingName": "局领导",
+        "gender": "性别",
+        "duty": "党组书记局长",
+        "officePhone": "0571-68881234",
+        "phone1": "15068807171",
+        "phone2": "15068807171"
+      },
+      {
+        "userId": "1",
+        "userName": "张三",
+        "groupingName": "局领导",
+        "gender": "性别",
+        "duty": "党组书记局长",
+        "officePhone": "0571-68881234",
+        "phone1": "15068807171",
+        "phone2": "15068807171"
+      },
+      {
+        "userId": "1",
+        "userName": "李四",
+        "groupingName": "局领导",
+        "gender": "性别",
+        "duty": "党组书记局长",
+        "officePhone": "0571-68881234",
+        "phone1": "15068807171",
+        "phone2": "15068807171"
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

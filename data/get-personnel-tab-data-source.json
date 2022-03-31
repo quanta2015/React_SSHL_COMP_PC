@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "label": "学生",
+      "key": "student"
+    }, {
+      "label": "教职工",
+      "key": "employee"
+    }]
+  }
+}

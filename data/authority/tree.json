@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "标签",
+        "key": "people",
+        "type": "AUTHORITY_ROOT",
+        "children": [
+          {
+            "label": "收发员",
+            "key": "child1",
+            "type": "AUTHORITY_DETAIL"
+          },
+          {
+            "label": "child2",
+            "type": "AUTHORITY_DETAIL",
+            "key": "child2"
+          }
+        ]
+      }
+    ]
+  }
+}

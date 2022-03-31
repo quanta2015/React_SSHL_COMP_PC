@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "key": "10001",
+      "sortNum": 1,
+      "label": "小虫学校滨江校区",
+      "totalStudent": 100,
+      "totalParent": 50,
+      "totalTeacher": 12
+    }, {
+      "key": "10002",
+      "sortNum": 2,
+      "label": "小虫学校余杭校区",
+      "totalStudent": 120,
+      "totalParent": 60,
+      "totalTeacher": 8
+    }, {
+      "key": "10003",
+      "sortNum": 3,
+      "label": "小虫学校拱墅校区",
+      "totalStudent": 92,
+      "totalParent": 37,
+      "totalTeacher": 19
+    }],
+    "pagination": {
+      "total": 79
+    }
+  }
+}

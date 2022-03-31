@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "key": 10001,
+      "label": "化学兴趣班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10002,
+      "label": "物理兴趣班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10003,
+      "label ": "篮球兴趣班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10004,
+      "label": "足球兴趣班",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }],
+    "pagination": {
+      "total": 4
+    }
+  }
+}

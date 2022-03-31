@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "code": 0,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [
+      {
+        "labelPath": ["行知小学", "二小", "五年级"],
+        "key": "xingzhiwunianji",
+        "type": "test-people",
+        "iconType": "dept"
+      },
+      {
+        "labelPath": ["行知小学", "一小", "五年级", "3 班"],
+        "key": "xingzhisanban",
+        "type": "test-department",
+        "iconType": "dept"
+      }
+    ],
+    "peopleList": [
+      {
+        "iconType": "house",
+        "label": "张三",
+        "key": "a"
+      },
+      {
+        "label": "李四吉祥的名字如果过长的话就点",
+        "key": "b",
+        "position": "副校长"
+      },
+      {
+        "label": "李四",
+        "key": "b1",
+        "orgName": "小虫学校滨教育局"
+      },
+      {
+        "label": "李四",
+        "key": "b2",
+        "position": "副校长",
+        "orgName": "职务文案具体内容见原型职务文案具体内容见原型职务文案具体内容见原型职务文案具"
+      }
+    ]
+  }
+}

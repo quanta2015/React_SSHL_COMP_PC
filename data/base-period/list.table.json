@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [{
+      "key": 10001,
+      "label": "2019级",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10002,
+      "label": "2018级",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10003,
+      "label": "2017级",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }, {
+      "key": 10004,
+      "label": "2016级",
+      "totalStudent": 10,
+      "totalParent": 10,
+      "totalTeacher": 9
+    }],
+    "pagination": {
+      "total": 4
+    }
+  }
+}

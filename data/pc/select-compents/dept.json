@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "code": 200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [
+      {
+        "id": 1,
+        "label": "所属部门01",
+        "key": "1",
+        "type": "DEPT",
+        "children": [
+          {
+            "id": 2,
+            "label": "人员01",
+            "key": "2",
+            "type": "USER",
+            "children": null
+          }
+        ]
+      }
+    ]
+  }
+}

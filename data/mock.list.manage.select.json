@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      { "value": 1, "label": "全部" },
+      { "value": 2, "label": "校级领导" },
+      { "value": 3, "label": "中层干部" },
+      { "value": 4, "label": "收发员" },
+      { "value": 5, "label": "教职工" }
+    ]
+  }
+}

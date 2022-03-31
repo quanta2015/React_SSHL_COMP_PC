@@ -1,0 +1,53 @@
+{
+  "data": {
+    "dataSource": [
+      {
+        "id": "1",
+        "selectId": "2333",
+        "deptList": [
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" },
+          { "deptId": "xxx", "deptName": "xxx" }
+        ],
+        "keptInPush": true,
+        "afterSchoolPush": true,
+        "timeList": [
+          { "startTime": "01:11", "endTime": "01:15" },
+          { "startTime": "01:19", "endTime": "02:20" }
+        ]
+      },
+      {
+        "id": "2",
+        "selectId": "2333",
+        "deptList": [{ "deptId": "xxx", "deptName": "xxx" }],
+        "keptInPush": true,
+        "afterSchoolPush": true,
+        "timeList": [
+          { "startTime": "01:11", "endTime": "01:15" },
+          { "startTime": "01:19", "endTime": "02:20" }
+        ]
+      },
+      {
+        "id": "3",
+        "selectId": "2333",
+        "deptList": [{ "deptId": "xxx", "deptName": "xxx" }],
+        "keptInPush": true,
+        "afterSchoolPush": true,
+        "timeList": [
+          { "startTime": "01:11", "endTime": "01:15" },
+          { "startTime": "01:19", "endTime": "02:20" }
+        ]
+      }
+    ]
+  },
+  "success": true,
+  "code": "200",
+  "errorMsg": null
+}

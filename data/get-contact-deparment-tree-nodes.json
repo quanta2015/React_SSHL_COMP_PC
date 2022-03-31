@@ -1,0 +1,31 @@
+  {
+    "success": true,
+    "data": {
+      "dataSource": [
+        {
+          "label": "template positionSetting",
+          "key": "positionSetting",
+          "type": "contact-department-position-setting",
+          "children": [
+            {
+              "label": "child1",
+              "key": "child1",
+              "type": "contact-department-personnel-setting",
+              "isLeaf": true
+            },
+            {
+              "label": "child2",
+              "type": "contact-department-position-setting",
+              "key": "child2"
+            }
+          ]
+        },
+        {
+          "label": "template personnelSetting",
+          "key": "personnelSetting",
+          "type": "contact-department-personnel-setting",
+          "isLeaf": true
+        }
+      ]
+    }
+  }

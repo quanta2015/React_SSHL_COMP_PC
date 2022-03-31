@@ -1,0 +1,8 @@
+{
+  "data":{
+    "dataSource":[{"label":"幼儿园","value":"kindergarten"},{"label":"小学","value":"primary_school"},{"label":"九年制","value":"nine_school"},{"label":"初中","value":"junior_middle_school"},{"label":"普高","value":"general_high_school"},{"label":"十二年制","value":"twelve_nine_school"},{"label":"教学点","value":"teaching_point\n"},{"label":"完中","value":"complete_middle_scholl"},{"label":"综合学校【幼小】","value":"you_xiao"},{"label":"综合学校【小初】","value":"xiao_chu"},{"label":"综合学校【初高】","value":"chu_gao"},{"label":"综合学校【幼小初】","value":"you_xiao_chu"},{"label":"综合学校【小初高】","value":"xiao_chu_gao"},{"label":"中等职业学校","value":"secondary_vocational_schools"},{"label":"特殊教育学校","value":"special_education_school"},{"label":"培训学校/机构","value":"training_school"},{"label":"教育主管部门","value":"educational_authorities"},{"label":"其他","value":"other"}]
+  },
+  "success":true,
+  "code":"200",
+  "errorMsg":null
+}

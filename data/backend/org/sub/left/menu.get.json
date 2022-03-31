@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "教育局",
+        "key": "jiaoyuju",
+        "type": "contact-sub-org-root-manage",
+        "children": [
+          {
+            "label": "公办小学",
+            "type": "contact-sub-org-branch-manage",
+            "key": "gongbanxiaoxue",
+            "children": [
+              {
+                "label": "滨河小学",
+                "key": "binhexiaoxue",
+                "type": "contact-sub-org-leaf-manage"
+              },
+              {
+                "label": "行知小学",
+                "key": "xingzhixiaoxue",
+                "type": "contact-sub-org-leaf-manage"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

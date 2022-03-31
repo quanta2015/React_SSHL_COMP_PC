@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "id": "10001",
+        "name": "局领导",
+        "numberOfDepartment": 100,
+        "numberOfSubDepartment": 50,
+        "numberOfFollower": 12
+      },
+      {
+        "id": "10002",
+        "name": "科室组",
+        "numberOfDepartment": 120,
+        "numberOfSubDepartment": 60,
+        "numberOfFollower": 8
+      },
+      {
+        "id": "10003",
+        "name": "教育支撑机构",
+        "numberOfDepartment": 92,
+        "numberOfSubDepartment": 37,
+        "numberOfFollower": 19
+      },
+      {
+        "id": "10003",
+        "name": "小虫测试管理组",
+        "numberOfDepartment": 92,
+        "numberOfSubDepartment": 37,
+        "numberOfFollower": 19
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

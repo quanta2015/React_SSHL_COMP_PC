@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "id": "10001",
+        "tag": "局领导",
+        "tagRules": ["100", "公办"],
+        "numberMembers": 20,
+        "operat": ""
+      },
+      {
+        "id": "10002",
+        "tag": "科室组",
+        "tagRules": ["120", "公办"],
+        "numberMembers": 32,
+        "operat": ""
+      },
+      {
+        "id": "10003",
+        "tag": "教育支撑机构",
+        "tagRules": ["92", "公办"],
+        "numberMembers": 29,
+        "operat": ""
+      },
+      {
+        "id": "10004",
+        "tag": "小虫测试管理组",
+        "tagRules": ["92", "公办"],
+        "numberMembers": 48,
+        "operat": ""
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}

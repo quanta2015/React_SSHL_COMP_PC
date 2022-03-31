@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "code":200,
+  "errorMsg": null,
+  "data": {
+    "dataSource": [{
+      "id": 1,
+      "label": "小虫学校",
+      "key": "12",
+      "type": "DEPT",
+      "userCount": 1,
+      "children": [{
+        "id": 2,
+        "label": "人员01",
+        "key": "13",
+        "type": "USER",
+        "children": null
+      }]
+    }]
+  }
+}

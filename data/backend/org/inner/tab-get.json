@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "label": "内部通讯录",
+        "key": "internal"
+      },
+      {
+        "label": "局校通讯录",
+        "key": "bureauAndSchool"
+      },
+      {
+        "label": "下属组织通讯录",
+        "key": "subOrganization"
+      },
+      {
+        "label": "虚拟组织通讯录",
+        "key": "virtualOrganization"
+      },
+      {
+        "label": "虚拟组织通讯录",
+        "key": "lastVirtualOrganization"
+      }
+    ]
+  }
+}

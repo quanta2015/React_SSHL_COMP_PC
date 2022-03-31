@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "dataSource": [
+      {
+        "orgId": "10001",
+        "groupName": "局领导111",
+        "orgName": 100,
+        "orgTypeName": 50,
+        "orgTypeSection": 12
+      },
+      {
+        "orgId": "1000222",
+        "groupName": "局领导1222",
+        "orgName": 100,
+        "orgTypeName": 50,
+        "orgTypeSection": 12
+      },
+      {
+        "orgId": "1000333",
+        "groupName": "局领导13333",
+        "orgName": 100,
+        "orgTypeName": 50,
+        "orgTypeSection": 12
+      }
+    ],
+    "pagination": {
+      "total": 10
+    }
+  }
+}
