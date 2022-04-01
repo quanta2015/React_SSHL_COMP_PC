@@ -124,15 +124,15 @@ const _TL_LINE = [
   },
   {
     key: 'tlli012',
-    data: `<div class='fn-tl_li_12'><div><div class='title'><div class='content'>师</div><div class='content'>恩</div><div class='content'>如</div><div class='content'>海</div><div class='line'></div></div><div class='day'>TEACHERS' DAY</div></div></div>`,
+    data: `<div class='fn-tl_li_12'><div class='m-tl'><div>师</div><div>恩</div><div>如</div><div>海</div></div><div class='m-ft'>THANKS GIVING DAY</div></div>`,
   },
   {
     key: 'tlli013',
-    data: `<div class='fn-tl_li_13'><div><div class='bg'></div><div class='content'>露凝 · 云散</div></div></div>`,
+    data: `<div class='fn-tl_li_13'><div class='m-ct'>露凝 · 云散</div></div>`,
   },
   {
     key: 'tlli014',
-    data: `<div class='fn-tl_li_14'><div class='title'>01</div><div class='content'>迎建党百年<div></div></div></div>`,
+    data: `<div class='fn-tl_li_14'><i>01</i><div class='m-bd'>迎建党百年</div></div>`,
   },
 ];
 

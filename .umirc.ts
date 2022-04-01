@@ -18,9 +18,7 @@ export default defineConfig({
   // mode: 'site',
   menus: {
     '/compose': [],
-    '/global': [
-      { title: '菜单项', path: 'components/form/kv-list/readme.md' },
-    ],
+    '/global': [{ title: '菜单项', path: 'components/form/kv-list/readme.md' }],
   },
   // locales: {
   //   default: 'zh-CN',
@@ -45,12 +43,12 @@ export default defineConfig({
   //   },
   // },
   // hash: true,
-  copy: [
-    {
-      from: '/data',
-      to: '/data',
-    },
-  ],
+  // copy: [
+  //   {
+  //     from: '/data',
+  //     to: '/data',
+  //   },
+  // ],
   // routes: pageRoutes,
 
   targets: {

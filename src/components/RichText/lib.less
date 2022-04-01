@@ -155,7 +155,9 @@ li {
 }
 
 .fn-tl_li_10 {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   & > div {
     height: 50px;
@@ -204,18 +206,15 @@ li {
   }
 
   & > .m-lt {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     &::before {
       content: '';
       width: 120%;
       height: 2px;
-      background-color: #0f0;
+      background-color: #f00;
       display: block;
-      // position: absolute;
-      // top: 15px;
-      // left: -115px;
+      position: absolute;
+      top: 15px;
+      left: -115px;
     }
   }
 
@@ -234,55 +233,66 @@ li {
 }
 
 .fn-tl_li_12 {
-  & > div {
-    & > .title {
-      padding: 10px 0px 0px 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      & > .content {
-        border: 1px solid #b3c5bc;
-        color: #b3c5bc;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        text-align: center;
-      }
-      & > .line {
-        width: 50%;
-        border-top: 3px solid #b3c5bc;
-      }
-    }
-    & > .day {
+  & > .m-tl {
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    & > div {
+      border: 1px solid #b3c5bc;
       color: #b3c5bc;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
       text-align: center;
     }
+
+    &::after {
+      width: 50%;
+      border-top: 3px solid #b3c5bc;
+      content: '';
+    }
+  }
+
+  & > .m-ft {
+    color: #b3c5bc;
+    text-align: center;
   }
 }
 
 .fn-tl_li_13 {
   position: relative;
-  & > div {
+
+  & > .m-ct {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    & > .bg {
+    font-weight: bold;
+    color: #7aaaa3;
+    padding: 10px;
+
+    &::before {
       mix-blend-mode: multiply;
       background-color: #f3fbf0;
-
+      content: '';
+      display: block;
       height: 40px;
-      width: 15%;
+      width: 10%;
       position: absolute;
       top: 5px;
     }
-    & > .content {
-      font-weight: bold;
-      color: #7aaaa3;
-      border-bottom: 1px solid #7aaaa3;
 
-      padding: 10px;
+    &::after {
+      width: 40%;
+      border-bottom: 1px solid #7aaaa3;
+      height: 2px;
+      content: '';
+      display: block;
+      margin-top: 5px;
     }
   }
 }
@@ -291,21 +301,26 @@ li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  & > .title {
-    width: 25px;
-    height: 25px;
+
+  & > i {
+    font-style: normal;
+    width: 45px;
+    height: 45px;
     border-radius: 0% 40% 0% 0%;
     background-color: #f00;
     color: #fff;
     text-align: center;
+    padding: 10px;
+    font-size: large;
+    margin-right: 10px;
   }
-  & > .content {
+
+  & > .m-bd {
     padding: 10px;
     color: #f00;
     font-weight: bold;
-    & > div {
-      border-bottom: 3px solid #f3d174;
-    }
+    border-bottom: 3px solid #f3d174;
+    font-size: large;
   }
 }
 // 图片标题

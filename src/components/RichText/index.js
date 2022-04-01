@@ -57,6 +57,7 @@ const encodeHis = () => {
     let d = item.split('|');
     let o = main[d[0]][d[1]][d[2]];
     let key = d[3];
+    console.log(i);
     if (o.key === key) {
       o.click = d[4];
     }
@@ -92,18 +93,17 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
   const [selSub, setSelsub] = useState(0);
   const [lib, setLib] = useState(LIB);
 
-  const selMenu=(e,p)=> {
-    p.stopPropagation()
-    setSel(e)
-    setSelsub(0)
-  }
+  const selMenu = (e, p) => {
+    p.stopPropagation();
+    setSel(e);
+    setSelsub(0);
+  };
 
-  const selSubMenu=(i,j,p)=> {
-    p.stopPropagation()
-    setSel(i)
-    setSelsub(j)
-  }
-
+  const selSubMenu = (i, j, p) => {
+    p.stopPropagation();
+    setSel(i);
+    setSelsub(j);
+  };
 
   useEffect(() => {
     // 初始化历史点击率
@@ -348,7 +348,7 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
                     <div
                       key={j}
                       className="m-sub"
-                      onClick={selSubMenu.bind(this,i, j)}
+                      onClick={selSubMenu.bind(this, i, j)}
                     >
                       {o.name}
                     </div>
