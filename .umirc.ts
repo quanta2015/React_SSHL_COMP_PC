@@ -45,12 +45,12 @@ export default defineConfig({
   //   },
   // },
   // hash: true,
-  copy: [
-    {
-      from: '/data',
-      to: '/data',
-    },
-  ],
+  // copy: [
+  //   {
+  //     from: '/data',
+  //     to: '/data',
+  //   },
+  // ],
   // routes: pageRoutes,
 
   targets: {
