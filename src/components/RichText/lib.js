@@ -164,6 +164,8 @@ const _TL_SYM = [
   },
 ];
 
+// 安慰赋完分
+
 const _TL = [_TL_BASE, _TL_LINE, _TL_IMG, _TL_BCOL, _TL_SYM];
 
 /* --- 卡片 --- */
