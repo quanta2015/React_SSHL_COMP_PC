@@ -91,6 +91,7 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
 
   const selMenu=(e)=> {
     setSel(e)
+    setSelsub(0)
   }
 
   const selSubMenu=(e)=> {
