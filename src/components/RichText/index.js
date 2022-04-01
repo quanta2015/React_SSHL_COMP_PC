@@ -52,12 +52,15 @@ const decodeHis = () => {
 const encodeHis = () => {
   // 还原历史记录
   let list = JSON.parse(window.localStorage.getItem(RICHTEXT_KEY));
-
+  // console.log(list);
+  console.log(main);
   list?.map((item, i) => {
     let d = item.split('|');
     let o = main[d[0]][d[1]][d[2]];
-    let key = d[3];
+
     console.log(i);
+    console.log(d);
+    let key = d[3];
     if (o.key === key) {
       o.click = d[4];
     }
