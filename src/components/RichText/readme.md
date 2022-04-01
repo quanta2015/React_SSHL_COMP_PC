@@ -4,31 +4,23 @@
 
 ```tsx
 import React from 'react';
-import RichText from '@/components/RichText'
-
+import RichText from '@/components/RichText';
 
 export default class Conf extends React.Component {
-
   constructor(props) {
-    super(props)
+    super(props);
   }
-  
-
 
   render() {
-    
     const props = {
-      value:'',
-      onChange: ()=>{}
-    }
+      value: '',
+      onChange: () => {},
+    };
 
-    return (
-      <RichText {...props}/>
-    )
+    return <RichText {...props} />;
   }
-};
+}
 ```
-
 
 ### 项目组成
 
@@ -41,9 +33,7 @@ export default class Conf extends React.Component {
 └── readme.md
 ```
 
-
 ### 开发规范
-
 
 #### 1. 样式的命名规则
 
@@ -62,11 +52,10 @@ fn-父菜单_子菜单_1
 fn-tl_bs_1
 ```
 
+#### 2. H5 元素使用规范
 
-#### 2. H5元素使用规范
-
-- 使用的 H5 元素不能超过5种，一般建议使用 `div` `em` `i` `img` `code` 即可; 不允许使用 `span` 元素；
-- 可编辑的段落对象必须包裹 `div` 
-- 写完CSS脚本后必须自己测试
+- 使用的 H5 元素不能超过 5 种，一般建议使用 `div` `em` `i` `img` `code` 即可; 不允许使用 `span` 元素；
+- 可编辑的段落对象必须包裹 `div`
+- 写完 CSS 脚本后必须自己测试
 - 图标不要使用图片尽量使用 CSS3 构建
 - 图片使用 `SVG` 、 `WEBP` 、 `PNG` 格式,统一保存在 `img` 文件夹

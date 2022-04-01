@@ -1,5 +1,4 @@
-import React, { useEffect, useState , Suspense, lazy  } from 'react';
-import { ReactSVG } from 'react-svg'
+import React, { useEffect, useState } from 'react';
 import E from 'wangeditor';
 import { message, Spin } from 'antd';
 import url from '@/common/service-utils';
@@ -9,77 +8,82 @@ import './lib.less';
 
 // import {emoji} from './img/emoji'
 
-import { MENU_MAIN,MATLIB } from './lib'
+import { MENU_MAIN, MATLIB } from './lib';
 
+const RICHTEXT_KEY = 'SSHL_RICHTEXT_KEY';
 
-const RICHTEXT_KEY = 'SSHL_RICHTEXT_KEY'
+console.log(MATLIB, 'MATLIB');
 
+const initData = (list) => {
+  let ret = [];
+  list.map((m, i) => {
+    m.map((o, j) => {
+      o.map((p, k) => {
+        list[i][j][k] = { ...p, click: 0 };
+        ret.push(list[i][j][k]);
+      });
+    });
+  });
+  return [list, ret];
+};
 
-console.log(MATLIB,'MATLIB')
-
-const initData = (list) =>{
-  let ret = []
-  list.map((m,i)=>{
-    m.map((o,j)=>{
-      o.map((p,k)=>{
-        list[i][j][k] = {...p, click: 0}
-        ret.push(list[i][j][k])
-      })
+const initLib = (_main, _his) => {
+  _his = _his
+    .sort((a, b) => {
+      return a.click - b.click;
     })
-  })
-  return [list, ret]
-}
+    .slice(0, 10);
+  return [...[[_his]], ..._main];
+};
 
-const initLib = (_main,_his) => {
-  _his = _his.sort((a,b)=>{return a.click-b.click}).slice(0,10)
-  return [...[[_his]], ..._main]
-}
+const decodeHis = () => {
+  let ret = [];
+  main.map((m, i) => {
+    m.map((o, j) => {
+      o.map((p, k) => {
+        let { key, click, ...d } = p;
+        ret.push(`${i}|${j}|${k}|${key}|${click}`);
+      });
+    });
+  });
+  window.localStorage.setItem(RICHTEXT_KEY, JSON.stringify(ret));
+};
 
-const decodeHis =()=>{
-  let ret = []
-  main.map((m,i)=>{
-    m.map((o,j)=>{
-      o.map((p,k)=>{
-        let {key, click, ...d} = p
-        ret.push(`${i}|${j}|${k}|${key}|${click}`)
-      })
-    })
-  })
-  window.localStorage.setItem(RICHTEXT_KEY, JSON.stringify(ret))
-}
-
-const encodeHis =()=> {
+const encodeHis = () => {
   // 还原历史记录
-  let list = JSON.parse(window.localStorage.getItem(RICHTEXT_KEY))
+  let list = JSON.parse(window.localStorage.getItem(RICHTEXT_KEY));
 
-  list?.map((item,i)=>{
-    let d = item.split('|')
-    let o = main[d[0]][d[1]][d[2]]
-    let key = d[3]
-    if (o.key===key) {
-      o.click = d[4]
+  list?.map((item, i) => {
+    let d = item.split('|');
+    let o = main[d[0]][d[1]][d[2]];
+    let key = d[3];
+    if (o.key === key) {
+      o.click = d[4];
     }
-  })
+  });
 
   // 重新计算使用频率
-  let _his = []
-  main.map((m,i)=>{
-    m.map((o,j)=>{
-      o.map((p,k)=>{
-        _his.push(main[i][j][k])
-      })
+  let _his = [];
+  main.map((m, i) => {
+    m.map((o, j) => {
+      o.map((p, k) => {
+        _his.push(main[i][j][k]);
+      });
+    });
+  });
+  his = _his
+    .sort((a, b) => {
+      return b.click - a.click;
     })
-  })
-  his = _his.sort((a,b)=>{return b.click-a.click}).slice(0,10)
+    .slice(0, 10);
 
-  let _lib = [...[[his]], ...main]
-  return _lib
-}
+  let _lib = [...[[his]], ...main];
+  return _lib;
+};
 
-var [main, his] = initData(MATLIB)
-var LIB = initLib(main,his)
+var [main, his] = initData(MATLIB);
+var LIB = initLib(main, his);
 var editor = null;
-
 
 const RichText = ({ value, onChange, appCode, requestUrl }) => {
   const [isInput, setIsInput] = useState(false);
@@ -88,20 +92,22 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
   const [selSub, setSelsub] = useState(0);
   const [lib, setLib] = useState(LIB);
 
-
-  const selMenu=(e)=> {
+  const selMenu=(e,p)=> {
+    p.stopPropagation()
     setSel(e)
     setSelsub(0)
   }
 
-  const selSubMenu=(e)=> {
-    setSelsub(e)
+  const selSubMenu=(i,j,p)=> {
+    p.stopPropagation()
+    setSel(i)
+    setSelsub(j)
   }
+
 
   useEffect(() => {
     // 初始化历史点击率
-    setLib(encodeHis())
-
+    setLib(encodeHis());
 
     editor = new E('#rich-text');
     editor.config.focus = true;
@@ -263,19 +269,16 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
     // 一定要创建
     editor.create();
 
- 
     // for(let i=90;i<200;i++) {
     //   editor.cmd.do('insertHTML',`<img class="fn-emoji" src="${emoji[i]}">`)
     // }
-    
-    
 
     return () => {
       // 组件销毁时销毁编辑器  注：class写法需要在componentWillUnmount中调用
       editor.destroy();
 
       // 保存历史点击率
-      decodeHis()
+      decodeHis();
     };
   }, []);
 
@@ -287,76 +290,87 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
     }
   }, [value]);
 
-
-  const insert = (id,key) => {
+  const insert = (id, key) => {
     // console.log(`${sel} ${selSub} ${id}`)
     // console.log(key)
 
-    let _his = []
-    main.map((m,i)=>{
-      m.map((o,j)=>{
-        o.map((p,k)=>{
+    let _his = [];
+    main.map((m, i) => {
+      m.map((o, j) => {
+        o.map((p, k) => {
           // 判断是否是选择样式
           if (key === p.key) {
             // 0:常用  >0: others
-            const _sel = (sel===0)?sel:sel-1
+            const _sel = sel === 0 ? sel : sel - 1;
             // console.log(main)
-            const html = main[_sel][selSub][id].data
-            editor.cmd.do('insertHTML',html)
+            const html = main[_sel][selSub][id].data;
+            editor.cmd.do('insertHTML', html);
 
-            if (sel<6) {
-              editor.txt.append('<br>')
+            if (sel < 6) {
+              editor.txt.append('<br>');
             }
 
             // 点击计数器
-            main[i][j][k].click++
+            main[i][j][k].click++;
           }
-          _his.push(main[i][j][k])
-        })
-      })
-    })
+          _his.push(main[i][j][k]);
+        });
+      });
+    });
     // 排序取前10个
-    _his = _his.sort((a,b)=>{return b.click-a.click}).slice(0,10)
-    let _lib = [...[[_his]], ...main]
+    _his = _his
+      .sort((a, b) => {
+        return b.click - a.click;
+      })
+      .slice(0, 10);
+    let _lib = [...[[_his]], ...main];
 
-    setLib(_lib)
-  }
+    setLib(_lib);
+  };
 
-  console.log(`${sel} ${selSub} `)
-  console.log(lib)
+  console.log(`${sel} ${selSub} `);
+  console.log(lib);
 
   return (
-
     <Spin tip="Loading..." spinning={loading}>
       <div className="g-rt">
-
         <div className="m-bar">
           <div className="m-menu">
-            {MENU_MAIN.map((item,i)=>
-              <div key={i} className={(i==sel)?"m-item sel":"m-item"} onClick={selMenu.bind(this,i)} >
+            {MENU_MAIN.map((item, i) => (
+              <div
+                key={i}
+                className={i == sel ? 'm-item sel' : 'm-item'}
+                onClick={selMenu.bind(this, i)}
+              >
                 {item.name}
                 <div className="m-sub_menu">
-                  {item.list.map((o,j)=>
-                    <div key={j} className="m-sub" onClick={selSubMenu.bind(this,j)} >{o.name}</div>
-                  )}
+                  {item.list.map((o, j) => (
+                    <div
+                      key={j}
+                      className="m-sub"
+                      onClick={selSubMenu.bind(this,i, j)}
+                    >
+                      {o.name}
+                    </div>
+                  ))}
                 </div>
               </div>
-            )}
+            ))}
           </div>
           <div className="m-wrap">
-            {lib[sel][(sel===0)?0:selSub].map((item,i)=>
-              <div className={sel<6?"m-sect":"m-sect m-emo"} key={i} 
-                   dangerouslySetInnerHTML={{ __html:item.data  }}
-                   onClick={insert.bind(this,i,item.key)}></div>
-            )}
+            {lib[sel][sel === 0 ? 0 : selSub].map((item, i) => (
+              <div
+                className={sel < 6 ? 'm-sect' : 'm-sect m-emo'}
+                key={i}
+                dangerouslySetInnerHTML={{ __html: item.data }}
+                onClick={insert.bind(this, i, item.key)}
+              ></div>
+            ))}
           </div>
-
         </div>
-        
-        <div id="rich-text" className="m-richtext" />
 
+        <div id="rich-text" className="m-richtext" />
       </div>
-      
     </Spin>
   );
 };
