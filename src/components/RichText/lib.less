@@ -187,6 +187,127 @@ li {
     }
   }
 }
+
+.fn-tl_li_11 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  & > .m-lt,
+  & > .m-rt {
+    background-color: #f00;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  & > .m-lt {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    &::before {
+      content: '';
+      width: 120%;
+      height: 2px;
+      background-color: #0f0;
+      display: block;
+      // position: absolute;
+      // top: 15px;
+      // left: -115px;
+    }
+  }
+
+  & > .m-rt {
+    &::before {
+      content: '';
+      width: 120%;
+      height: 2px;
+      background-color: #f00;
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: -115px;
+    }
+  }
+}
+
+.fn-tl_li_12 {
+  & > div {
+    & > .title {
+      padding: 10px 0px 0px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      & > .content {
+        border: 1px solid #b3c5bc;
+        color: #b3c5bc;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        text-align: center;
+      }
+      & > .line {
+        width: 50%;
+        border-top: 3px solid #b3c5bc;
+      }
+    }
+    & > .day {
+      color: #b3c5bc;
+      text-align: center;
+    }
+  }
+}
+
+.fn-tl_li_13 {
+  position: relative;
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & > .bg {
+      mix-blend-mode: multiply;
+      background-color: #f3fbf0;
+
+      height: 40px;
+      width: 15%;
+      position: absolute;
+      top: 5px;
+    }
+    & > .content {
+      font-weight: bold;
+      color: #7aaaa3;
+      border-bottom: 1px solid #7aaaa3;
+
+      padding: 10px;
+    }
+  }
+}
+
+.fn-tl_li_14 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  & > .title {
+    width: 25px;
+    height: 25px;
+    border-radius: 0% 40% 0% 0%;
+    background-color: #f00;
+    color: #fff;
+    text-align: center;
+  }
+  & > .content {
+    padding: 10px;
+    color: #f00;
+    font-weight: bold;
+    & > div {
+      border-bottom: 3px solid #f3d174;
+    }
+  }
+}
 // 图片标题
 .fn-tl_im_1 {
   margin: 30px 20px;
