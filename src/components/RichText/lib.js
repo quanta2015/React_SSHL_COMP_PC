@@ -7,82 +7,13 @@ import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
 
 export const MENU_MAIN = [
-  { name: '常用', list: [] },
-  {
-    name: '标题',
-    list: [
-      { name: '基础标题' },
-      { name: '框线标题' },
-      { name: '图片标题' },
-      { name: '底色标题' },
-      { name: '符号标题' },
-    ],
-  },
-  {
-    name: '卡片',
-    list: [
-      { name: '基础卡片' },
-      { name: '框线卡片' },
-      { name: '底色卡片' },
-      { name: '底纹卡片' },
-      { name: '对话/问答' },
-      { name: '轴线卡片' },
-    ],
-  },
-  {
-    name: '图片',
-    list: [
-      { name: '基础图片' },
-      { name: '单图' },
-      { name: '双图' },
-      { name: '三图' },
-      { name: '多图' },
-      { name: '圆形图' },
-      { name: '背景图' },
-    ],
-  },
-  {
-    name: '布局',
-    list: [
-      { name: '基础布局' },
-      { name: '组合' },
-      { name: '表格' },
-      { name: '上下滑动' },
-      { name: '左右滑动' },
-      { name: '自由布局' },
-      { name: '' },
-    ],
-  },
-  {
-    name: '组件',
-    list: [
-      { name: '分割线' },
-      { name: '分隔符' },
-      { name: '贴纸' },
-      { name: 'SVG贴纸' },
-      { name: '关注原文' },
-      { name: '公众号组件' },
-      { name: '二维码' },
-      { name: '零件' },
-    ],
-  },
-  {
-    name: 'EMOJI',
-    list: [
-      { name: '表情' },
-      { name: '手势' },
-      { name: '头像' },
-      { name: '动作' },
-      { name: '动物' },
-      { name: '食物' },
-      { name: '交通' },
-      { name: '时间天气' },
-      { name: '日常A' },
-      { name: '日常B' },
-      { name: '标志' },
-      { name: '国旗' },
-    ],
-  },
+  { name: '常用', list: [{ name: '常用样式' },{ name: '常用EMO' }] },
+  { name: '标题', list: [{ name: '基础标题' },{ name: '框线标题' },{ name: '图片标题' },{ name: '底色标题' },{ name: '符号标题' }] },
+  { name: '卡片', list: [{ name: '基础卡片' },{ name: '框线卡片' },{ name: '底色卡片' },{ name: '底纹卡片' },{ name: '对话/问答' },{ name: '轴线卡片' }] },
+  { name: '图片', list: [{ name: '基础图片' },{ name: '单图' },{ name: '双图' },{ name: '三图' },{ name: '多图' },{ name: '圆形图' },{ name: '背景图' }] },
+  { name: '布局', list: [{ name: '基础布局' },{ name: '组合' },{ name: '表格' },{ name: '上下滑动' },{ name: '左右滑动' },{ name: '自由布局' }] },
+  { name: '组件', list: [{ name: '分割线' },{ name: '分隔符' },{ name: '贴纸' },{ name: 'SVG贴纸' },{ name: '关注原文' },{ name: '公众号组件' },{ name: '二维码' },{ name: '零件' }] },
+  { name: 'EMOJI',list: [{ name: '表情' },{ name: '手势' },{ name: '头像' },{ name: '动作' },{ name: '动物' },{ name: '食物' },{ name: '交通' },{ name: '时间天气' },{ name: '日常A' },{ name: '日常B' },{ name: '标志' },{ name: '国旗' }] },
 ];
 
 /* --- 组件 --- */
@@ -314,222 +245,177 @@ export const MENU_MAIN = [
   const _IM = [_IM_BASE, _IM_ONE, _IM_TWO, _IM_THR, _IM_MUL, _IM_CIR, _IM_BACK];
 
 /* --- 布局 --- */
-// 基础布局
-const _LY_BASE = [
-  {
-    key: 'lybs001',
-    data: `<div class='fn-ly_bs_1'><div class="m-grid"></div>
-    <div class="m-grid"></div></div>`,
-  },{
-    key: 'lybs002',
-    data: `<div class="fn-ly_bs_2"><div class="m-grid"></div>
-    <div class="m-grid m-gf2"></div></div>`,
-  },{
-    key: 'lybs003',
-    data: `<div class="fn-ly_bs_3"><div class="m-grid m-gf2"></div>
-    <div class="m-grid"></div></div>`,
-  },{
-    key: 'lybs004',
-    data: `<div class="fn-ly_bs_4"><div class="m-grid"></div>
-    <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
-  },{
-    key: 'lybs005',
-    data: `<div class="fn-ly_bs_5"><div class="m-grid"></div>
-    <div class="m-grid"></div><div class="m-grid"></div></div>`,
-  },{
-    key: 'lybs006',
-    data: `<div class="fn-ly_bs_6"><div class="m-grid"></div>
-    <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
-  },{
-    key: 'lybs007',
-    data: `<div class="fn-ly_bs_7"><div class="m-grid"></div>
-    <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
-  },
+  // 基础布局
+  const _LY_BASE = [
+    {
+      key: 'lybs001',
+      data: `<div class='fn-ly_bs_1'><div class="m-grid"></div>
+      <div class="m-grid"></div></div>`,
+    },{
+      key: 'lybs002',
+      data: `<div class="fn-ly_bs_2"><div class="m-grid"></div>
+      <div class="m-grid m-gf2"></div></div>`,
+    },{
+      key: 'lybs003',
+      data: `<div class="fn-ly_bs_3"><div class="m-grid m-gf2"></div>
+      <div class="m-grid"></div></div>`,
+    },{
+      key: 'lybs004',
+      data: `<div class="fn-ly_bs_4"><div class="m-grid"></div>
+      <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
+    },{
+      key: 'lybs005',
+      data: `<div class="fn-ly_bs_5"><div class="m-grid"></div>
+      <div class="m-grid"></div><div class="m-grid"></div></div>`,
+    },{
+      key: 'lybs006',
+      data: `<div class="fn-ly_bs_6"><div class="m-grid"></div>
+      <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
+    },{
+      key: 'lybs007',
+      data: `<div class="fn-ly_bs_7"><div class="m-grid"></div>
+      <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
+    },
 
-];
+  ];
 
-// 组合
-const _LY_GROP = [
-  {
-    key: 'lygr001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 组合
+  const _LY_GROP = [
+    {
+      key: 'lygr001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 表格
-const _LY_TAB = [
-  {
-    key: 'lyta001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-  {
-    key: 'lyta002',
-    data: `<div class="fn-fr_tb_1"><table><tr class="m-tp"><td>时间</td><td>项目</td><td>内容</td></tr><tr class="m-bt"><td>8:10</td><td>滑雪</td><td>高山滑雪</td></tr><tr class="m-bt"><td>9:45</td><td>滑雪</td><td>越野滑雪</td></tr><tr class="m-bt"><td>9:45</td><td>滑雪</td><td>高山滑雪</td></tr><tr class="m-bt"><td>9:45</td><td>滑雪</td><td>越野滑雪</td></tr></table></div>`,
-  },
-];
+  // 表格
+  const _LY_TAB = [
+    {
+      key: 'lyta001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+    {
+      key: 'lyta002',
+      data: `<div class="fn-fr_tb_1"><table><tr class="m-tp"><td>时间</td><td>项目</td><td>内容</td></tr><tr class="m-bt"><td>8:10</td><td>滑雪</td><td>高山滑雪</td></tr><tr class="m-bt"><td>9:45</td><td>滑雪</td><td>越野滑雪</td></tr><tr class="m-bt"><td>9:45</td><td>滑雪</td><td>高山滑雪</td></tr><tr class="m-bt"><td>9:45</td><td>滑雪</td><td>越野滑雪</td></tr></table></div>`,
+    },
+  ];
 
-// 上下滑动
-const _LY_SLTB = [
-  {
-    key: 'lysb001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 上下滑动
+  const _LY_SLTB = [
+    {
+      key: 'lysb001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 左右滑动
-const _LY_SLLR = [
-  {
-    key: 'lysr001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 左右滑动
+  const _LY_SLLR = [
+    {
+      key: 'lysr001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 自由布局
-const _LY_FREE = [
-  {
-    key: 'lyfr001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 自由布局
+  const _LY_FREE = [
+    {
+      key: 'lyfr001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 图片
-const _LY = [_LY_BASE, _LY_GROP, _LY_TAB, _LY_SLTB, _LY_SLLR, _LY_FREE];
+  const _LY = [_LY_BASE, _LY_GROP, _LY_TAB, _LY_SLTB, _LY_SLLR, _LY_FREE];
 
 /* --- 组件 --- */
-// 分割线
-const _CO_SPLL = [
-  {
-    key: 'cosl001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 分割线
+  const _CO_SPLL = [
+    {
+      key: 'cosl001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 分隔符
-const _CO_SPLS = [
-  {
-    key: 'coss001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 分隔符
+  const _CO_SPLS = [
+    {
+      key: 'coss001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 贴纸
-const _CO_STIC = [
-  {
-    key: 'cosc001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 贴纸
+  const _CO_STIC = [
+    {
+      key: 'cosc001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// SVG贴纸
-const _CO_SVG = [
-  {
-    key: 'cosg001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // SVG贴纸
+  const _CO_SVG = [
+    {
+      key: 'cosg001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 关注原文
-const _CO_FOC = [
-  {
-    key: 'cofc001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 关注原文
+  const _CO_FOC = [
+    {
+      key: 'cofc001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 公众号组件
-const _CO_OFFI = [
-  {
-    key: 'coof001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 公众号组件
+  const _CO_OFFI = [
+    {
+      key: 'coof001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 二维码
-const _CO_QRCO = [
-  {
-    key: 'coqr001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 二维码
+  const _CO_QRCO = [
+    {
+      key: 'coqr001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-// 零件
-const _CO_PART = [
-  {
-    key: 'copa001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-];
+  // 零件
+  const _CO_PART = [
+    {
+      key: 'copa001',
+      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    },
+  ];
 
-const _CO = [
-  _CO_SPLL,
-  _CO_SPLS,
-  _CO_STIC,
-  _CO_SVG,
-  _CO_FOC,
-  _CO_OFFI,
-  _CO_QRCO,
-  _CO_PART,
-];
+  const _CO = [_CO_SPLL,_CO_SPLS,_CO_STIC,_CO_SVG,_CO_FOC,_CO_OFFI,_CO_QRCO,_CO_PART,];
 
-const importAll = (r) => {
-  let images = [];
-  r.keys().map((item, index) => {
-    let img = `<img class="fn-emoji" src="${r(item)}">`;
-    images.push({ key: item.replace('./', ''), data: img });
-  });
-  return images;
-};
 
-var _EM_FA = importAll(
-  require.context('./emo/01 face', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_GE = importAll(
-  require.context('./emo/02 gest', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_HE = importAll(
-  require.context('./emo/03 head', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_AC = importAll(
-  require.context('./emo/04 act', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_AN = importAll(
-  require.context('./emo/05 anim', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_FO = importAll(
-  require.context('./emo/06 food', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_TR = importAll(
-  require.context('./emo/07 traf', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_TI = importAll(
-  require.context('./emo/08 time', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_C1 = importAll(
-  require.context('./emo/09 com1', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_C2 = importAll(
-  require.context('./emo/10 com2', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_RE = importAll(
-  require.context('./emo/11 rect', false, /\.(png|jpe?g|svg)$/),
-);
-var _EM_NA = importAll(
-  require.context('./emo/12 nati', false, /\.(png|jpe?g|svg)$/),
-);
+  const importAll = (r) => {
+    let images = [];
+    r.keys().map((item, index) => {
+      let img = `<img class="fn-emoji" src="${r(item)}">`;
+      images.push({ key: item.replace('./', ''), data: img });
+    });
+    return images;
+  };
 
-const _EM = [
-  _EM_FA,
-  _EM_GE,
-  _EM_HE,
-  _EM_AC,
-  _EM_AN,
-  _EM_FO,
-  _EM_TR,
-  _EM_TI,
-  _EM_C1,
-  _EM_C2,
-  _EM_RE,
-  _EM_NA,
-];
+/* --- EMOJI --- */
+  var _EM_FA = importAll(require.context('./emo/01 face', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_GE = importAll(require.context('./emo/02 gest', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_HE = importAll(require.context('./emo/03 head', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_AC = importAll(require.context('./emo/04 act', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_AN = importAll(require.context('./emo/05 anim', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_FO = importAll(require.context('./emo/06 food', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_TR = importAll(require.context('./emo/07 traf', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_TI = importAll(require.context('./emo/08 time', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_C1 = importAll(require.context('./emo/09 com1', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_C2 = importAll(require.context('./emo/10 com2', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_RE = importAll(require.context('./emo/11 rect', false, /\.(png|jpe?g|svg)$/),);
+  var _EM_NA = importAll(require.context('./emo/12 nati', false, /\.(png|jpe?g|svg)$/),);
+
+  const _EM = [_EM_FA,_EM_GE,_EM_HE,_EM_AC,_EM_AN,_EM_FO,_EM_TR,_EM_TI,_EM_C1,_EM_C2,_EM_RE,_EM_NA,];
 
 export const MATLIB = [_TL, _CD, _IM, _LY, _CO, _EM];
