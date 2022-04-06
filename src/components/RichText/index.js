@@ -6,34 +6,42 @@ import request from '@/common/fileRequest';
 import './index.less';
 import './lib.less';
 
-// import {emoji} from './img/emoji'
-
 import { MENU_MAIN, MATLIB } from './lib';
 
 const RICHTEXT_KEY = 'SSHL_RICHTEXT_KEY';
-
-console.log(MATLIB, 'MATLIB');
+const COMON_LEN = 10;
+const EMOJI_LEN = 50;
 
 const initData = (list) => {
-  let ret = [];
+  let [_hisC, _hisE] = [[], []];
   list.map((m, i) => {
     m.map((o, j) => {
       o.map((p, k) => {
         list[i][j][k] = { ...p, click: 0 };
-        ret.push(list[i][j][k]);
+
+        if (i < 5) {
+          _hisC.push(list[i][j][k]);
+        } else {
+          _hisE.push(list[i][j][k]);
+        }
       });
     });
   });
-  return [list, ret];
+  return [list, _hisC, _hisE];
 };
 
-const initLib = (_main, _his) => {
-  _his = _his
+const initLib = (_main, _hisC, _hisE) => {
+  _hisC = _hisC
     .sort((a, b) => {
       return a.click - b.click;
     })
     .slice(0, 10);
-  return [...[[_his]], ..._main];
+  _hisE = _hisE
+    .sort((a, b) => {
+      return a.click - b.click;
+    })
+    .slice(0, 30);
+  return [...[[_hisC, _hisE]], ..._main];
 };
 
 const decodeHis = () => {
@@ -52,14 +60,9 @@ const decodeHis = () => {
 const encodeHis = () => {
   // 还原历史记录
   let list = JSON.parse(window.localStorage.getItem(RICHTEXT_KEY));
-  // console.log(list);
-  console.log(main);
   list?.map((item, i) => {
     let d = item.split('|');
     let o = main[d[0]][d[1]][d[2]];
-
-    console.log(i);
-    console.log(d);
     let key = d[3];
     if (o.key === key) {
       o.click = d[4];
@@ -67,26 +70,35 @@ const encodeHis = () => {
   });
 
   // 重新计算使用频率
-  let _his = [];
+  let [_hisC, _hisE] = [[], []];
   main.map((m, i) => {
     m.map((o, j) => {
       o.map((p, k) => {
-        _his.push(main[i][j][k]);
+        if (i < 5) {
+          _hisC.push(main[i][j][k]);
+        } else {
+          _hisE.push(main[i][j][k]);
+        }
       });
     });
   });
-  his = _his
+  _hisC = _hisC
     .sort((a, b) => {
       return b.click - a.click;
     })
-    .slice(0, 10);
+    .slice(0, COMON_LEN);
+  _hisE = _hisE
+    .sort((a, b) => {
+      return b.click - a.click;
+    })
+    .slice(0, EMOJI_LEN);
 
-  let _lib = [...[[his]], ...main];
+  let _lib = [...[[_hisC, _hisE]], ...main];
   return _lib;
 };
 
-var [main, his] = initData(MATLIB);
-var LIB = initLib(main, his);
+var [main, hisC, hisE] = initData(MATLIB);
+var LIB = initLib(main, hisC, hisE);
 var editor = null;
 
 const RichText = ({ value, onChange, appCode, requestUrl }) => {
@@ -272,10 +284,6 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
     // 一定要创建
     editor.create();
 
-    // for(let i=90;i<200;i++) {
-    //   editor.cmd.do('insertHTML',`<img class="fn-emoji" src="${emoji[i]}">`)
-    // }
-
     return () => {
       // 组件销毁时销毁编辑器  注：class写法需要在componentWillUnmount中调用
       editor.destroy();
@@ -295,18 +303,14 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
 
   const insert = (id, key) => {
     // console.log(`${sel} ${selSub} ${id}`)
-    // console.log(key)
 
-    let _his = [];
+    let [_hisC, _hisE] = [[], []];
     main.map((m, i) => {
       m.map((o, j) => {
         o.map((p, k) => {
           // 判断是否是选择样式
           if (key === p.key) {
-            // 0:常用  >0: others
-            const _sel = sel === 0 ? sel : sel - 1;
-            // console.log(main)
-            const html = main[_sel][selSub][id].data;
+            const html = lib[sel][selSub][id].data;
             editor.cmd.do('insertHTML', html);
 
             if (sel < 6) {
@@ -316,23 +320,29 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
             // 点击计数器
             main[i][j][k].click++;
           }
-          _his.push(main[i][j][k]);
+
+          if (i < 5) {
+            _hisC.push(main[i][j][k]);
+          } else {
+            _hisE.push(main[i][j][k]);
+          }
         });
       });
     });
-    // 排序取前10个
-    _his = _his
+
+    _hisC = _hisC
       .sort((a, b) => {
         return b.click - a.click;
       })
-      .slice(0, 10);
-    let _lib = [...[[_his]], ...main];
-
+      .slice(0, COMON_LEN);
+    _hisE = _hisE
+      .sort((a, b) => {
+        return b.click - a.click;
+      })
+      .slice(0, EMOJI_LEN);
+    let _lib = [...[[_hisC, _hisE]], ...main];
     setLib(_lib);
   };
-
-  console.log(`${sel} ${selSub} `);
-  console.log(lib);
 
   return (
     <Spin tip="Loading..." spinning={loading}>
@@ -361,9 +371,13 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
             ))}
           </div>
           <div className="m-wrap">
-            {lib[sel][sel === 0 ? 0 : selSub].map((item, i) => (
+            {lib[sel][selSub].map((item, i) => (
               <div
-                className={sel < 6 ? 'm-sect' : 'm-sect m-emo'}
+                className={
+                  (sel < 6 && sel > 0) || (sel == 0 && selSub == 0)
+                    ? 'm-sect'
+                    : 'm-sect m-emo'
+                }
                 key={i}
                 dangerouslySetInnerHTML={{ __html: item.data }}
                 onClick={insert.bind(this, i, item.key)}

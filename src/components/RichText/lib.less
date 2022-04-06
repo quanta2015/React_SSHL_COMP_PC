@@ -6,9 +6,8 @@ li {
 }
 
 /*--- 标题 ---*/
-*
 // 基础标题
-  .fn-tl_bs_1 {
+.fn-tl_bs_1 {
   font-size: 24px;
 }
 
@@ -326,7 +325,7 @@ li {
 
 .fn-tl_li_15 {
   background-color: #fff9e7;
-
+  margin: 20px !important;
   & > div {
     display: flex;
     align-items: center;
@@ -334,6 +333,7 @@ li {
     margin-left: 10px;
     margin-top: 10px;
     position: relative;
+
     &::before {
       content: '';
       display: block;
@@ -341,10 +341,21 @@ li {
       height: 35px;
       border: 3px solid #ffd658;
       position: absolute;
-      top: -5px;
-      left: -15px;
-      z-index: -1;
-      //???
+      top: -25px;
+      left: -25px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 20px;
+      background-color: #fff9e7;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      z-index: 10;
     }
   }
 }
@@ -378,6 +389,7 @@ li {
     top: 5px;
   }
 }
+
 .fn-tl_li_17 {
   & > div {
     padding: 5px 20px;
@@ -399,6 +411,7 @@ li {
     }
   }
 }
+
 .fn-tl_li_18 {
   display: flex;
   justify-content: center;
@@ -436,6 +449,7 @@ li {
     }
   }
 }
+
 .fn-tl_li_19 {
   position: relative;
   padding: 20px;
@@ -709,6 +723,7 @@ li {
     right: -10px;
   }
 }
+
 // 底色标题
 .fn-tl_bc_1 {
   display: flex;
@@ -855,6 +870,7 @@ li {
     align-items: center;
     margin-right: 15px;
   }
+
   & > .m-bd {
     width: 10px;
     height: 10px;
@@ -921,6 +937,7 @@ li {
 
 .fn-tl_bc_14 {
   padding: 15px;
+
   & > div {
     width: 80%;
     padding: 5px;
@@ -1064,10 +1081,12 @@ li {
 
     &::after {
       content: '';
+      width: 0;
+      height: 0;
       border: 10px solid transparent;
       border-top: 20px solid #fbd083;
       position: absolute;
-      z-index: 1; //???
+      z-index: 1;
     }
   }
 }
@@ -1636,15 +1655,95 @@ li {
 }
 
 .fn-cd_bs_10 {
-  width: 80%;
-  height: 60px;
-  outline: 1px solid #000;
-  outline-offset: -10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #000;
+  border: 1px solid #000;
+  margin: 10px !important;
+  box-shadow: 2px 2px 2px gray;
+  padding: 10px !important;
+
+  & > div {
+    padding: 10px;
+  }
+}
+
+.fn-cd_bs_11 {
   margin: auto !important;
+  padding: 10px !important;
+
+  & > div {
+    padding: 10px;
+    border: 2px dashed #c0c8d1;
+    background-color: #efefef;
+    border-radius: 15px;
+  }
+}
+
+.fn-cd_bs_12 {
+  margin: auto !important;
+  padding: 10px !important;
+
+  & > div {
+    padding: 10px;
+    border: 2px dashed #c0c8d1;
+    background-color: #efefef;
+  }
+}
+
+.fn-cd_bs_13 {
+  margin: auto !important;
+  padding: 10px !important;
+
+  & > div {
+    padding: 20px;
+    border: 1px solid #c0c8d1;
+    background-color: #fafaef;
+    box-shadow: 0px -1px 20px #b6bec8 inset, 1px -1px 20px #b6bec8 inset;
+  }
+}
+
+.fn-cd_bs_14 {
+  margin: auto !important;
+  padding: 10px !important;
+
+  & > div {
+    padding: 20px;
+    border: 1px solid #c0c8d1;
+    background-color: #fafaef;
+    box-shadow: -1px -1px 5px#b6bec8 inset, -1px -1px 5px #b6bec8 inset;
+    border-radius: 10px;
+  }
+}
+
+.fn-cd_bs_15 {
+  margin: auto !important;
+  padding: 10px !important;
+
+  & > div {
+    padding: 20px;
+    background-color: #fafaef;
+    box-shadow: 1px 1px 5px #b6bec8, -1px -1px 5px #b6bec8;
+  }
+}
+
+.fn-cd_bs_16 {
+  margin: auto !important;
+  width: 90%;
+
+  & > div {
+    padding: 20px 30px;
+    margin: 10px;
+    border: 3px solid #000;
+    outline: 1px solid #000;
+    outline-offset: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.fn-cd_bs_17 {
+  & > div {
+    outline: 1px dashed #000;
+  }
 }
 // 框线卡片
 .fn-cd_li_1 {
@@ -2553,7 +2652,7 @@ li {
     &::before {
       width: 25px;
       height: 7px;
-      border-radius: 30%;
+      border-radius: 10px;
       right: 70px;
       top: 10px;
     }
@@ -3033,6 +3132,7 @@ li {
     display: flex;
     margin-bottom: 10px;
     margin-top: 15px;
+
     & > em {
       width: 30px;
       height: 30px;
@@ -3100,6 +3200,7 @@ li {
     align-items: center;
     margin-bottom: 10px;
     margin-top: 15px;
+
     & > em {
       width: 40px;
       height: 50px;
@@ -3240,31 +3341,48 @@ li {
     }
   }
 }
+
 .fn-im_ba_12 {
   & > div {
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     & > img {
       border-radius: 30% 0 30% 0;
     }
   }
 }
+
 .fn-im_ba_13 {
   & > div {
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     & > img {
       border: 10px solid #afcfee;
     }
   }
 }
+
 .fn-im_ba_14 {
-  // border: 1px solid #cd4242;
+  background-image: linear-gradient(to bottom, #c5e3d3 50%, #fff 50%);
+  padding: 15px !important;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
+
 .fn-im_ba_15 {
   padding: 10px;
 
@@ -3567,12 +3685,13 @@ li {
 }
 
 .fn-im_on_14 {
-  padding: 20px;
+  padding: 20px !important;
 
   & > .m-img {
     position: relative;
     padding: 15px;
     border-bottom: 5px dotted #9de1fc;
+
     img {
       max-width: 100%;
     }
@@ -3580,30 +3699,34 @@ li {
     &::before,
     &::after {
       content: '';
-      width: 20%;
-      height: 30px;
-      background-color: #9de1fc;
+      width: 50px;
+      height: 50px;
       display: inline-block;
       position: absolute;
       z-index: 1; //???
     }
 
     &::before {
-      top: -15px;
-      left: -15px;
+      top: 0;
+      left: 0;
+      border-top: 5px solid #9de1fc;
+      border-left: 5px solid #9de1fc;
     }
 
     &::after {
-      top: -15px;
-      right: -15px;
+      top: 0;
+      right: 0;
+      border-top: 5px solid #9de1fc;
+      border-right: 5px solid #9de1fc;
     }
   }
 }
+
 // 双图
 .fn-im_tw_1 {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px !important;
 
   & > .m-bd {
     display: flex;
@@ -3625,7 +3748,7 @@ li {
   flex-direction: column;
   margin: 10px;
   position: relative;
-  padding: 20px;
+  padding: 20px !important;
 
   .m-limg {
     img {
@@ -3903,7 +4026,7 @@ li {
     margin-top: 15px;
 
     & > img {
-      width: 20%;
+      width: 25%;
       margin-right: 10px;
       border: 10px solid #fff;
     }
@@ -3964,6 +4087,7 @@ li {
     font-size: 18px;
     font-weight: bold;
   }
+
   & > label {
     display: inline-block;
     margin: 0 0 0 20px;
@@ -4116,6 +4240,7 @@ li {
     padding: 80px 0 0 0;
   }
 }
+
 .fn-im_ba_10 {
   margin: 10px 10px;
   display: flex;

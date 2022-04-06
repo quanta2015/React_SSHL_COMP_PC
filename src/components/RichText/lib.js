@@ -7,7 +7,7 @@ import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
 
 export const MENU_MAIN = [
-  { name: '常用', list: [] },
+  { name: '常用', list: [{ name: '常用样式' }, { name: '常用EMO' }] },
   {
     name: '标题',
     list: [
@@ -50,7 +50,6 @@ export const MENU_MAIN = [
       { name: '上下滑动' },
       { name: '左右滑动' },
       { name: '自由布局' },
-      { name: '' },
     ],
   },
   {
@@ -295,7 +294,35 @@ const _CD_BASE = [
   },
   {
     key: 'cdbs010',
-    data: `<div class='fn-cd_bs_10'><div>请输入文字</div></div>`,
+    data: `<div class='fn-cd_bs_10'><div>任何时代，美好之物都与金钱和闲暇无关。创造出最美之物的，总是那些经过打磨的感知力，着眼于日常生活的目光，以及不懈努力的双手。</div></div>`,
+  },
+  {
+    key: 'cdbs011',
+    data: `<div class='fn-cd_bs_11'><div>不可以伪装，不允许欺骗，因为无时无刻不在接受考验，不遵守正直之徳，就无法成为美好的物品。</div></div>`,
+  },
+  {
+    key: 'cdbs012',
+    data: `<div class='fn-cd_bs_12'><div>选中一个模板，出现的黑色方框标志着选中的范围。插入新模板、收藏、复制，都是针对黑色方框进行操作。</div></div>`,
+  },
+  {
+    key: 'cdbs013',
+    data: `<div class='fn-cd_bs_13'><div>衣服，若是离开穿它的人，离开人的身体、心，还有生活，便没有什么好看的了。</div></div>`,
+  },
+  {
+    key: 'cdbs014',
+    data: `<div class='fn-cd_bs_14'><div>昨天是这么做的，所以今天也一样。别人是这样的，所以自己也一样。这也许轻松，但没有活过的意义。</div></div>`,
+  },
+  {
+    key: 'cdbs015',
+    data: `<div class='fn-cd_bs_15'><div>ctrl+home可以快速回到编辑区顶部选中编辑区的正文段落，再点击剪贴板里面的一个内容，会有格式刷的效果。</div></div>`,
+  },
+  {
+    key: 'cdbs016',
+    data: `<div class='fn-cd_bs_16'><div>请输入文字</div></div>`,
+  },
+  {
+    key: 'cdbs017',
+    data: `<div class='fn-cd_bs_17 fn-cd_bs_16'><div>请输入文字</div></div>`,
   },
 ];
 
@@ -304,7 +331,7 @@ const _CD_LINE = [
   {
     key: 'cdli001',
     data: `<div class='fn-cd_li_1'><div class="m-tl">机动车检验标志电子化</div><div class="m-bd"><li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li>
-        <li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li></div></div>`,
+          <li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li></div></div>`,
   },
   {
     key: 'cdli010',
@@ -501,7 +528,7 @@ const _IM_BASE = [
   },
   {
     key: 'imbs014',
-    data: `<div class='fn-im_ba_14'><div><img src=${img2}></div></div>`,
+    data: `<div class='fn-im_ba_14'><div><img src=${img3}></div></div>`,
   },
   {
     key: 'imbs015',
@@ -603,6 +630,10 @@ const _IM_BACK = [
     key: 'imba010',
     data: `<div class='fn-im_ba_10'><div class="m-logo"><img src=${img5} ></div><div class="m-img"><img src=${img5} ></div><div class="m-txt">谷雨是二十四节气的第六个节气，也是春季最后一个节气，每年4月19日～21日时太阳到达黄经30°时为谷雨，源自古人“雨生百谷”之说。同时也是播种移苗、埯瓜点豆的最佳时节。</div></div>`,
   },
+  {
+    key: 'imba011',
+    data: `<div class='fn-im_ba_11'><div><em>时间带着鲜明的恶意，从我身上慢慢流走；我深知，这以后的将来，我们无法一起走过。</em><em>对于命途多舛的人生，以及渺茫的时间，阻隔在我们之间的这一事实，我们无可奈何。 </em><em>如果樱花飘落的速度是每秒5厘米的话，那两颗心要多久才能靠近？</em><em>——新海诚《秒速五厘米》</em></div></div>`,
+  },
 ];
 
 const _IM = [_IM_BASE, _IM_ONE, _IM_TWO, _IM_THR, _IM_MUL, _IM_CIR, _IM_BACK];
@@ -612,7 +643,38 @@ const _IM = [_IM_BASE, _IM_ONE, _IM_TWO, _IM_THR, _IM_MUL, _IM_CIR, _IM_BACK];
 const _LY_BASE = [
   {
     key: 'lybs001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    data: `<div class='fn-ly_bs_1'><div class="m-grid"></div>
+      <div class="m-grid"></div></div>`,
+  },
+  {
+    key: 'lybs002',
+    data: `<div class="fn-ly_bs_2"><div class="m-grid"></div>
+      <div class="m-grid m-gf2"></div></div>`,
+  },
+  {
+    key: 'lybs003',
+    data: `<div class="fn-ly_bs_3"><div class="m-grid m-gf2"></div>
+      <div class="m-grid"></div></div>`,
+  },
+  {
+    key: 'lybs004',
+    data: `<div class="fn-ly_bs_4"><div class="m-grid"></div>
+      <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
+  },
+  {
+    key: 'lybs005',
+    data: `<div class="fn-ly_bs_5"><div class="m-grid"></div>
+      <div class="m-grid"></div><div class="m-grid"></div></div>`,
+  },
+  {
+    key: 'lybs006',
+    data: `<div class="fn-ly_bs_6"><div class="m-grid"></div>
+      <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
+  },
+  {
+    key: 'lybs007',
+    data: `<div class="fn-ly_bs_7"><div class="m-grid"></div>
+      <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs010',
@@ -642,10 +704,10 @@ const _LY_TAB = [
   {
     key: 'lyta010',
     data: `<div class='fn-ly_ta_10'>
-      <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
-      <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
-      <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
-      </div>`,
+        <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
+        <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
+        <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
+        </div>`,
   },
 ];
 
@@ -677,7 +739,6 @@ const _LY_FREE = [
   },
 ];
 
-// 图片
 const _LY = [_LY_BASE, _LY_GROP, _LY_TAB, _LY_SLTB, _LY_SLLR, _LY_FREE];
 
 /* --- 组件 --- */
@@ -724,10 +785,6 @@ const _CO_FOC = [
   {
     key: 'cofc001',
     data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
-  {
-    key: 'cofc010',
-    data: `<div class='fn-co_fo_10'><div><em>点击蓝字 关注我们</em><div></div>`,
   },
 ];
 
@@ -780,6 +837,7 @@ const importAll = (r) => {
   return images;
 };
 
+/* --- EMOJI --- */
 var _EM_FA = importAll(
   require.context('./emo/01 face', false, /\.(png|jpe?g|svg)$/),
 );
