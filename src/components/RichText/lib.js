@@ -6,6 +6,10 @@ import img3 from './img/img3.webp';
 import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
 
+// document.onkeydown = function (evt) {
+//     if (evt.key === 'Enter') return false
+// }
+
 export const MENU_MAIN = [
   { name: '常用', list: [{ name: '常用样式' }, { name: '常用EMO' }] },
   {
@@ -120,7 +124,14 @@ const _TL_LINE = [
   },
   {
     key: 'tlli003',
-    data: `<div class="fn-tl_li_3"><div class="m-wd1"><em><section>清</section></em></div><div class="m-wd2"><em><section>明</section></em></div></div>`,
+    data: `<div class="fn-tl_li_3">
+            <div class="m-wd">
+              <em><section>清</section></em>
+            </div>
+            <div class="m-wd">
+              <em><section>明</section></em>
+            </div>
+          </div>`,
   },
   {
     key: 'tlli010',
@@ -198,11 +209,22 @@ const _TL_IMG = [
   },
   {
     key: 'tlim004',
-    data: `<div class="fn-tl_im_4"><div class="m-hb"></div><div class="m-hs"></div><div class="m-ct"><em>情人节快乐</em></div></div>`,
+    data: `<div class="fn-tl_im_4">
+            <div class="m-hb"></div>
+            <div class="m-hs"></div>
+            <div class="m-ct">
+              <em><section>情人节快乐<section></em>
+            </div>
+          </div>`,
   },
   {
     key: 'tlim005',
-    data: `<div class="fn-tl_im_5"><div class="m-lt"></div><div class="m-rt"><em><section>世界艾滋病日</section></em></div></div>`,
+    data: `<div class="fn-tl_im_5">
+            <div class="m-lt"></div>
+            <div class="m-rt">
+              <em><section>世界艾滋病日</section></em>
+            </div>
+          </div>`,
   },
   {
     key: 'tlim010',
@@ -234,7 +256,11 @@ const _TL_BCOL = [
   },
   {
     Key: 'tlbc002',
-    data: `<div class="fn-tl_bc_2"><div class="m-cen"><em>聚焦两会 · 关注民生</em></div></div>`,
+    data: `<div class="fn-tl_bc_2">
+            <div class="m-cen">
+              <em>聚焦两会 · 关注民生</em>
+            </div>
+          </div>`,
   },
   {
     key: 'tlbc010',
@@ -286,11 +312,35 @@ const _TL_SYM = [
   },
   {
     key: 'tlsy002',
-    data: `<div class="fn-tl_sy_2"><div class="m-lt"><div class="m-lt-wd1"><section>圣</section></div><div class="m-lt-wd2"><section>诞</section></div><div class="m-lt-wd1"><section>快</section></div><div class="m-lt-wd2"><section>乐</section></div><div class="m-lt-wd3"><em>/ CHRISTMAS 12.25</em></div></div></div>`,
+    data: `<div class="fn-tl_sy_2">
+            <div class="m-lt">
+              <div class="m-lt-wd1">
+                <section>圣</section>
+              </div>
+              <div class="m-lt-wd2">
+                <section>诞</section>
+              </div>
+              <div class="m-lt-wd1">
+                <section>快</section>
+              </div>
+              <div class="m-lt-wd2">
+                <section>乐</section>
+              </div>
+              <div class="m-lt-wd3">
+                <em><section>/ CHRISTMAS 12.25</section></em>
+              </div>
+            </div>
+          </div>`,
   },
   {
     key: 'tlsy003',
-    data: `<div class="fn-tl_sy_3"><div class="m-rt"></div><div class="m-cen"></div><div class="m-lt"><em>面对疫情 不必恐慌</em></div></div>`,
+    data: `<div class="fn-tl_sy_3">
+            <div class="m-rt"></div>
+            <div class="m-cen"></div>
+            <div class="m-lt">
+              <em><section>面对疫情 不必恐慌</section></em>
+            </div>
+          </div>`,
   },
   {
     key: 'tlsy010',
@@ -415,7 +465,7 @@ const _CD_LINE = [
   },
   {
     key: 'cdli004',
-    data: `<div class="fn-cd_li_4"><div class="m-tp"><div class="m-tp-lt"></div><div class="m-tp-rt"></div></div><div class="m-cen"><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p><br><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p></div><div class="m-bt"><div class="m-bt-lt"></div><div class="m-bt-rt"></div</div></div>`,
+    data: `<div class="fn-cd_li_4"><div class="m-tp"><div class="m-tp-lt"></div><div class="m-tp-rt"></div></div><div class="m-cen"><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p><br><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p></div><div class="m-bt"><div class="m-bt-lt"></div><div class="m-bt-rt"></div></div></div>`,
   },
   {
     key: 'tlli005',
@@ -492,7 +542,16 @@ const _CD_BCOL = [
   },
   {
     key: 'cdbc011',
-    data: `<div class='fn-cd_bc_11'><div class='m-img'><img src=${img2}></div><div class='m-bd'>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</div></div>`,
+    data: `<div class='fn-cd_bc_11'>
+            <div class='m-img'>
+              <img src=${img2}>
+            </div>
+            <div class='m-bd'>
+              <div class="m-bd-lt"></div>
+              <em><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></em>
+              <div class="m-bd-rt"></div>
+              </div>
+          </div>`,
   },
   {
     key: 'cdbc012',
@@ -545,13 +604,7 @@ const _CD_PATT = [
   },
   {
     key: 'cdpa004',
-    data: `<div class="fn-cd_pa_4">
-              <img src=${img3}>
-              <div class="m-ct">
-                  <em><section>立 / 夏 / 时 / 节</section></em>
-                  <em><section>SUMMER TIME</section></em>
-              </div>
-            </div>`,
+    data: `<div class="fn-cd_pa_4"><img src=${img3}><div class="m-ct"><em><section>立 / 夏 / 时 / 节</section></em><div class="m-ct-ct"></div><em><section>SUMMER TIME</section></em></div></div>`,
   },
   {
     key: 'cdpa005',
@@ -591,7 +644,27 @@ const _CD_QUES = [
   },
   {
     key: 'cdqu002',
-    data: `<div class="fn-cd_qu_2"><div class="m-tp"><div class="m-tp-lt"><section>聚焦</section></div><div class="m-tp-rt">两会是指什么会议？</div></div><div class="m-bt"><div class="m-bt-tp"><em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em></div><div class="m-bt-cen"><em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em></div><div class="m-bt-bt"><em><section>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</section></em></div></div></div>`,
+    data: `<div class="fn-cd_qu_2">
+            <div class="m-tp">
+              <div class="m-tp-lt">
+                <em><section>聚焦</section></em>
+              </div>
+              <div class="m-tp-rt">
+                <em><section>两会是指什么会议？</section></em>
+              </div>
+            </div>
+            <div class="m-bt">
+              <div class="m-bt-tp">
+                <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
+              </div>
+              <div class="m-bt-cen">
+                <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
+              </div>
+              <div class="m-bt-bt">
+                <em><section>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</section></em>
+              </div>
+            </div>
+          </div>`,
   },
   {
     key: 'cdqu003',
@@ -779,13 +852,13 @@ const _IM_TWO = [
   {
     key: 'imtw003',
     data: `<div class="fn-im_tw_3">
-              <div class="m-img">
+              <div class="m-img"> 
                   <img src=${img2} alt="">
                   <img src=${img2} alt="">
               </div>
               <div class="m-wd">
                   <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
-                  <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
+                  <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城。</em>
               </div>
             </div>`,
   },
@@ -793,8 +866,8 @@ const _IM_TWO = [
     key: 'imtw004',
     data: `<div class="fn-im_tw_4">
               <div class="m-img">
-                  <img src=${img2} alt="">
-                  <img class="m-bt" src=${img2} alt="">
+                  <img class="m-img2" src=${img2} alt="">
+                  <img class="m-img1" src=${img2} alt="">
               </div>
               <div class="m-wd">
                   <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
@@ -806,8 +879,8 @@ const _IM_TWO = [
     key: 'imtw005',
     data: `<div class="fn-im_tw_5">
                 <div class="m-img">
-                    <img class="m-bt" src=${img2} alt="">
-                    <img src=${img2} alt="">
+                    <img class="m-img1" src=${img2} alt="">
+                    <img class="m-img2" src=${img2} alt="">
                 </div>
               </div>`,
   },
