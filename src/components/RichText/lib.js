@@ -11,7 +11,7 @@ import img5 from './img/img5.webp';
 // }
 
 export const MENU_MAIN = [
-  { name: '常用', list: [{ name: '常用样式' }, { name: '常用EMO' }] },
+  { name: '常用', list: [{ name: '常用样式' }, { name: '常用表情' }] },
   {
     name: '标题',
     list: [
