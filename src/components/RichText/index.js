@@ -9,19 +9,19 @@ import './lib.less';
 import { MENU_MAIN, MATLIB } from './lib';
 
 const RICHTEXT_KEY = 'SSHL_RICHTEXT_KEY';
-const COMON_LEN = 10
-const EMOJI_LEN = 50
+const COMON_LEN = 10;
+const EMOJI_LEN = 50;
 
 const initData = (list) => {
-  let [_hisC,_hisE] = [[],[]];
+  let [_hisC, _hisE] = [[], []];
   list.map((m, i) => {
     m.map((o, j) => {
       o.map((p, k) => {
         list[i][j][k] = { ...p, click: 0 };
 
-        if (i<5) {
+        if (i < 5) {
           _hisC.push(list[i][j][k]);
-        }else{
+        } else {
           _hisE.push(list[i][j][k]);
         }
       });
@@ -31,9 +31,17 @@ const initData = (list) => {
 };
 
 const initLib = (_main, _hisC, _hisE) => {
-  _hisC = _hisC.sort((a, b) => { return a.click - b.click; }).slice(0, 10);
-  _hisE = _hisE.sort((a, b) => { return a.click - b.click; }).slice(0, 30);
-  return [...[[_hisC,_hisE]], ..._main];
+  _hisC = _hisC
+    .sort((a, b) => {
+      return a.click - b.click;
+    })
+    .slice(0, 10);
+  _hisE = _hisE
+    .sort((a, b) => {
+      return a.click - b.click;
+    })
+    .slice(0, 30);
+  return [...[[_hisC, _hisE]], ..._main];
 };
 
 const decodeHis = () => {
@@ -62,22 +70,30 @@ const encodeHis = () => {
   });
 
   // 重新计算使用频率
-  let [_hisC,_hisE] = [[],[]];
+  let [_hisC, _hisE] = [[], []];
   main.map((m, i) => {
     m.map((o, j) => {
       o.map((p, k) => {
-        if (i<5) {
+        if (i < 5) {
           _hisC.push(main[i][j][k]);
-        }else{
+        } else {
           _hisE.push(main[i][j][k]);
         }
       });
     });
   });
-  _hisC = _hisC.sort((a, b) => { return b.click - a.click; }).slice(0, COMON_LEN);
-  _hisE = _hisE.sort((a, b) => { return b.click - a.click; }).slice(0, EMOJI_LEN);
+  _hisC = _hisC
+    .sort((a, b) => {
+      return b.click - a.click;
+    })
+    .slice(0, COMON_LEN);
+  _hisE = _hisE
+    .sort((a, b) => {
+      return b.click - a.click;
+    })
+    .slice(0, EMOJI_LEN);
 
-  let _lib = [...[[_hisC,_hisE]], ...main];
+  let _lib = [...[[_hisC, _hisE]], ...main];
   return _lib;
 };
 
@@ -268,7 +284,6 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
     // 一定要创建
     editor.create();
 
-
     return () => {
       // 组件销毁时销毁编辑器  注：class写法需要在componentWillUnmount中调用
       editor.destroy();
@@ -289,13 +304,12 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
   const insert = (id, key) => {
     // console.log(`${sel} ${selSub} ${id}`)
 
-    let [_hisC,_hisE] = [[],[]];
+    let [_hisC, _hisE] = [[], []];
     main.map((m, i) => {
       m.map((o, j) => {
         o.map((p, k) => {
           // 判断是否是选择样式
           if (key === p.key) {
-
             const html = lib[sel][selSub][id].data;
             editor.cmd.do('insertHTML', html);
 
@@ -307,18 +321,26 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
             main[i][j][k].click++;
           }
 
-          if (i<5) {
+          if (i < 5) {
             _hisC.push(main[i][j][k]);
-          }else{
+          } else {
             _hisE.push(main[i][j][k]);
           }
         });
       });
     });
 
-    _hisC = _hisC.sort((a, b) => { return b.click - a.click; }).slice(0, COMON_LEN);
-    _hisE = _hisE.sort((a, b) => { return b.click - a.click; }).slice(0, EMOJI_LEN);
-    let _lib = [...[[_hisC,_hisE]], ...main];
+    _hisC = _hisC
+      .sort((a, b) => {
+        return b.click - a.click;
+      })
+      .slice(0, COMON_LEN);
+    _hisE = _hisE
+      .sort((a, b) => {
+        return b.click - a.click;
+      })
+      .slice(0, EMOJI_LEN);
+    let _lib = [...[[_hisC, _hisE]], ...main];
     setLib(_lib);
   };
 
@@ -351,7 +373,11 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
           <div className="m-wrap" id="rich-wrap">
             {lib[sel][selSub].map((item, i) => (
               <div
-                className={((sel<6&&sel>0)||(sel==0&&selSub==0)) ? 'm-sect' : 'm-sect m-emo'}
+                className={
+                  (sel < 6 && sel > 0) || (sel == 0 && selSub == 0)
+                    ? 'm-sect'
+                    : 'm-sect m-emo'
+                }
                 key={i}
                 dangerouslySetInnerHTML={{ __html: item.data }}
                 onClick={insert.bind(this, i, item.key)}
