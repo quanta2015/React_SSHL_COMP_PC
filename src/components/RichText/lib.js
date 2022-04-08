@@ -6,6 +6,10 @@ import img3 from './img/img3.webp';
 import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
 
+// document.onkeydown = function (evt) {
+//     if (evt.key === 'Enter') return false
+// }
+
 export const MENU_MAIN = [
   { name: '常用', list: [{ name: '常用样式' }, { name: '常用EMO' }] },
   {
@@ -111,11 +115,23 @@ const _TL_LINE = [
   { key: 'tlli001', data: `<div class='fn-tl_li_1'><em>世界气象日</em></div>` },
   {
     key: 'tlli002',
-    data: `<div class="fn-tl_li_2"><div class="m-lt"><em>目录/contents</em></div><div class="m-rt"></div></div>`,
+    data: `<div class="fn-tl_li_2">
+              <div class="m-lt">
+                <em><section>目录/contents</section></em>
+              </div>
+              <div class="m-rt"></div>
+            </div>`,
   },
   {
     key: 'tlli003',
-    data: `<div class="fn-tl_li_3"><div class="m-wd1"><em>清</em></div><div class="m-wd2"><em>明</em></div></div>`,
+    data: `<div class="fn-tl_li_3">
+              <div class="m-wd">
+                <em><section>清</section></em>
+              </div>
+              <div class="m-wd">
+                <em><section>明</section></em>
+              </div>
+            </div>`,
   },
   {
     key: 'tlli010',
@@ -123,11 +139,11 @@ const _TL_LINE = [
   },
   {
     key: 'tlli011',
-    data: `<div class='fn-tl_li_11'><div class='m-lt'><section><section>人民英雄</section></section></div><div class='m-rt'><section><section>永垂不朽</section></section></div></div>`,
+    data: `<div class='fn-tl_li_11'><div class='m-lt'><section>人民英雄</section></div><div class='m-rt'><section>永垂不朽</section></div></div>`,
   },
   {
     key: 'tlli012',
-    data: `<div class='fn-tl_li_12'><div class='m-tl'><div><section>师</section></div><div><section>恩</section></div><div><section>如</section></div><div><section>海</section></div></div><div class='m-ft'>THANKS GIVING DAY</div></div>`,
+    data: `<div class='fn-tl_li_12'><div class='m-tl'><div><section><section>师</section></section></div><div><section><section>恩</section></section></div><div><section><section>如</section></section></div><div><section>海</section></div></div><div class='m-ft'>THANKS GIVING DAY</div></div>`,
   },
   {
     key: 'tlli013',
@@ -155,7 +171,11 @@ const _TL_LINE = [
   },
   {
     key: 'tlli019',
-    data: `<div class='fn-tl_li_19'><div class='m-bg'>SUMMER</div><div class='m-bd'>立/夏时/节</div><div class='m-ft'>SUMMER TIME</div></div>`,
+    data: `<div class='fn-tl_li_19'>
+      <div class='m-bg'>SUMMER</div>
+      <div class='m-bd'><section>立/夏时/节</section></div
+      ><div class='m-ft'>SUMMER TIME</div>
+      </div>`,
   },
 ];
 
@@ -167,19 +187,48 @@ const _TL_IMG = [
   },
   {
     key: 'tlim002',
-    data: `<div><div class="fn-tl_im_2"><div class="m-rt"><em>铭记历史</em></div><img class="m-cen" src=${img1} alt=""><div class="m-rt"><em>勿忘国耻</em></div></div></div>`,
+    data: `<div class="fn-tl_im_2">
+              <div class="m-rt">
+                <em><section>铭记历史</section></em>
+              </div>
+              <img class="m-cen" src=${img1} alt="">
+              <div class="m-rt">
+                <em><section>勿忘国耻</section></em>
+              </div>
+            </div>`,
   },
   {
     key: 'tlim003',
-    data: `<div class="fn-tl_im_3"><img src=${img1}><div class="m-wd"><div class="m-ct"><em>惊蛰</em></div><div class="m-lt"><em>2022.03.05</em></div></div></div>`,
+    data: `<div class="fn-tl_im_3">
+              <img src=${img1}>
+              <div class="m-wd">
+                <div class="m-ct">
+                  <em><section>惊蛰</section></em>
+                </div>
+                <div class="m-lt">
+                  <em><section>2022.03.05</section></em>
+                </div>
+            </div>
+          </div>`,
   },
   {
     key: 'tlim004',
-    data: `<div class="fn-tl_im_4"><div class="m-hb"></div><div class="m-hs"></div><div class="m-ct"><em>情人节快乐</em></div></div>`,
+    data: `<div class="fn-tl_im_4">
+              <div class="m-hb"></div>
+              <div class="m-hs"></div>
+              <div class="m-ct">
+                <em><section>情人节快乐<section></em>
+              </div>
+            </div>`,
   },
   {
     key: 'tlim005',
-    data: `<div class="fn-tl_im_5"><div class="m-lt"></div><div class="m-rt"><em>世界艾滋病日</em></div></div>`,
+    data: `<div class="fn-tl_im_5">
+              <div class="m-lt"></div>
+              <div class="m-rt">
+                <em><section>世界艾滋病日</section></em>
+              </div>
+            </div>`,
   },
   {
     key: 'tlim010',
@@ -191,11 +240,11 @@ const _TL_IMG = [
   },
   {
     key: 'tlim012',
-    data: `<div class='fn-tl_im_12'><div class='m-img'><img src=${img4} ></div><em>WHITE DEW</em></div>`,
+    data: `<div class='fn-tl_im_12'><div class='m-img'><img src=${img4} ></div><section><section>WHITE DEW</section></section></div>`,
   },
   {
     key: 'tlim013',
-    data: `<div class='fn-tl_im_13'><img src=${img3} ><div><section>01</section></section></div></div>`,
+    data: `<div class='fn-tl_im_13'><div><img src=${img3} ><section><section>01</section></section></div></div>`,
   },
   {
     key: 'tlim014',
@@ -211,7 +260,11 @@ const _TL_BCOL = [
   },
   {
     Key: 'tlbc002',
-    data: `<div class="fn-tl_bc_2"><div class="m-cen"><em>聚焦两会 · 关注民生</em></div></div>`,
+    data: `<div class="fn-tl_bc_2">
+              <div class="m-cen">
+                <em>聚焦两会 · 关注民生</em>
+              </div>
+            </div>`,
   },
   {
     key: 'tlbc010',
@@ -235,15 +288,15 @@ const _TL_BCOL = [
   },
   {
     key: 'tlbc015',
-    data: `<div class='fn-tl_bc_15'><div class='m-lt'><div><section>白</section></div><em><section>09.07</section></em><em><section>2021</section></em></div><div class='m-rt'><div><section>露</section></div></div></div>`,
+    data: `<div class='fn-tl_bc_15'><div class='m-lt'><div><section><section>白<section></section></div><em><section>09.07</section></em><em><section>2021</section></em></div><div class='m-rt'><div><section><section>露</section></section></div></div></div>`,
   },
   {
     key: 'tlbc016',
-    data: `<div class='fn-tl_bc_16'><div><section>峥嵘岁月，初心不改</section></div></div>`,
+    data: `<div class='fn-tl_bc_16'><div><section><section>峥嵘岁月，初心不改</section></section></div></div>`,
   },
   {
     key: 'tlbc017',
-    data: `<div class='fn-tl_bc_17'><div class='m-font'><section>端</section></div><em>DUAN</em><em>WU</em><div class='m-font'><section>午</section></div></div>`,
+    data: `<div class='fn-tl_bc_17'><div class='m-font'><section>端</section></div><em><section>DUAN</section></em><em><section>WU</section></em><div class='m-font'><section>午</section></div></div>`,
   },
   {
     key: 'tlbc018',
@@ -263,11 +316,35 @@ const _TL_SYM = [
   },
   {
     key: 'tlsy002',
-    data: `<div class="fn-tl_sy_2"><div class="m-lt"><div class="m-lt-wd1">圣</div><div class="m-lt-wd2">诞</div><div class="m-lt-wd1">快</div><div class="m-lt-wd2">乐</div><div class="m-lt-wd3"><em>/ CHRISTMAS 12.25</em></div></div></div>`,
+    data: `<div class="fn-tl_sy_2">
+              <div class="m-lt">
+                <div class="m-lt-wd1">
+                  <section>圣</section>
+                </div>
+                <div class="m-lt-wd2">
+                  <section>诞</section>
+                </div>
+                <div class="m-lt-wd1">
+                  <section>快</section>
+                </div>
+                <div class="m-lt-wd2">
+                  <section>乐</section>
+                </div>
+                <div class="m-lt-wd3">
+                  <em><section>/ CHRISTMAS 12.25</section></em>
+                </div>
+              </div>
+            </div>`,
   },
   {
     key: 'tlsy003',
-    data: `<div class="fn-tl_sy_3"><div class="m-rt"></div><div class="m-cen"></div><div class="m-lt"><em><section>面对疫情 不必恐慌</section></em></div></div>`,
+    data: `<div class="fn-tl_sy_3">
+              <div class="m-rt"></div>
+              <div class="m-cen"></div>
+              <div class="m-lt">
+                <em><section>面对疫情 不必恐慌</section></em>
+              </div>
+            </div>`,
   },
   {
     key: 'tlsy010',
@@ -283,7 +360,7 @@ const _TL_SYM = [
   },
   {
     key: 'tlsy013',
-    data: `<div class='fn-tl_sy_13'><em>Winter</em><div class='m-cr'></div></div>`,
+    data: `<div class='fn-tl_sy_13'><section>Winter</section><div class='m-cr'></div></div>`,
   },
   {
     key: 'tlsy014',
@@ -303,7 +380,7 @@ const _TL_SYM = [
   },
   {
     key: 'tlsy018',
-    data: `<div class='fn-tl_sy_18'><div></div><em><section>安全提示</section></em></div>`,
+    data: `<div class='fn-tl_sy_18'><div></div><section><section>安全提示</section></section></div>`,
   },
   {
     key: 'tlsy019',
@@ -363,23 +440,50 @@ const _CD_LINE = [
   {
     key: 'cdli001',
     data: `<div class='fn-cd_li_1'><div class="m-tl">机动车检验标志电子化</div><div class="m-bd"><li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li>
-          <li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li></div></div>`,
+            <li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li></div></div>`,
   },
   {
     key: 'cdli002',
-    data: `<div class="fn-cd_li_2"><img src=${img2}><div class="m-ct"><div class="m-wd1"><em>清</em></div><div class="m-wd2"><em>明</em></div></div><div class="m-bt"><em>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。</em></div></div>`,
+    data: `<div class="fn-cd_li_2">
+              <img src=${img2}>
+              <div class="m-ct">
+                <div class="m-wd1">
+                  <em><section>清</section></em>
+                </div>
+                <div class="m-wd2">
+                  <em><section>明</section></em>
+                </div>
+              </div>
+              <div class="m-bt">
+                <em>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。</em>
+              </div>
+            </div>`,
   },
   {
     key: 'cdli003',
-    data: `<div class="fn-cd_li_3"><div class="m-tp"><em>3.15</em></div><div class="m-bt"><em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em><em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em></div></div>`,
+    data: `<div class="fn-cd_li_3">
+              <div class="m-ab"></div>
+              <div class="m-tp">
+                <em>3.15</em></div>
+              <div class="m-bt">
+                <em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em>
+                <em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em>
+              </div>
+            </div>`,
   },
   {
     key: 'cdli004',
-    data: `<div class="fn-cd_li_4"><div class="m-tp"><div class="m-tp-lt"></div><div class="m-tp-rt"></div></div><div class="m-cen"><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p><br><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p></div><div class="m-bt"><div class="m-bt-lt"></div><div class="m-bt-rt"></div</div></div>`,
+    data: `<div class="fn-cd_li_4"><div class="m-tp"><div class="m-tp-lt"></div><div class="m-tp-rt"></div></div><div class="m-cen"><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p><br><p>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</p></div><div class="m-bt"><div class="m-bt-lt"></div><div class="m-bt-rt"></div></div></div>`,
   },
   {
     key: 'tlli005',
-    data: `<div class="fn-tl_li_2"><div class="m-lt"><em>目录/contents</em></div><div class="m-rt"></div></div>`,
+    data: `<div class="fn-cd_li_5">
+              <div class="m-lt">
+                <em>目录/contents</em>
+              </div>
+              <div class="m-rt">
+              </div>
+            </div>`,
   },
   {
     key: 'cdli010',
@@ -387,7 +491,7 @@ const _CD_LINE = [
   },
   {
     key: 'cdli011',
-    data: `<div class='fn-cd_li_11'><div><section><section>01</section></section></div><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></div>`,
+    data: `<div class='fn-cd_li_11'><div><section>01</section></div><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></div>`,
   },
   {
     key: 'cdli012',
@@ -411,11 +515,11 @@ const _CD_LINE = [
   },
   {
     key: 'cdli017',
-    data: "<div class='fn-cd_li_17'><em>2021/09/03</em><div class='m-tl'>抗日战争胜利纪念日</div><div class='m-bd'><section>中国人民抗日战争胜利纪念日，是每个中国人都该铭记的日子。铭记历史，吾辈自强！我们从未遗忘！如今，硝烟散去，和平安宁，然而曾经那段血泪写就的过去不能忘，那场不屈不挠的抗争不敢忘。铭记历史，吾辈自强！我们从未遗忘！</section></div></div>",
+    data: "<div class='fn-cd_li_17'><em><section>2021/09/03</section></em><div class='m-tl'><section>抗日战争胜利纪念日</section></div><div class='m-bd'><section>中国人民抗日战争胜利纪念日，是每个中国人都该铭记的日子。铭记历史，吾辈自强！我们从未遗忘！如今，硝烟散去，和平安宁，然而曾经那段血泪写就的过去不能忘，那场不屈不挠的抗争不敢忘。铭记历史，吾辈自强！我们从未遗忘！</section></div></div>",
   },
   {
     key: 'cdli018',
-    data: "<div class='fn-cd_li_18'><div class='m-tl'>生命在于运动</div><em>排球场地设备简单，比赛规则容易掌握。既可在球场上比赛和训练，亦可以在一般空地上活动，运动量可大可小，适合于不同年龄、不同性别、不同体质、不同训练程度的人。</em><div class='m-ft'><div></div></div></div>",
+    data: "<div class='fn-cd_li_18'><div class='m-tl'><section>生命在于运动</section></div><em>排球场地设备简单，比赛规则容易掌握。既可在球场上比赛和训练，亦可以在一般空地上活动，运动量可大可小，适合于不同年龄、不同性别、不同体质、不同训练程度的人。</em><div class='m-ft'><div></div></div></div>",
   },
   {
     key: 'cdli019',
@@ -436,21 +540,26 @@ const _CD_BCOL = [
   {
     key: 'cdbc010',
     data: `<div class='fn-cd_bc_10'>
-                <div class='m-tl'>
-                  <label><section><section>项目 | 高山滑雪</section></section></label>
-                  <div class='m-bd'><img src=${img2}></div>
-                  <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
-                  <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
-                </div>
-              </div>`,
+                  <div class='m-tl'>
+                    <label><section><section>项目 | 高山滑雪</section></section></label>
+                    <div class='m-bd'><img src=${img2}></div>
+                    <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
+                    <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
+                  </div>
+                </div>`,
   },
   {
     key: 'cdbc011',
-    data: `<div class='fn-cd_bc_11'><div class='m-img'><img src=${img2}></div><div class='m-bd'><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></div></div>`,
+    data: `<div class='fn-cd_bc_11'>
+                <img src=${img2}>
+              <div class='m-bd'>
+                <em><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></em>
+                </div>
+            </div>`,
   },
   {
     key: 'cdbc012',
-    data: `<div class='fn-cd_bc_12'><div class='m-tl'><em><section>01</section></em><div><em><section>在招岗位</section></em><em><section>2022 RECRUIT /</section></em></div></div><em><section>2022年校园招聘会即将开始，为满足各用人单位校园招聘的需求，帮助我校求职同学找到心仪的工作。2022年校园招聘会即将开始，为满足各用人单位校园招聘的需求，帮助我校求职同学找到心仪的工作，现对2021年校园招聘相关事宜进行如下安排。</section></em></div>`,
+    data: `<div class='fn-cd_bc_12'><div class='m-tl'><section>01</section><div><em><section>在招岗位</section></em><em><section>2022 RECRUIT /</section></em></div></div><em><section>2022年校园招聘会即将开始，为满足各用人单位校园招聘的需求，帮助我校求职同学找到心仪的工作。2022年校园招聘会即将开始，为满足各用人单位校园招聘的需求，帮助我校求职同学找到心仪的工作，现对2021年校园招聘相关事宜进行如下安排。</section></em></div>`,
   },
   {
     key: 'cdbc013',
@@ -486,32 +595,26 @@ const _CD_PATT = [
   },
   {
     key: 'cdpa002',
-    data: `<div class="fn-cd_pa_2"><div class="m-cen"><em>从最开始对新冠痘情的猝不及防，到全民抗疫的众志成城、共克时艰，从最开始对新冠疫情的蠡不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验，取得了来之不易的重大成果。</em></div></div>`,
+    data: `<div class="fn-cd_pa_2"><div class="m-cen"><em><section>从最开始对新冠痘情的猝不及防，到全民抗疫的众志成城、共克时艰，从最开始对新冠疫情的蠡不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验，取得了来之不易的重大成果。</section></em></div></div>`,
   },
   {
     key: 'cdpa003',
     data: `<div class="fn-cd_pa_3">
-                <div class="m-ct"></div>
-                <div class="m-wd">
-                    <em>凉风至，白露生</em><em>寒蝉鸣</em><em>夏色藏云天，秋声动木叶</em><em>所有丰收,</em><em>都是对耕种的犒赏</em><em>一叶一报秋，绵柔话丰收</em><em>立秋雨淋淋，遍地是黄金</em>
-                </div>
-              </div>`,
+                  <div class="m-ct"></div>
+                  <div class="m-wd">
+                      <em>凉风至，白露生</em><em>寒蝉鸣</em><em>夏色藏云天，秋声动木叶</em><em>所有丰收,</em><em>都是对耕种的犒赏</em><em>一叶一报秋，绵柔话丰收</em><em>立秋雨淋淋，遍地是黄金</em>
+                  </div>
+                </div>`,
   },
   {
     key: 'cdpa004',
-    data: `<div class="fn-cd_pa_4">
-                <img src=${img3}>
-                <div class="m-ct">
-                    <em>立 / 夏 / 时 / 节</em>
-                    <em>SUMMER TIME</em>
-                </div>
-              </div>`,
+    data: `<div class="fn-cd_pa_4"><img src=${img3}><div class="m-ct"><em><section>立 / 夏 / 时 / 节</section></em><div class="m-ct-ct"></div><em><section>SUMMER TIME</section></em></div></div>`,
   },
   {
     key: 'cdpa005',
     data: `<div class="fn-cd_pa_5">
                 <div class="m-ct">
-                    <em>小年通常被视为忙年的开始，意味着人们开始准备年货、扫尘、祭灶等，准备干干净净过个好年，表达了人们—种辞旧迎新、迎祥纳福的美好愿望。由于各地风俗不同，被称为"小年"的日子也不尽相同。</em>
+                    <em><section>小年通常被视为忙年的开始，意味着人们开始准备年货、扫尘、祭灶等，准备干干净净过个好年，表达了人们—种辞旧迎新、迎祥纳福的美好愿望。由于各地风俗不同，被称为"小年"的日子也不尽相同。</section></em>
                 </div>
               </div>`,
   },
@@ -525,7 +628,7 @@ const _CD_PATT = [
   },
   {
     key: 'cdpa012',
-    data: `<div class='fn-cd_pa_12 '><div class='m-tl'><em><section><section>人物简介</section></section></em><em><section><section>/profile/</section></section></em></div><div class='m-bd'><section>任教高中语文，目前担任“十人课堂”语文老师，所谓“知人而善教”。提倡在教学的同时深入了解学生，意在培养学生成长、成才，教会学生守正树德，昂扬自信。</section></div></div>`,
+    data: `<div class='fn-cd_pa_12 '><div class='m-tl'><em><section>人物简介</section></section></em><em><section><section>/profile/</section></section></em></div><div class='m-bd'><section>任教高中语文，目前担任“十人课堂”语文老师，所谓“知人而善教”。提倡在教学的同时深入了解学生，意在培养学生成长、成才，教会学生守正树德，昂扬自信。</section></div></div>`,
   },
   {
     key: 'cdpa013',
@@ -545,31 +648,51 @@ const _CD_QUES = [
   },
   {
     key: 'cdqu002',
-    data: `<div class="fn-cd_qu_2"><div class="m-tp"><div class="m-tp-lt">聚焦</div><div class="m-tp-rt">两会是指什么会议？</div></div><div class="m-bt"><div class="m-bt-tp"><em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em></div><div class="m-bt-cen"><em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em></div><div class="m-bt-bt"><em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em></div></div></div>`,
+    data: `<div class="fn-cd_qu_2">
+              <div class="m-tp">
+                <div class="m-tp-lt">
+                  <em><section>聚焦</section></em>
+                </div>
+                <div class="m-tp-rt">
+                  <em><section>两会是指什么会议？</section></em>
+                </div>
+              </div>
+              <div class="m-bt">
+                <div class="m-bt-tp">
+                  <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
+                </div>
+                <div class="m-bt-cen">
+                  <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
+                </div>
+                <div class="m-bt-bt">
+                  <em><section>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</section></em>
+                </div>
+              </div>
+            </div>`,
   },
   {
     key: 'cdqu003',
     data: `<div class='fn-cd_qu_3'>
                 <div class="m-wd">
-                    <em class='m-wd-tp'>面对疫情 不必恐慌</em>
-                    <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</em>
+                    <em class='m-wd-tp'><section>面对疫情 不必恐慌</section></em>
+                    <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
                 </div>
                 <div class="m-wd">
                     <em class='m-wd-tp'>面对疫情 不必恐慌</em>
-                    <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</em>
+                    <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
                 </div>
                 <div class="m-wd">
-                    <em class='m-wd-tp'>面对疫情 不必恐慌</em>
-                    <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</em>
+                    <em class='m-wd-tp'><section>面对疫情 不必恐慌</section></em>
+                    <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
                 </div>
               </div>`,
   },
   {
     key: 'cdqu010',
     data: `<div class='fn-cd_qu_10'>
-          <div class='m-q'><div>面对疫情 不必恐慌</div></div>
-          <div class='m-a'><div><div>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</div></div></div>
-      </div>`,
+            <div class='m-q'><div>面对疫情 不必恐慌</div></div>
+            <div class='m-a'><div><div>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</div></div></div>
+        </div>`,
   },
   {
     key: 'cdqu011',
@@ -581,7 +704,7 @@ const _CD_QUES = [
   },
   {
     key: 'cdqu013',
-    data: `<div class='fn-cd_qu_13'><div class='m-img'><img src=${img3}></div><section><section>输入名字</section></section><div><section><section>输入对话输入对话</section></section></div></div>`,
+    data: `<div class='fn-cd_qu_13'><div class='m-img'><img src=${img3}></div><div class='m-bd'><section><section>输入对话输入对话<section></section></div></div>`,
   },
   {
     key: 'cdqu014',
@@ -597,11 +720,11 @@ const _CD_AXIS = [
   },
   {
     key: 'cdax010',
-    data: `<div class='fn-cd_ax_10'><div class="m-tl"><section><section>01</section></section></div><div class='m-bd'>地球一小时是世界自然基金会应对全球气候变化所提出的一项全球性节能活动，提倡于每年三月的最后一个星期六当地时间晚上20:30。</div></div>`,
+    data: `<div class='fn-cd_ax_10'><div class="m-tl"><section>01</section></div><div class='m-bd'>地球一小时是世界自然基金会应对全球气候变化所提出的一项全球性节能活动，提倡于每年三月的最后一个星期六当地时间晚上20:30。</div></div>`,
   },
   {
     key: 'cdax011',
-    data: `<div class='fn-cd_ax_11'><div><em>1</em><label>春雷乍动</label></div><div><section>时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。</section></div><div><em>2</em><label>春雷乍动</label></div><div><section>时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。</section></div><div><em>3</em><label>春雷乍动</label></div><div><section>时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。</section></div></div>`,
+    data: `<div class='fn-cd_ax_11'><div><em><section>1</section></em><label><section>春雷乍动</section></label></div><div><section>时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。</section></div><div><em><section>2</section></em><label><section>春雷乍动</section></label></div><div><section>时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。</section></div><div><em><section>3</section></em><label><section>春雷乍动</section></label></div><div><section>时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。</section></div></div>`,
   },
   {
     key: 'cdax012',
@@ -609,15 +732,26 @@ const _CD_AXIS = [
   },
   {
     key: 'cdax013',
-    data: `<div class='fn-cd_ax_13'><div><em><section><section>01</section></section></em><label>高山滑雪</label></div><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div><div><em><section><section>02</section></section></em><label>高山滑雪</label></div><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div><div><em><section><section>03</section></section></em><label>高山滑雪</label></div><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div>`,
+    data: `<div class='fn-cd_ax_13'><div><em><section>01</section></em><label>高山滑雪</label></div><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div><div><em><section>02</section></em><label>高山滑雪</label></div><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div><div><em><section>03</section></em><label>高山滑雪</label></div><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div>`,
   },
   {
     key: 'cdax014',
-    data: `<div class='fn-cd_ax_14 fn-tl_im_13'><img src=${img3} ><div><section>01</section></div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section><img src=${img3} ><div><section>02</section></div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section><img src=${img3} ><div><section>03</section></div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>`,
+    data: `<div class='fn-cd_ax_14 fn-tl_im_13'>
+      <div><img src=${img3} ><section><section>01</section></section>
+      </div>
+      <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>
+      
+      <div><img src=${img3} ><section><section>01</section></section>
+      </div>
+      <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>
+      
+      <div><img src=${img3} ><section><section>01</section></section></div>
+      
+      <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div></div>`,
   },
   {
     key: 'cdax015',
-    data: `<div class='fn-cd_ax_15'><div><em><section><section>01</section></section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div><div><em><section><section>02</section></section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div><div><em><section><section>03</section></section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div></div>`,
+    data: `<div class='fn-cd_ax_15'><div><em><section>01</section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div><div><em><section>02</section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div><div><em><section>03</section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div></div>`,
   },
 ];
 
@@ -662,15 +796,15 @@ const _IM_ONE = [
   },
   {
     key: 'imon003',
-    data: `<div class="fn-im_on_3"><div class="m-lt"><div class="m-lt-tp"><em>清</em><em>明</em></div><div class="m-lt-ct"><em>清明时节雨纷纷</em></div><div class="m-lt-ct"><em>路上行人欲断魂</em></div></div><img src=${img3}></div>`,
+    data: `<div class="fn-im_on_3"><div class="m-lt"><div class="m-lt-tp"><em><section>清</section></em><em><section>明</section></em></div><div class="m-lt-ct"><em><section>清明时节雨纷纷</section></em></div><div class="m-lt-ct"><em><section>路上行人欲断魂</section></em></div></div><img src=${img3}></div>`,
   },
   {
     key: 'imon004',
-    data: `<div class="fn-im_on_4"><img src=${img1}><div class="m-lt"><em>清明时节雨纷纷</em><em>路上行人欲断魂</em></div></div>`,
+    data: `<div class="fn-im_on_4"><img src=${img1}><div class="m-lt"><em><section>清明时节雨纷纷</section></em><em><section>路上行人欲断魂</section></em></div></div>`,
   },
   {
     key: 'imon005',
-    data: `<div class="fn-im_on_5"><div class="m-lt"><em>清</em><em>明</em></div><img src=${img1}></div>`,
+    data: `<div class="fn-im_on_5"><div class="m-lt"><em><section>清</section></em><em><section>明</section></em></div><img src=${img1}></div>`,
   },
   {
     key: 'imon006',
@@ -678,7 +812,7 @@ const _IM_ONE = [
   },
   {
     key: 'imon007',
-    data: `<div class="fn-im_on_7"><div class="m-img"><img src=${img1}></div><div class="m-lt"><em>清明时节雨纷纷</em><em>路上行人欲断魂</em><em>借问酒家何处有</em><em>牧童遥指杏花村</em></div></div>`,
+    data: `<div class="fn-im_on_7"><div class="m-img"><img src=${img1}></div><div class="m-lt"><em><section>清明时节雨纷纷</section></em><em><section>路上行人欲断魂</section></em><em><section>借问酒家何处有</section></em><em><section>牧童遥指杏花村</section></em></div></div>`,
   },
   {
     key: 'imon008',
@@ -699,7 +833,7 @@ const _IM_ONE = [
   },
   {
     key: 'imon013',
-    data: `<div class='fn-im_on_13'><div class="m-img"><img src=${img3} ></div><div class='m-bd'><div><em>清</em><em>明</em></div><div><em>Qing</em><em>Ming</em><em>时</em><em>节</em></div></div></div>`,
+    data: `<div class='fn-im_on_13'><div class="m-img"><img src=${img3} ></div><div class='m-bd'><div><em><section>清</section></em><em><section>明</section></em></div><div><em><section>Qing</section></em><em><section>Ming</section></em><em><section>时</section></em><em><section>节</section></em></div></div></div>`,
   },
   {
     key: 'imon014',
@@ -716,10 +850,11 @@ const _IM_TWO = [
   {
     key: 'imtw002',
     data: `<div class="fn-im_tw_2">
-                <div class="m-lt">
-                    <img src=${img2}>
-                    <div class="m-wd">
-                      <em>梨花风气正清明</em>
+                  <div class="m-lt">
+                      <img src=${img2}>
+                      <div class="m-wd">
+                        <em>梨花风气正清明</em>
+                      </div>
                     </div>
                   </div>
                 <div class="m-lt">
@@ -733,13 +868,13 @@ const _IM_TWO = [
   {
     key: 'imtw003',
     data: `<div class="fn-im_tw_3">
-                <div class="m-img">
+                <div class="m-img"> 
                     <img src=${img2} alt="">
                     <img src=${img2} alt="">
                 </div>
                 <div class="m-wd">
                     <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
-                    <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
+                    <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城。</em>
                 </div>
               </div>`,
   },
@@ -747,7 +882,7 @@ const _IM_TWO = [
     key: 'imtw004',
     data: `<div class="fn-im_tw_4">
                 <div class="m-img">
-                    <img class='m-img2' src=${img2} alt="">
+                    <img class="m-img2" src=${img2} alt="">
                     <img class="m-img1" src=${img2} alt="">
                 </div>
                 <div class="m-wd">
@@ -760,14 +895,49 @@ const _IM_TWO = [
     key: 'imtw005',
     data: `<div class="fn-im_tw_5">
                   <div class="m-img">
-                      <img class="m-bt" src=${img2} alt="">
-                      <img src=${img2} alt="">
+                      <img class="m-img1" src=${img2} alt="">
+                      <img class="m-img2" src=${img2} alt="">
                   </div>
                 </div>`,
   },
   {
+    key: 'imtw003',
+    data: `<div class="fn-im_tw_3">
+                  <div class="m-img">
+                      <img src=${img2} alt="">
+                      <img src=${img2} alt="">
+                  </div>
+                  <div class="m-wd">
+                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
+                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
+                  </div>
+                </div>`,
+  },
+  {
+    key: 'imtw004',
+    data: `<div class="fn-im_tw_4">
+                  <div class="m-img">
+                      <img class='m-img2' src=${img2} alt="">
+                      <img class="m-img1" src=${img2} alt="">
+                  </div>
+                  <div class="m-wd">
+                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
+                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
+                  </div>
+                </div>`,
+  },
+  {
+    key: 'imtw005',
+    data: `<div class="fn-im_tw_5">
+                    <div class="m-img">
+                        <img class="m-bt" src=${img2} alt="">
+                        <img src=${img2} alt="">
+                    </div>
+                  </div>`,
+  },
+  {
     key: 'imtw010',
-    data: `<div class='fn-im_tw_10'><em>02</em><div class="m-limg"><img src=${img3} ><img src=${img3} ></div></div>`,
+    data: `<div class='fn-im_tw_10'><em><section>02</section></em><div class="m-limg"><div><img src=${img3} ></div><div><img src=${img3} ></div></div></div>`,
   },
   {
     key: 'imtw011',
@@ -775,7 +945,7 @@ const _IM_TWO = [
   },
   {
     key: 'imtw012',
-    data: `<div class='fn-im_tw_12'><div class='m-img'><img src=${img3} ><img src=${img3}></div><div class='m-bd'><div><em><section>清</section></em><em><section>明</section></em></div><div><em>Qing</em><em>Ming</em><em>时</em><em>节</em></div></div></div>`,
+    data: `<div class='fn-im_tw_12'><div class='m-img'><img src=${img3} ><img src=${img3}></div><div class='m-bd'><div><em><section>清</section></em><em><section>明</section></em></div><div><em><section>Qing</section></em><em><section>Ming</section></em><em><section>时</section></em><em><section>节</section></em></div></div></div>`,
   },
 ];
 
@@ -787,7 +957,7 @@ const _IM_THR = [
   },
   {
     key: 'imth010',
-    data: `<div class='fn-im_th_10'><div class="m-img"><img src=${img3} ><img src=${img3} ><img src=${img3} ></div><em>图丨全年工作成果展示</em></div>`,
+    data: `<div class='fn-im_th_10'><div class="m-bd"><div class='m-img'><img src=${img3} ></div><div class='m-img'><img src=${img3} ></div><div class='m-img'><img src=${img3} ></div></div><em>图丨全年工作成果展示</em></div>`,
   },
 ];
 
@@ -835,37 +1005,37 @@ const _LY_BASE = [
   {
     key: 'lybs001',
     data: `<div class='fn-ly_bs_1'><div class="m-grid"></div>
-        <div class="m-grid"></div></div>`,
+          <div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs002',
     data: `<div class="fn-ly_bs_2"><div class="m-grid"></div>
-        <div class="m-grid m-gf2"></div></div>`,
+          <div class="m-grid m-gf2"></div></div>`,
   },
   {
     key: 'lybs003',
     data: `<div class="fn-ly_bs_3"><div class="m-grid m-gf2"></div>
-        <div class="m-grid"></div></div>`,
+          <div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs004',
     data: `<div class="fn-ly_bs_4"><div class="m-grid"></div>
-        <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
+          <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs005',
     data: `<div class="fn-ly_bs_5"><div class="m-grid"></div>
-        <div class="m-grid"></div><div class="m-grid"></div></div>`,
+          <div class="m-grid"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs006',
     data: `<div class="fn-ly_bs_6"><div class="m-grid"></div>
-        <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
+          <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs007',
     data: `<div class="fn-ly_bs_7"><div class="m-grid"></div>
-        <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
+          <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs010',
@@ -895,10 +1065,10 @@ const _LY_TAB = [
   {
     key: 'lyta010',
     data: `<div class='fn-ly_ta_10'>
-          <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
-          <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
-          <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
-          </div>`,
+            <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
+            <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
+            <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
+            </div>`,
   },
 ];
 
