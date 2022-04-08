@@ -850,20 +850,19 @@ const _IM_TWO = [
   {
     key: 'imtw002',
     data: `<div class="fn-im_tw_2">
-                  <div class="m-lt">
-                      <img src=${img2}>
-                      <div class="m-wd">
-                        <em>梨花风气正清明</em>
-                      </div>
-                    </div>
-                  </div>
-                <div class="m-lt">
-                    <img src=${img2}>
-                    <div class="m-wd">
-                    <em>游子寻春半出城</em>
-                    </div>
+              <div class="m-lt">
+                <img src=${img2}>
+                <div class="m-wd">
+                  <em>梨花风气正清明</em>
                 </div>
-              </div>`,
+              </div>
+              <div class="m-lt">
+                <img src=${img2}>
+                <div class="m-wd">
+                  <em>游子寻春半出城</em>
+                </div>
+              </div>
+            </div>`,
   },
   {
     key: 'imtw003',
@@ -882,8 +881,8 @@ const _IM_TWO = [
     key: 'imtw004',
     data: `<div class="fn-im_tw_4">
                 <div class="m-img">
-                    <img class="m-img2" src=${img2} alt="">
-                    <img class="m-img1" src=${img2} alt="">
+                <img class="m-img2" src=${img2} alt="">
+                <img class="m-img1" src=${img2} alt="">
                 </div>
                 <div class="m-wd">
                     <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
@@ -899,41 +898,6 @@ const _IM_TWO = [
                       <img class="m-img2" src=${img2} alt="">
                   </div>
                 </div>`,
-  },
-  {
-    key: 'imtw003',
-    data: `<div class="fn-im_tw_3">
-                  <div class="m-img">
-                      <img src=${img2} alt="">
-                      <img src=${img2} alt="">
-                  </div>
-                  <div class="m-wd">
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
-                  </div>
-                </div>`,
-  },
-  {
-    key: 'imtw004',
-    data: `<div class="fn-im_tw_4">
-                  <div class="m-img">
-                      <img class='m-img2' src=${img2} alt="">
-                      <img class="m-img1" src=${img2} alt="">
-                  </div>
-                  <div class="m-wd">
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
-                  </div>
-                </div>`,
-  },
-  {
-    key: 'imtw005',
-    data: `<div class="fn-im_tw_5">
-                    <div class="m-img">
-                        <img class="m-bt" src=${img2} alt="">
-                        <img src=${img2} alt="">
-                    </div>
-                  </div>`,
   },
   {
     key: 'imtw010',
@@ -953,11 +917,33 @@ const _IM_TWO = [
 const _IM_THR = [
   {
     key: 'imth001',
-    data: `<div class='fn-im_th_1'><em> 图标标题</em><div class="m-img"><img src=${img3} ></div><div class="m-img"><img src=${img3} ><img src=${img3} ></div></div>`,
+    data: `<div class='fn-im_th_1'>
+            <em> 图标标题</em>
+            <div class="m-img">
+              <img src=${img3} >
+            </div>
+            <div class="m-img">
+              <img src=${img3} >
+              <img src=${img3} >
+            </div>
+          </div>`,
   },
   {
     key: 'imth010',
     data: `<div class='fn-im_th_10'><div class="m-bd"><div class='m-img'><img src=${img3} ></div><div class='m-img'><img src=${img3} ></div><div class='m-img'><img src=${img3} ></div></div><em>图丨全年工作成果展示</em></div>`,
+  },
+  {
+    key: 'imth002',
+    data: `<div class='fn-im_th_2'>
+            <div class="m-lt">
+                <img class="m-lt-tp" src=${img3} alt="">
+                <img class="m-lt-bt" src=${img3} alt="">
+            </div>
+            <div class="m-rt">
+                <div class="m-rt-tp"><em>02</em></div>
+                <img class="m-rt-bt" src=${img3} alt="">
+            </div>
+          </div>`,
   },
 ];
 
