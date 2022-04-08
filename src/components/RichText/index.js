@@ -370,7 +370,7 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
               </div>
             ))}
           </div>
-          <div className="m-wrap">
+          <div className="m-wrap" id="rich-wrap">
             {lib[sel][selSub].map((item, i) => (
               <div
                 className={
@@ -386,7 +386,7 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
           </div>
         </div>
 
-        <div id="rich-text" className="m-richtext" />
+        <div className="m-richtext" id="rich-text" />
       </div>
     </Spin>
   );
