@@ -348,7 +348,7 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
               </div>
             ))}
           </div>
-          <div className="m-wrap">
+          <div className="m-wrap" id="rich-wrap">
             {lib[sel][selSub].map((item, i) => (
               <div
                 className={((sel<6&&sel>0)||(sel==0&&selSub==0)) ? 'm-sect' : 'm-sect m-emo'}
@@ -360,7 +360,7 @@ const RichText = ({ value, onChange, appCode, requestUrl }) => {
           </div>
         </div>
 
-        <div id="rich-text" className="m-richtext" />
+        <div className="m-richtext" id="rich-text" />
       </div>
     </Spin>
   );

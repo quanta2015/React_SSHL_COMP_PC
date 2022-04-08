@@ -18,7 +18,7 @@ export const MENU_MAIN = [
 
 /* --- 组件 --- */
   // 基础标题
-  const _TL_BASE = [
+    const _TL_BASE = [
     { key: 'tlbs001', data: `<div class='fn-tl_bs_1'>标题级别 1</div>` },
     { key: 'tlbs002', data: `<div class='fn-tl_bs_2'>标题级别 2</div>` },
     { key: 'tlbs003', data: `<div class='fn-tl_bs_3'>标题级别 3</div>` },
@@ -36,6 +36,7 @@ export const MENU_MAIN = [
     { key: 'tlbs009', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
     { key: 'tlbs010', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
     { key: 'tlbs011', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
+    { key: 'tlbs012', data: `<div class='fn-tl_bs_12'>地球一小时是世界自然基金会应对全球气候变化所提出的一项全球性节能活动，提倡于每年三月的最后一个星期六当地时间晚上20:30。</div>` },
   ];
 
   // 框线标题
