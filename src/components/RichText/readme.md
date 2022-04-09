@@ -1,6 +1,4 @@
-# RichText
 
-### DEMO
 
 ```tsx
 import React from 'react';
