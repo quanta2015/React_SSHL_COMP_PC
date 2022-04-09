@@ -531,7 +531,11 @@ const _CD_LINE = [
 const _CD_BCOL = [
   {
     key: 'cdbc001',
-    data: `<div class='fn-cd_bc_1'><i>1</i><div>植树节是按照法律规定宣传保护树木，并组织动员群众积极参加以植树造林为活动内容的节日。提倡通过这种活动，激发人们爱林造林的热情、意识到环保的重要性。</div></div>`,
+    data: `<div class='fn-cd_bc_1'>
+            <i>1</i>
+            <div>植树节是按照法律规定宣传保护树木，并组织动员群众积极参加以植树造林为活动内容的节日。提倡通过这种活动，激发人们爱林造林的热情、意识到环保的重要性。
+            </div>
+          </div>`,
   },
   {
     key: 'cdbc002',
@@ -1093,6 +1097,34 @@ const _CO_SPLL = [
     key: 'cosl001',
     data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
   },
+  {
+    key: 'cosl002',
+    data: `<div class="fn-co_sp_2">
+            <div class="m-wd"><em>3.15</em></div>
+          </div>`,
+  },
+  {
+    key: 'cosl003',
+    data: `<div class="fn-co_sp_3"><div class="m-odd"></div><div class="m-even"></div><div class="m-odd"></div><div class="m-even"></div><div class="m-odd"></div><div class="m-even"></div><div class="m-odd"></div></div>`,
+  },
+  {
+    key: 'cosl004',
+    data: `<div class="fn-co_sp_4">
+            <div class="m-lt"></div>
+            <div class="m-rt"></div>
+          </div>`,
+  },
+  {
+    key: 'cosl005',
+    data: `<div class="fn-co_sp_5">
+            <div class="m-lt"></div>
+            <div class="m-rt"></div>
+          </div>`,
+  },
+  {
+    key: 'cosl006',
+    data: `<div class="fn-co_sp_6"><div class="m-lt"><div class="m-lt-lt"></div><div class="m-lt-ct"></div><div class="m-lt-rt"></div></div><div class="m-rt"><div class="m-rt-lt"></div><div class="m-rt-rt"></div></div></div>`,
+  },
   { key: 'cosl010', data: `<div class='fn-co_sp_10'><div></div></div>` },
 ];
 // 分隔符
@@ -1102,8 +1134,43 @@ const _CO_SPLS = [
     data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
   },
   {
+    key: 'coss002',
+    data: `<div class='fn-co_spls_2'>
+            <div class="m-hb"></div>
+            <div class="m-hs"></div>
+          </div>`,
+  },
+  {
+    key: 'coss003',
+    data: `<div class='fn-co_spls_3'>
+            <div class="m-lt"></div>
+            <div class="m-rt"></div>
+          </div>`,
+  },
+  {
+    key: 'coss004',
+    data: `<div class='fn-co_spls_4'>
+            <div class="m-lt"></div>
+            <div class="m-rt"></div>
+          </div>`,
+  },
+  {
+    key: 'coss005',
+    data: `<div class='fn-co_spls_5'>
+            <div class="m-lt"></div>
+            <div class="m-ct"></div>
+            <div class="m-rt"></div>
+          </div>`,
+  },
+  {
+    key: 'coss006',
+    data: `<div class='fn-co_spls_6'>
+            <div class="m-ct"></div>
+          </div>`,
+  },
+  {
     key: 'coss010',
-    data: `<div class='fn-co_spls_10'><div><div><div></div></div>`,
+    data: `<div class='fn-co_spls_10'><div><div></div></div></div>`,
   },
 ];
 
@@ -1157,6 +1224,37 @@ const _CO_PART = [
   {
     key: 'copa001',
     data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+  },
+  {
+    key: 'copa002',
+    data: `<div class='fn-co_pa_2'>
+            <div class="m-lt"><em>01</em></div>
+          </div>`,
+  },
+  {
+    key: 'copa003',
+    data: `<div class='fn-co_pa_3'>
+            <div class="m-lt"><em>2</em></div>
+          </div>`,
+  },
+  {
+    key: 'copa004',
+    data: `<div class="fn-co_pa_4">
+            <i>1</i>
+          </div>`,
+  },
+  {
+    key: 'copa005',
+    data: `<div class='fn-co_pa_5'>
+            <div class="m-lt"><em>4</em></div>
+            <div class="m-rt"></div>
+          </div>`,
+  },
+  {
+    key: 'copa006',
+    data: `<div class='fn-co_pa_6'>
+            <div class="m-lt"><em>2</em></div>
+          </div>`,
   },
   { key: 'copa010', data: `<div class='fn-co_pa_10'><i>01</i></div>` },
 ];
