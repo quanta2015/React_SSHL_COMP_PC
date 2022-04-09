@@ -49,7 +49,6 @@ export const MENU_MAIN = [
     name: '布局',
     list: [
       { name: '基础布局' },
-      { name: '组合' },
       { name: '表格' },
       { name: '上下滑动' },
       { name: '左右滑动' },
@@ -1012,31 +1011,62 @@ export const MENU_MAIN = [
       key: 'lybs006',
       data: `<div class="fn-ly_bs_6"><div class="m-grid"></div>
             <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
-    },
-    {
-      key: 'lybs007',
-      data: `<div class="fn-ly_bs_7"><div class="m-grid"></div>
-            <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
-    },
-    {
-      key: 'lybs010',
-      data: `<div class='fn-ly_ba_10'><div data='空白处输入文字'></div><div></div><div></div></div>`,
-    },
+    }
   ];
 
   // 表格
   const _LY_TAB = [
     {
       key: 'lyta001',
-      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+      data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+    },
+    {
+      key: 'lyta002',
+      data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+    },
+    {
+      key: 'lyta003',
+      data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+    },
+    {
+      key: 'lyta004',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+    },
+    {
+      key: 'lyta005',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+    },
+    {
+      key: 'lyta006',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+    },
+    {
+      key: 'lyta007',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+    },
+    {
+      key: 'lyta008',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+    },
+    {
+      key: 'lyta009',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
     },
     {
       key: 'lyta010',
-      data: `<div class='fn-ly_ta_10'>
-              <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
-              <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
-              <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
               </div>`,
+    },
+    {
+      key: 'lyta011',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+    },
+    {
+      key: 'lyta012',
+      data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
     },
   ];
 
