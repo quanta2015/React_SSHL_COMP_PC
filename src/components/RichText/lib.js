@@ -1102,10 +1102,6 @@ export const MENU_MAIN = [
 /* --- 组件 --- */
   // 分割线
   const _CO_SPLL = [
-    {
-      key: 'cosl001',
-      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-    },
     { key: 'cosl010', data: `<div class='fn-co_sp_10'><div></div></div>` },
     { key: 'cosl011', data: `<div class='fn-co_sp_11'><div></div></div>` },
     { key: 'cosl013', data: `<div class='fn-co_sp_13'><div></div></div>` },
@@ -1118,10 +1114,6 @@ export const MENU_MAIN = [
 
   // 分隔符
   const _CO_SPLS = [
-    {
-      key: 'coss001',
-      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-    },
     {
       key: 'coss010',
       data: `<div class='fn-co_spls_10'><div><div></div></div></div>`,
@@ -1147,10 +1139,6 @@ export const MENU_MAIN = [
   // 关注原文
   const _CO_FOC = [
     {
-      key: 'cofc001',
-      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-    },
-    {
       key: 'cofc010',
       data: `<div class='fn-co_fo_10 fn-tl_bc_13'><div><section>点击蓝字 关注我们</section></div></div>`,
     },
@@ -1174,10 +1162,6 @@ export const MENU_MAIN = [
 
   // 二维码
   const _CO_QRCO = [
-    {
-      key: 'coqr001',
-      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-    },
     {
       key: 'coqr010',
       data: `<div class='fn-co_qr_10'>
