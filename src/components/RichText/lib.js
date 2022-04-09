@@ -5,6 +5,7 @@ import img2 from './img/img2.png';
 import img3 from './img/img3.webp';
 import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
+import img6 from './img/img6.png';
 
 // document.onkeydown = function (evt) {
 //     if (evt.key === 'Enter') return false
@@ -1144,7 +1145,7 @@ const _CO_QRCO = [
     key: 'coqr010',
     data: `<div class='fn-co_qr_10'>
       <div class='m-tl'> <div>春</div><div>日</div><div></div><div>光</div><div>景</div></div>
-      <div class='m-bd'><img src=${img1}></div>
+      <div class='m-bd'><img src=${img6}></div>
       <em>SPRING COMING</em>
       <div class='m-ft'><div><em>微信公众号</em><em>XIUMIUS</em></div><div><em>新浪微博</em><em>@秀米XIUMI</em></div></div></div>`,
   },
@@ -1152,25 +1153,25 @@ const _CO_QRCO = [
     key: 'coqr011',
     data: `<div class='fn-co_qr_11'>
       <div class='m-tl'>XIUMIUS</div>
-      <div class='m-bd'><img src=${img1}></div>
+      <div class='m-bd'><img src=${img6}></div>
       <div class='m-ft'><em>微信公众号</em><em>XIUMIUS</em><em>新浪微博</em><em>@秀米XIUMI</em></div></div>`,
   },
   {
     key: 'coqr012',
     data: `<div class='fn-co_qr_12'>
-      <div class='m-img'><img src=${img1}></div>
+      <div class='m-img'><img src=${img6}></div>
       <div class='m-bd'><div><em>//</em><em>注意防火</em><em>//</em></div><em>微信公众号:XIUMIUS</em><em>新浪微博:@秀米XIUMI</em></div></div>`,
   },
   {
     key: 'coqr013',
     data: `<div class='fn-co_qr_13 fn-tl_bc_15'>
-      <div class='m-bd'><img src=${img1}></div>
+      <div class='m-bd'><img src=${img6}></div>
       <div class='m-lt'><div><section><section>白<section></section></div><em><section>09.07</section></em><em><section>2021</section></em></div><div class='m-rt'><div><section><section>露</section></section></div></div></div>`,
   },
   {
     key: 'coqr014',
     data: `<div class='fn-co_qr_14'>
-      <div class='m-img'><img src=${img1}></div>
+      <div class='m-img'><img src=${img6}></div>
       <div class='m-bd'>
       <em>XIUMIUS</em><em>微信号 | xiumius</em><em>新浪微博 | 秀米XIUMI</em></div></div>`,
   },
