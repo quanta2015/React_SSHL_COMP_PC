@@ -5,10 +5,16 @@ import img2 from './img/img2.png';
 import img3 from './img/img3.webp';
 import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
+import img6 from './img/img6.png';
 
-// document.onkeydown = function (evt) {
-//     if (evt.key === 'Enter') return false
-// }
+const importAll = (r) => {
+  let images = [];
+  r.keys().map((item, index) => {
+    let img = `<img class="fn-emoji" src="${r(item)}">`;
+    images.push({ key: item.replace('./', ''), data: img });
+  });
+  return images;
+};
 
 export const MENU_MAIN = [
   { name: '常用', list: [{ name: '常用样式' }, { name: '常用表情' }] },
@@ -49,7 +55,6 @@ export const MENU_MAIN = [
     name: '布局',
     list: [
       { name: '基础布局' },
-      { name: '组合' },
       { name: '表格' },
       { name: '上下滑动' },
       { name: '左右滑动' },
@@ -201,7 +206,7 @@ const _TL_IMG = [
                     <em><section>惊蛰</section></em>
                   </div>
                   <div class="m-lt">
-                    <em><section>2022.03.05</section></em>
+                    <em><section>目录/contents</section></em>
                   </div>
               </div>
             </div>`,
@@ -445,7 +450,7 @@ const _CD_LINE = [
                   <div class="m-wd1">
                     <em><section>清</section></em>
                   </div>
-                  <div class="m-wd2">
+                  <div class="m-wd">
                     <em><section>明</section></em>
                   </div>
                 </div>
@@ -1028,15 +1033,55 @@ const _LY_BASE = [
 const _LY_TAB = [
   {
     key: 'lyta001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta002',
+    data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta003',
+    data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta004',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta005',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta006',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta007',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta008',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta009',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
   },
   {
     key: 'lyta010',
-    data: `<div class='fn-ly_ta_10'>
-              <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
-              <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
-              <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
               </div>`,
+  },
+  {
+    key: 'lyta011',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta012',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
   },
 ];
 
@@ -1097,6 +1142,14 @@ const _CO_SPLL = [
     data: `<div class="fn-co_sp_6"><div class="m-lt"><div class="m-lt-lt"></div><div class="m-lt-ct"></div><div class="m-lt-rt"></div></div><div class="m-rt"><div class="m-rt-lt"></div><div class="m-rt-rt"></div></div></div>`,
   },
   { key: 'cosl010', data: `<div class='fn-co_sp_10'><div></div></div>` },
+  { key: 'cosl010', data: `<div class='fn-co_sp_10'><div></div></div>` },
+  { key: 'cosl011', data: `<div class='fn-co_sp_11'><div></div></div>` },
+  { key: 'cosl013', data: `<div class='fn-co_sp_13'><div></div></div>` },
+  { key: 'cosl014', data: `<div class='fn-co_sp_14'><div></div></div>` },
+  {
+    key: 'cosl015',
+    data: `<div class='fn-co_sp_15'><div><em>THE</em></div><div><em>END</em></div></div>`,
+  },
 ];
 
 // 分隔符
@@ -1175,6 +1228,22 @@ const _CO_SPLS = [
     key: 'coss010',
     data: `<div class='fn-co_spls_10'><div><div><div></div></div>`,
   },
+  {
+    key: 'coss011',
+    data: `<div class='fn-co_spls_11'><div></div></div>`,
+  },
+  {
+    key: 'coss012',
+    data: `<div class='fn-co_spls_12'><div></div></div>`,
+  },
+  {
+    key: 'coss013',
+    data: `<div class='fn-co_spls_13'><div></div></div>`,
+  },
+  {
+    key: 'coss014',
+    data: `<div class='fn-co_spls_14'><div></div></div>`,
+  },
 ];
 
 // 关注原文
@@ -1238,6 +1307,24 @@ const _CO_FOC = [
                   <em>关注我们</em>
               </div>
             </div>`,
+    key: 'cofc010',
+    data: `<div class='fn-co_fo_10 fn-tl_bc_13'><div><section>点击蓝字 关注我们</section></div></div>`,
+  },
+  {
+    key: 'cofc011',
+    data: `<div class='fn-co_fo_11 fn-tl_bc_13'><div class='m-ct'><div><section>点击蓝字 关注我们</section></div><div><section>First Frost</section></div></div></div>`,
+  },
+  {
+    key: 'cofc012',
+    data: `<div class='fn-co_fo_12'><div>点击蓝字 关注我们</div></div>`,
+  },
+  {
+    key: 'cofc013',
+    data: `<div class='fn-co_fo_13'><div>点击蓝字 关注我们</div></div>`,
+  },
+  {
+    key: 'cofc001',
+    data: `<div class='fn-co_fo_14'><div>点击蓝字·关注我们</div></div>`,
   },
 ];
 
@@ -1249,17 +1336,17 @@ const _CO_QRCO = [
   },
   {
     key: 'coqr002',
-    data: `<div class='fn-co_qr_2'><div class="m-lt"><div></div><div></div><div></div><div></div></div><div class="m-ct"><img src=${img1} alt=""></div><div class="m-bt"><em>微信号 | xiumius</em><em>新浪微博 | 秀米XIUMI</em></div></div>`,
+    data: `<div class='fn-co_qr_2'><div class="m-lt"><div></div><div></div><div></div><div></div></div><div class="m-ct"><img src=${img6} alt=""></div><div class="m-bt"><em>微信号 | xiumius</em><em>新浪微博 | 秀米XIUMI</em></div></div>`,
   },
   {
     key: 'coqr003',
-    data: `<div class='fn-co_qr_3'><div class="m-tp"><em>XIUMIUS</em></div><div class="m-ct"><img src=${img1} alt=""></div><div class="m-bt"><em class="m-bt-odd">微信公众号</em><em>XIUMIUS</em><em class="m-bt-odd">新浪微博</em><em>@秀米XIUMI</em></div></div>`,
+    data: `<div class='fn-co_qr_3'><div class="m-tp"><em>XIUMIUS</em></div><div class="m-ct"><img src=${img6} alt=""></div><div class="m-bt"><em class="m-bt-odd">微信公众号</em><em>XIUMIUS</em><em class="m-bt-odd">新浪微博</em><em>@秀米XIUMI</em></div></div>`,
   },
   {
     key: 'coqr004',
     data: `<div class='fn-co_qr_4'>
               <div class="m-lt">
-                  <img src=${img1} alt="">
+                  <img src=${img6} alt="">
               </div>
               <div class="m-rt">
                   <em>XIUMIUS</em>
@@ -1271,7 +1358,7 @@ const _CO_QRCO = [
     key: 'coqr005',
     data: `<div class='fn-co_qr_5'>
               <div class="m-lt">
-                  <img src=${img1} alt="">
+                  <img src=${img6} alt="">
               </div>
               <div class="m-ct"></div>
               <div class="m-rt">
@@ -1284,7 +1371,7 @@ const _CO_QRCO = [
     key: 'coqr006',
     data: `<div class='fn-co_qr_6'>
               <div class="m-lt">
-                  <img src=${img1} alt="">
+                  <img src=${img6} alt="">
               </div>
               <div class="m-rt">
                   <em>微信公众号 | XIUMIUS</em>
@@ -1295,21 +1382,43 @@ const _CO_QRCO = [
   {
     key: 'coqr010',
     data: `<div class='fn-co_qr_10'><div class='m-tl'> <div>春</div><div>日</div><div></div><div>光</div><div>景</div></div><div class='m-bd'><img src=${img1}></div><div class='m-ft'><div><em>微信公众号</em><em>XIUMIUS</em></div><div><em>新浪微博</em><em>@秀米XIUMI</em></div></div></div>`,
+    key: 'coqr010',
+    data: `<div class='fn-co_qr_10'>
+      <div class='m-tl'> <div>春</div><div>日</div><div></div><div>光</div><div>景</div></div>
+      <div class='m-bd'><img src=${img6}></div>
+      <em>SPRING COMING</em>
+      <div class='m-ft'><div><em>微信公众号</em><em>XIUMIUS</em></div><div><em>新浪微博</em><em>@秀米XIUMI</em></div></div></div>`,
+  },
+  {
+    key: 'coqr011',
+    data: `<div class='fn-co_qr_11'>
+      <div class='m-tl'>XIUMIUS</div>
+      <div class='m-bd'><img src=${img6}></div>
+      <div class='m-ft'><em>微信公众号</em><em>XIUMIUS</em><em>新浪微博</em><em>@秀米XIUMI</em></div></div>`,
+  },
+  {
+    key: 'coqr012',
+    data: `<div class='fn-co_qr_12'>
+      <div class='m-img'><img src=${img6}></div>
+      <div class='m-bd'><div><em>//</em><em>注意防火</em><em>//</em></div><em>微信公众号:XIUMIUS</em><em>新浪微博:@秀米XIUMI</em></div></div>`,
+  },
+  {
+    key: 'coqr013',
+    data: `<div class='fn-co_qr_13 fn-tl_bc_15'>
+      <div class='m-bd'><img src=${img6}></div>
+      <div class='m-lt'><div><section><section>白<section></section></div><em><section>09.07</section></em><em><section>2021</section></em></div><div class='m-rt'><div><section><section>露</section></section></div></div></div>`,
+  },
+  {
+    key: 'coqr014',
+    data: `<div class='fn-co_qr_14'>
+      <div class='m-img'><img src=${img6}></div>
+      <div class='m-bd'>
+      <em>XIUMIUS</em><em>微信号 | xiumius</em><em>新浪微博 | 秀米XIUMI</em></div></div>`,
   },
 ];
 
 const _CO = [_CO_SPLL, _CO_SPLS, _CO_FOC, _CO_QRCO];
 
-const importAll = (r) => {
-  let images = [];
-  r.keys().map((item, index) => {
-    let img = `<img class="fn-emoji" src="${r(item)}">`;
-    images.push({ key: item.replace('./', ''), data: img });
-  });
-  return images;
-};
-
-/* --- EMOJI --- */
 /* --- EMOJI --- */
 var _EM_FA = importAll(
   require.context('./emo/01 face', false, /\.(png|jpe?g|svg)$/),
