@@ -1,7 +1,3 @@
-# RichText
-
-### DEMO
-
 ```tsx
 import React from 'react';
 import RichText from '@/components/RichText';
