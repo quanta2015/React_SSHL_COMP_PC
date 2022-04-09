@@ -1024,19 +1024,6 @@ export const MENU_MAIN = [
     },
   ];
 
-  // 组合
-  const _LY_GROP = [
-    {
-      key: 'lygr001',
-      data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-    },
-
-    {
-      key: 'lygr010',
-      data: `<div class='fn-im_tw_1 fn-ly_gr_10'><div class="m-bd"><div class="m-img"><img src=${img4} ></div><div class="m-img"><img src=${img4} ></div></div><div class='m-ft'>地球一小时是世界自然基金会应对全球气候变化所提出的一项全球性节能活动，提倡于每年三月的最后一个星期六当地时间晚上20:30。</div></div>`,
-    },
-  ];
-
   // 表格
   const _LY_TAB = [
     {
@@ -1073,7 +1060,7 @@ export const MENU_MAIN = [
   ];
 
 
-  const _LY = [_LY_BASE, _LY_GROP, _LY_TAB, _LY_SLTB, _LY_SLLR];
+  const _LY = [_LY_BASE,  _LY_TAB, _LY_SLTB, _LY_SLLR];
 
 
 /* --- 组件 --- */
