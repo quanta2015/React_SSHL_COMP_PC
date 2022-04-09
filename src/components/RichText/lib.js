@@ -7,9 +7,14 @@ import img4 from './img/img4.png';
 import img5 from './img/img5.webp';
 import img6 from './img/img6.png';
 
-// document.onkeydown = function (evt) {
-//     if (evt.key === 'Enter') return false
-// }
+const importAll = (r) => {
+  let images = [];
+  r.keys().map((item, index) => {
+    let img = `<img class="fn-emoji" src="${r(item)}">`;
+    images.push({ key: item.replace('./', ''), data: img });
+  });
+  return images;
+};
 
 export const MENU_MAIN = [
   { name: '常用', list: [{ name: '常用样式' }, { name: '常用表情' }] },
@@ -50,7 +55,6 @@ export const MENU_MAIN = [
     name: '布局',
     list: [
       { name: '基础布局' },
-      { name: '组合' },
       { name: '表格' },
       { name: '上下滑动' },
       { name: '左右滑动' },
@@ -112,22 +116,22 @@ const _TL_LINE = [
   {
     key: 'tlli002',
     data: `<div class="fn-tl_li_2">
-                <div class="m-lt">
-                  <em><section>目录/contents</section></em>
-                </div>
-                <div class="m-rt"></div>
-              </div>`,
+                  <div class="m-lt">
+                    <em><section>目录/contents</section></em>
+                  </div>
+                  <div class="m-rt"></div>
+                </div>`,
   },
   {
     key: 'tlli003',
     data: `<div class="fn-tl_li_3">
-                <div class="m-wd">
-                  <em><section>清</section></em>
-                </div>
-                <div class="m-wd">
-                  <em><section>明</section></em>
-                </div>
-              </div>`,
+                  <div class="m-wd">
+                    <em><section>清</section></em>
+                  </div>
+                  <div class="m-wd">
+                    <em><section>明</section></em>
+                  </div>
+                </div>`,
   },
   {
     key: 'tlli010',
@@ -168,10 +172,10 @@ const _TL_LINE = [
   {
     key: 'tlli019',
     data: `<div class='fn-tl_li_19'>
-        <div class='m-bg'>SUMMER</div>
-        <div class='m-bd'><section>立/夏时/节</section></div
-        ><div class='m-ft'>SUMMER TIME</div>
-        </div>`,
+          <div class='m-bg'>SUMMER</div>
+          <div class='m-bd'><section>立/夏时/节</section></div
+          ><div class='m-ft'>SUMMER TIME</div>
+          </div>`,
   },
 ];
 
@@ -184,47 +188,47 @@ const _TL_IMG = [
   {
     key: 'tlim002',
     data: `<div class="fn-tl_im_2">
-                <div class="m-rt">
-                  <em><section>铭记历史</section></em>
-                </div>
-                <img class="m-cen" src=${img1} alt="">
-                <div class="m-rt">
-                  <em><section>勿忘国耻</section></em>
-                </div>
-              </div>`,
+                  <div class="m-rt">
+                    <em><section>铭记历史</section></em>
+                  </div>
+                  <img class="m-cen" src=${img1} alt="">
+                  <div class="m-rt">
+                    <em><section>勿忘国耻</section></em>
+                  </div>
+                </div>`,
   },
   {
     key: 'tlim003',
     data: `<div class="fn-tl_im_3">
-                <img src=${img1}>
-                <div class="m-wd">
-                  <div class="m-ct">
-                    <em><section>惊蛰</section></em>
-                  </div>
-                  <div class="m-lt">
-                    <em><section>2022.03.05</section></em>
-                  </div>
-              </div>
-            </div>`,
+                  <img src=${img1}>
+                  <div class="m-wd">
+                    <div class="m-ct">
+                      <em><section>惊蛰</section></em>
+                    </div>
+                    <div class="m-lt">
+                      <em><section>2022.03.05</section></em>
+                    </div>
+                </div>
+              </div>`,
   },
   {
     key: 'tlim004',
     data: `<div class="fn-tl_im_4">
-                <div class="m-hb"></div>
-                <div class="m-hs"></div>
-                <div class="m-ct">
-                  <em><section>情人节快乐<section></em>
-                </div>
-              </div>`,
+                  <div class="m-hb"></div>
+                  <div class="m-hs"></div>
+                  <div class="m-ct">
+                    <em><section>情人节快乐<section></em>
+                  </div>
+                </div>`,
   },
   {
     key: 'tlim005',
     data: `<div class="fn-tl_im_5">
-                <div class="m-lt"></div>
-                <div class="m-rt">
-                  <em><section>世界艾滋病日</section></em>
-                </div>
-              </div>`,
+                  <div class="m-lt"></div>
+                  <div class="m-rt">
+                    <em><section>世界艾滋病日</section></em>
+                  </div>
+                </div>`,
   },
   {
     key: 'tlim010',
@@ -257,10 +261,10 @@ const _TL_BCOL = [
   {
     Key: 'tlbc002',
     data: `<div class="fn-tl_bc_2">
-                <div class="m-cen">
-                  <em>聚焦两会 · 关注民生</em>
-                </div>
-              </div>`,
+                  <div class="m-cen">
+                    <em>聚焦两会 · 关注民生</em>
+                  </div>
+                </div>`,
   },
   {
     key: 'tlbc010',
@@ -313,34 +317,34 @@ const _TL_SYM = [
   {
     key: 'tlsy002',
     data: `<div class="fn-tl_sy_2">
-                <div class="m-lt">
-                  <div class="m-lt-wd1">
-                    <section>圣</section>
+                  <div class="m-lt">
+                    <div class="m-lt-wd1">
+                      <section>圣</section>
+                    </div>
+                    <div class="m-lt-wd2">
+                      <section>诞</section>
+                    </div>
+                    <div class="m-lt-wd1">
+                      <section>快</section>
+                    </div>
+                    <div class="m-lt-wd2">
+                      <section>乐</section>
+                    </div>
+                    <div class="m-lt-wd3">
+                      <em><section>/ CHRISTMAS 12.25</section></em>
+                    </div>
                   </div>
-                  <div class="m-lt-wd2">
-                    <section>诞</section>
-                  </div>
-                  <div class="m-lt-wd1">
-                    <section>快</section>
-                  </div>
-                  <div class="m-lt-wd2">
-                    <section>乐</section>
-                  </div>
-                  <div class="m-lt-wd3">
-                    <em><section>/ CHRISTMAS 12.25</section></em>
-                  </div>
-                </div>
-              </div>`,
+                </div>`,
   },
   {
     key: 'tlsy003',
     data: `<div class="fn-tl_sy_3">
-                <div class="m-rt"></div>
-                <div class="m-cen"></div>
-                <div class="m-lt">
-                  <em><section>面对疫情 不必恐慌</section></em>
-                </div>
-              </div>`,
+                  <div class="m-rt"></div>
+                  <div class="m-cen"></div>
+                  <div class="m-lt">
+                    <em><section>面对疫情 不必恐慌</section></em>
+                  </div>
+                </div>`,
   },
   {
     key: 'tlsy010',
@@ -436,36 +440,36 @@ const _CD_LINE = [
   {
     key: 'cdli001',
     data: `<div class='fn-cd_li_1'><div class="m-tl">机动车检验标志电子化</div><div class="m-bd"><li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li>
-              <li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li></div></div>`,
+                <li>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人、驾驶人以及相关行业和管理部门提供电子证照服务。</li></div></div>`,
   },
   {
     key: 'cdli002',
     data: `<div class="fn-cd_li_2">
-                <img src=${img2}>
-                <div class="m-ct">
-                  <div class="m-wd1">
-                    <em><section>清</section></em>
+                  <img src=${img2}>
+                  <div class="m-ct">
+                    <div class="m-wd1">
+                      <em><section>清</section></em>
+                    </div>
+                    <div class="m-wd2">
+                      <em><section>明</section></em>
+                    </div>
                   </div>
-                  <div class="m-wd2">
-                    <em><section>明</section></em>
+                  <div class="m-bt">
+                    <em>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。</em>
                   </div>
-                </div>
-                <div class="m-bt">
-                  <em>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。</em>
-                </div>
-              </div>`,
+                </div>`,
   },
   {
     key: 'cdli003',
     data: `<div class="fn-cd_li_3">
-                <div class="m-ab"></div>
-                <div class="m-tp">
-                  <em>3.15</em></div>
-                <div class="m-bt">
-                  <em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em>
-                  <em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em>
-                </div>
-              </div>`,
+                  <div class="m-ab"></div>
+                  <div class="m-tp">
+                    <em>3.15</em></div>
+                  <div class="m-bt">
+                    <em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em>
+                    <em>国际消费者权益日是每年的3月15日，由国际消费者联盟组织于1983年确定，目的在于扩大消费者权益保护的宣传。</em>
+                  </div>
+                </div>`,
   },
   {
     key: 'cdli004',
@@ -474,12 +478,12 @@ const _CD_LINE = [
   {
     key: 'tlli005',
     data: `<div class="fn-cd_li_5">
-                <div class="m-lt">
-                  <em>目录/contents</em>
-                </div>
-                <div class="m-rt">
-                </div>
-              </div>`,
+                  <div class="m-lt">
+                    <em>目录/contents</em>
+                  </div>
+                  <div class="m-rt">
+                  </div>
+                </div>`,
   },
   {
     key: 'cdli010',
@@ -536,22 +540,22 @@ const _CD_BCOL = [
   {
     key: 'cdbc010',
     data: `<div class='fn-cd_bc_10'>
-                    <div class='m-tl'>
-                      <label><section><section>项目 | 高山滑雪</section></section></label>
-                      <div class='m-bd'><img src=${img2}></div>
-                      <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
-                      <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
-                    </div>
-                  </div>`,
+                      <div class='m-tl'>
+                        <label><section><section>项目 | 高山滑雪</section></section></label>
+                        <div class='m-bd'><img src=${img2}></div>
+                        <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
+                        <section>2015年07月31日17时57分，国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市。</section>
+                      </div>
+                    </div>`,
   },
   {
     key: 'cdbc011',
     data: `<div class='fn-cd_bc_11'>
-                  <img src=${img2}>
-                <div class='m-bd'>
-                  <em><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></em>
-                  </div>
-              </div>`,
+                    <img src=${img2}>
+                  <div class='m-bd'>
+                    <em><section>雷锋精神是中华民族传统美德的一种积淀，是一种随着时代进步而不断发展的与时俱进的精神。</section></em>
+                    </div>
+                </div>`,
   },
   {
     key: 'cdbc012',
@@ -596,11 +600,11 @@ const _CD_PATT = [
   {
     key: 'cdpa003',
     data: `<div class="fn-cd_pa_3">
-                    <div class="m-ct"></div>
-                    <div class="m-wd">
-                        <em>凉风至，白露生</em><em>寒蝉鸣</em><em>夏色藏云天，秋声动木叶</em><em>所有丰收,</em><em>都是对耕种的犒赏</em><em>一叶一报秋，绵柔话丰收</em><em>立秋雨淋淋，遍地是黄金</em>
-                    </div>
-                  </div>`,
+                      <div class="m-ct"></div>
+                      <div class="m-wd">
+                          <em>凉风至，白露生</em><em>寒蝉鸣</em><em>夏色藏云天，秋声动木叶</em><em>所有丰收,</em><em>都是对耕种的犒赏</em><em>一叶一报秋，绵柔话丰收</em><em>立秋雨淋淋，遍地是黄金</em>
+                      </div>
+                    </div>`,
   },
   {
     key: 'cdpa004',
@@ -609,10 +613,10 @@ const _CD_PATT = [
   {
     key: 'cdpa005',
     data: `<div class="fn-cd_pa_5">
-                  <div class="m-ct">
-                      <em><section>小年通常被视为忙年的开始，意味着人们开始准备年货、扫尘、祭灶等，准备干干净净过个好年，表达了人们—种辞旧迎新、迎祥纳福的美好愿望。由于各地风俗不同，被称为"小年"的日子也不尽相同。</section></em>
-                  </div>
-                </div>`,
+                    <div class="m-ct">
+                        <em><section>小年通常被视为忙年的开始，意味着人们开始准备年货、扫尘、祭灶等，准备干干净净过个好年，表达了人们—种辞旧迎新、迎祥纳福的美好愿望。由于各地风俗不同，被称为"小年"的日子也不尽相同。</section></em>
+                    </div>
+                  </div>`,
   },
   {
     key: 'cdpa010',
@@ -645,50 +649,50 @@ const _CD_QUES = [
   {
     key: 'cdqu002',
     data: `<div class="fn-cd_qu_2">
-                <div class="m-tp">
-                  <div class="m-tp-lt">
-                    <em><section>聚焦</section></em>
+                  <div class="m-tp">
+                    <div class="m-tp-lt">
+                      <em><section>聚焦</section></em>
+                    </div>
+                    <div class="m-tp-rt">
+                      <em><section>两会是指什么会议？</section></em>
+                    </div>
                   </div>
-                  <div class="m-tp-rt">
-                    <em><section>两会是指什么会议？</section></em>
-                  </div>
-                </div>
-                <div class="m-bt">
-                  <div class="m-bt-tp">
-                    <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
-                  </div>
-                  <div class="m-bt-cen">
-                    <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
-                  </div>
-                  <div class="m-bt-bt">
-                    <em><section>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</section></em>
-                  </div>
-                </div>
-              </div>`,
-  },
-  {
-    key: 'cdqu003',
-    data: `<div class='fn-cd_qu_3'>
-                  <div class="m-wd">
-                      <em class='m-wd-tp'><section>面对疫情 不必恐慌</section></em>
-                      <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
-                  </div>
-                  <div class="m-wd">
-                      <em class='m-wd-tp'>面对疫情 不必恐慌</em>
-                      <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
-                  </div>
-                  <div class="m-wd">
-                      <em class='m-wd-tp'><section>面对疫情 不必恐慌</section></em>
-                      <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
+                  <div class="m-bt">
+                    <div class="m-bt-tp">
+                      <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
+                    </div>
+                    <div class="m-bt-cen">
+                      <em>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</em>
+                    </div>
+                    <div class="m-bt-bt">
+                      <em><section>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</section></em>
+                    </div>
                   </div>
                 </div>`,
   },
   {
+    key: 'cdqu003',
+    data: `<div class='fn-cd_qu_3'>
+                    <div class="m-wd">
+                        <em class='m-wd-tp'><section>面对疫情 不必恐慌</section></em>
+                        <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
+                    </div>
+                    <div class="m-wd">
+                        <em class='m-wd-tp'>面对疫情 不必恐慌</em>
+                        <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
+                    </div>
+                    <div class="m-wd">
+                        <em class='m-wd-tp'><section>面对疫情 不必恐慌</section></em>
+                        <em><section>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</section></em>
+                    </div>
+                  </div>`,
+  },
+  {
     key: 'cdqu010',
     data: `<div class='fn-cd_qu_10'>
-              <div class='m-q'><div>面对疫情 不必恐慌</div></div>
-              <div class='m-a'><div><div>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</div></div></div>
-          </div>`,
+                <div class='m-q'><div>面对疫情 不必恐慌</div></div>
+                <div class='m-a'><div><div>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化，我们积累了丰富的抗疫经验。</div></div></div>
+            </div>`,
   },
   {
     key: 'cdqu011',
@@ -733,17 +737,17 @@ const _CD_AXIS = [
   {
     key: 'cdax014',
     data: `<div class='fn-cd_ax_14 fn-tl_im_13'>
-        <div><img src=${img3} ><section><section>01</section></section>
-        </div>
-        <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>
-        
-        <div><img src=${img3} ><section><section>01</section></section>
-        </div>
-        <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>
-        
-        <div><img src=${img3} ><section><section>01</section></section></div>
-        
-        <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div></div>`,
+          <div><img src=${img3} ><section><section>01</section></section>
+          </div>
+          <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>
+          
+          <div><img src=${img3} ><section><section>01</section></section>
+          </div>
+          <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div>
+          
+          <div><img src=${img3} ><section><section>01</section></section></div>
+          
+          <div><section>据第二次世界大战结束后远东国际军事法庭和南京军事法庭的有关判决和调查，在大屠杀中有20万以上乃至30万以上中国平民和战俘被日军杀害。</section></div></div>`,
   },
   {
     key: 'cdax015',
@@ -846,54 +850,54 @@ const _IM_TWO = [
   {
     key: 'imtw002',
     data: `<div class="fn-im_tw_2">
-                <div class="m-lt">
-                  <img src=${img2}>
-                  <div class="m-wd">
-                    <em>梨花风气正清明</em>
+                  <div class="m-lt">
+                    <img src=${img2}>
+                    <div class="m-wd">
+                      <em>梨花风气正清明</em>
+                    </div>
                   </div>
-                </div>
-                <div class="m-lt">
-                  <img src=${img2}>
-                  <div class="m-wd">
-                    <em>游子寻春半出城</em>
+                  <div class="m-lt">
+                    <img src=${img2}>
+                    <div class="m-wd">
+                      <em>游子寻春半出城</em>
+                    </div>
                   </div>
-                </div>
-              </div>`,
+                </div>`,
   },
   {
     key: 'imtw003',
     data: `<div class="fn-im_tw_3">
-                  <div class="m-img"> 
-                      <img src=${img2} alt="">
-                      <img src=${img2} alt="">
-                  </div>
-                  <div class="m-wd">
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城。</em>
-                  </div>
-                </div>`,
+                    <div class="m-img"> 
+                        <img src=${img2} alt="">
+                        <img src=${img2} alt="">
+                    </div>
+                    <div class="m-wd">
+                        <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
+                        <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城。</em>
+                    </div>
+                  </div>`,
   },
   {
     key: 'imtw004',
     data: `<div class="fn-im_tw_4">
-                  <div class="m-img">
-                  <img class="m-img2" src=${img2} alt="">
-                  <img class="m-img1" src=${img2} alt="">
-                  </div>
-                  <div class="m-wd">
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
-                      <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
-                  </div>
-                </div>`,
+                    <div class="m-img">
+                    <img class="m-img2" src=${img2} alt="">
+                    <img class="m-img1" src=${img2} alt="">
+                    </div>
+                    <div class="m-wd">
+                        <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰，再到实现疫情防控常态化。</em>
+                        <em>从最开始对新冠疫情的猝不及防，到全民抗疫的众志成城、共克时艰。</em>
+                    </div>
+                  </div>`,
   },
   {
     key: 'imtw005',
     data: `<div class="fn-im_tw_5">
-                    <div class="m-img">
-                        <img class="m-img1" src=${img2} alt="">
-                        <img class="m-img2" src=${img2} alt="">
-                    </div>
-                  </div>`,
+                      <div class="m-img">
+                          <img class="m-img1" src=${img2} alt="">
+                          <img class="m-img2" src=${img2} alt="">
+                      </div>
+                    </div>`,
   },
   {
     key: 'imtw010',
@@ -914,15 +918,15 @@ const _IM_THR = [
   {
     key: 'imth001',
     data: `<div class='fn-im_th_1'>
-              <em> 图标标题</em>
-              <div class="m-img">
-                <img src=${img3} >
-              </div>
-              <div class="m-img">
-                <img src=${img3} >
-                <img src=${img3} >
-              </div>
-            </div>`,
+                <em> 图标标题</em>
+                <div class="m-img">
+                  <img src=${img3} >
+                </div>
+                <div class="m-img">
+                  <img src=${img3} >
+                  <img src=${img3} >
+                </div>
+              </div>`,
   },
   {
     key: 'imth010',
@@ -931,15 +935,15 @@ const _IM_THR = [
   {
     key: 'imth002',
     data: `<div class='fn-im_th_2'>
-              <div class="m-lt">
-                  <img class="m-lt-tp" src=${img3} alt="">
-                  <img class="m-lt-bt" src=${img3} alt="">
-              </div>
-              <div class="m-rt">
-                  <div class="m-rt-tp"><em>02</em></div>
-                  <img class="m-rt-bt" src=${img3} alt="">
-              </div>
-            </div>`,
+                <div class="m-lt">
+                    <img class="m-lt-tp" src=${img3} alt="">
+                    <img class="m-lt-bt" src=${img3} alt="">
+                </div>
+                <div class="m-rt">
+                    <div class="m-rt-tp"><em>02</em></div>
+                    <img class="m-rt-bt" src=${img3} alt="">
+                </div>
+              </div>`,
   },
 ];
 
@@ -987,41 +991,32 @@ const _LY_BASE = [
   {
     key: 'lybs001',
     data: `<div class='fn-ly_bs_1'><div class="m-grid"></div>
-            <div class="m-grid"></div></div>`,
+              <div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs002',
     data: `<div class="fn-ly_bs_2"><div class="m-grid"></div>
-            <div class="m-grid m-gf2"></div></div>`,
+              <div class="m-grid m-gf2"></div></div>`,
   },
   {
     key: 'lybs003',
     data: `<div class="fn-ly_bs_3"><div class="m-grid m-gf2"></div>
-            <div class="m-grid"></div></div>`,
+              <div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs004',
     data: `<div class="fn-ly_bs_4"><div class="m-grid"></div>
-            <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
+              <div class="m-grid m-gf2"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs005',
     data: `<div class="fn-ly_bs_5"><div class="m-grid"></div>
-            <div class="m-grid"></div><div class="m-grid"></div></div>`,
+              <div class="m-grid"></div><div class="m-grid"></div></div>`,
   },
   {
     key: 'lybs006',
     data: `<div class="fn-ly_bs_6"><div class="m-grid"></div>
-            <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
-  },
-  {
-    key: 'lybs007',
-    data: `<div class="fn-ly_bs_7"><div class="m-grid"></div>
-            <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
-  },
-  {
-    key: 'lybs010',
-    data: `<div class='fn-ly_ba_10'><div data='空白处输入文字'></div><div></div><div></div></div>`,
+              <div class="m-grid"></div><div class="m-grid"></div><div class="m-grid"></div></div>`,
   },
 ];
 
@@ -1029,15 +1024,55 @@ const _LY_BASE = [
 const _LY_TAB = [
   {
     key: 'lyta001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
+    data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta002',
+    data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta003',
+    data: `<div class='fn-ly_ta_1'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta004',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta005',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta006',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta007',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta008',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta009',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
   },
   {
     key: 'lyta010',
-    data: `<div class='fn-ly_ta_10'>
-              <ul class='m-tl'><li>用户昵称</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li><li>@秀小米</li></ul>
-              <ul class='m-tl'><li>地区</li><li>上海</li><li>上海</li><li>上海</li><li>上海</li></ul>
-              <ul class='m-tl'><li>联系方式</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><li>138xxxx9572</li><ul>
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
               </div>`,
+  },
+  {
+    key: 'lyta011',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta012',
+    data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
   },
 ];
 
@@ -1052,6 +1087,7 @@ const _LY_SLTB = [
     data: `<div class='fn-ly_sl_10'><div><img src=${img2}><em>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。</em><img src=${img2}></div></div>`,
   },
 ];
+
 // 左右滑动
 const _LY_SLLR = [
   {
@@ -1065,10 +1101,6 @@ const _LY = [_LY_BASE, _LY_TAB, _LY_SLTB, _LY_SLLR];
 /* --- 组件 --- */
 // 分割线
 const _CO_SPLL = [
-  {
-    key: 'cosl001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
   { key: 'cosl010', data: `<div class='fn-co_sp_10'><div></div></div>` },
   { key: 'cosl011', data: `<div class='fn-co_sp_11'><div></div></div>` },
   { key: 'cosl013', data: `<div class='fn-co_sp_13'><div></div></div>` },
@@ -1081,10 +1113,6 @@ const _CO_SPLL = [
 
 // 分隔符
 const _CO_SPLS = [
-  {
-    key: 'coss001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
   {
     key: 'coss010',
     data: `<div class='fn-co_spls_10'><div><div></div></div></div>`,
@@ -1109,10 +1137,6 @@ const _CO_SPLS = [
 
 // 关注原文
 const _CO_FOC = [
-  {
-    key: 'cofc001',
-    data: `<div class='fn-cd_bs_1'>内文的标题设计有两款，一款是细线搭配粗线的设计；另一款是同样的细线搭配“空心的粗线”。这两款线的设计都可以运用秀米的布局，可嵌套和可设置单边边框这两个特性就能做出来。本段文字设置了边距20像素。</div>`,
-  },
   {
     key: 'cofc010',
     data: `<div class='fn-co_fo_10 fn-tl_bc_13'><div><section>点击蓝字 关注我们</section></div></div>`,
@@ -1179,16 +1203,6 @@ const _CO_QRCO = [
 
 const _CO = [_CO_SPLL, _CO_SPLS, _CO_FOC, _CO_QRCO];
 
-const importAll = (r) => {
-  let images = [];
-  r.keys().map((item, index) => {
-    let img = `<img class="fn-emoji" src="${r(item)}">`;
-    images.push({ key: item.replace('./', ''), data: img });
-  });
-  return images;
-};
-
-/* --- EMOJI --- */
 /* --- EMOJI --- */
 var _EM_FA = importAll(
   require.context('./emo/01 face', false, /\.(png|jpe?g|svg)$/),
