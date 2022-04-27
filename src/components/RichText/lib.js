@@ -105,9 +105,9 @@ const _TL_BASE = [
   },
   { key: 'tlbs007', data: `<div class='fn-tl_bs_7'><em>请输入标题</em></div>` },
   { key: 'tlbs008', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
-  { key: 'tlbs009', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
-  { key: 'tlbs010', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
-  { key: 'tlbs011', data: `<div class='fn-tl_bs_8'><em>描边文字</em></div>` },
+  { key: 'tlbs009', data: `<div class='fn-tl_bs_9'><em>描边文字</em></div>` },
+  { key: 'tlbs010', data: `<div class='fn-tl_bs_10'><em>输入标题</em></div>` },
+  { key: 'tlbs011', data: `<div class='fn-tl_bs_11'><em>简单阴影</em></div>` },
 ];
 
 // 框线标题
@@ -177,6 +177,180 @@ const _TL_LINE = [
         ><div class='m-ft'>SUMMER TIME</div>
         </div>`,
   },
+  {
+    key: 'tlli020',
+    data: `
+    <div class='fn-tl_li_20'>
+      <div class='my-bg'> 
+        <div class='m-plus'><section>+<section></div>
+        <em>输入标题</em> 
+      </div> 
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli021',
+    data: `
+    <div class='fn-tl_li_21'>
+
+      <div class='m-ob'> 
+        <div class='m-ib'><section><em>输入标题</em> <section></div>
+        
+      </div> 
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli022',
+    data: `
+    <div class='fn-tl_li_22'>
+
+      <div class='m-bk'> 
+        SUMMER
+      </div> 
+      <div class='m-m'>
+        炎炎夏日
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli023',
+    data: `
+    <div class='fn-tl_li_23'>
+
+      <div class='m-bk'> 
+      </div> 
+      <div class='m-ft'> 
+        万物清明
+      </div> 
+      <div class='m-ls'>
+      /念故人
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli024',
+    data: `
+    <div class='fn-tl_li_24'>
+
+      <div class='m-lt'> 
+          <div class='m-dot'></div>
+      </div> 
+      <div class='m-md'> 
+        <section>中国航天日</section>
+      </div> 
+      <div class='m-lt'>
+          <div class='m-dot'></div>
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli025',
+    data: `
+    <div class='fn-tl_li_25'>
+
+      <div class='m-lt'> 
+        <section>1</section>
+      </div> 
+      <div class='m-md'> 
+        <section>中国航天日</section>
+      </div> 
+      <div class='m-rt'>
+          <div class='m-dt'></div>
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli026',
+    data: `
+    <div class='fn-tl_li_26'>
+        <div class='m-m'>
+              <div class="m-hd">
+                  <div class="m-lt">Grain Rain</div>
+                  <div class="m-rt">
+                      <section><em>谷雨时节</em>/萍始生</section>
+
+                  </div>
+              </div> 
+        </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli027',
+    data: `
+    <div class='fn-tl_li_27'>
+        <div><div class="m-num">00</div><section>通用标题</section></div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli028',
+    data: `
+    <div class='fn-tl_li_28'>
+        <div class="m-bg">
+            <div class="m-rd_l"></div>
+            <div class="m-curve">
+                <div class="u-cr_r"></div>
+                <div class="u-cr_l"></div>
+            </div>
+            <div class="m-rd_r"></div>
+        </div>
+
+        <div class="m-bd"><i>PANTONE长春花篮</i></div>
+        <div class="m-ft"><i>PANTONE CATHARANTHUS BLUE</i></div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli029',
+    data: `
+    <div class='fn-tl_li_29'>
+
+    <div class="m-bg">
+      <div class="m-ln"></div>
+      <div class="m-tr">
+        <div class="m-el"></div>
+        <div class="m-hide"></div>
+      </div>
+    </div>
+    <div class="m-bd">
+      <section class="m-top"><i>冬日的</i></section>
+      <section class="m-btm"><i>美好时光</i></section>
+    </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlli030',
+    data: `
+    <div class='fn-tl_li_30'>
+
+    <div class="m-num">
+      <section><i>00</i></section>
+    </div>
+    <div class="m-bd">  
+      <section>长春花蓝</section>
+    </div>
+
+    </div>
+    `,
+  },
+  
 ];
 
 // 图片标题
@@ -250,6 +424,32 @@ const _TL_IMG = [
     key: 'tlim014',
     data: `<div class='fn-tl_im_14'><div class='m-tl'><em><section>2</section></em><em><section>心有猛虎，细嗅蔷薇</section></em></div><img src=${img3} ></div>`,
   },
+  {
+    key: 'tlim015',
+    data: `
+    <div class='fn-tl_im_15'>
+      <div class='m-bk'>
+        <div class='m-txt'>
+          <div><em>清明</em></div>  
+          <section>QING MING</section>
+        </div>
+        
+      </div>
+    </div>`,
+  },
+  {
+    key: 'tlim016',
+    data: `
+    <div class='fn-tl_im_16'>
+      <div class='m-bk1'>
+        <div><em>贰</em></div>
+      </div>
+      <div class='m-bk2'>
+      </div>
+        
+      
+    </div>`,
+  },
 ];
 
 // 底色标题
@@ -305,6 +505,88 @@ const _TL_BCOL = [
   {
     key: 'tlbc019',
     data: `<div class='fn-tl_bc_19'><div class='m-bd'><section><section>春季校园招聘</section></section><div class='m-cr'><div></div></div></div></div>`,
+  },
+  {
+    key: 'tlbc020',
+    data: `
+    <div class='fn-tl_bc_20'>
+          <div class='m-ft'>
+            <div class='m-lt'>中国航天日</div>
+            <div class='m-rt'>/ Space Day Of China</div>
+          
+          </div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlbc021',
+    data: `
+    <div class='fn-tl_bc_21'>
+          <div class='m-ft'>
+            <div class='m-lt'>聚焦两会 · 关注民生</div>
+          
+          </div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlbc022',
+    data: `
+    <div class='fn-tl_bc_22'>
+        <div class='m-m'>
+          <div class='m-lt'></div>
+          <div class='m-bf'></div>
+          <div class='m-rt'>
+            
+            <div class='m-wd'>聚焦两会 · 关注民生</div>
+            
+          </div>
+          <div class='m-af'></div>
+        </div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlbc023',
+    data: `
+    <div class='fn-tl_bc_23'>
+        <div class='m-m'>
+          <div class='m-bf'>
+            <div class='m-lt'></div>
+            <div class='m-rt'></div>
+          </div>
+          <div class='m-bd'>
+            
+            <div class='m-wd'>项目 | 高山滑雪</div>
+            
+          </div>
+          <div class='m-af'>
+            <div class='m-lt'></div>
+            <div class='m-rt'></div>
+          </div>
+        </div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlbc024',
+    data: `
+    <div class="fn-tl_bc_24">
+        <div class="m-num"><div class="m-bg"><section>00</section></div></div>
+        <div class="m-tl"><section>次级标题</section></div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlbc025',
+    data: `
+    <div class='fn-tl_bc_25'>
+        <div>
+            <section>00</section>
+            <div class="m-bc m-btm"></div><div class="m-bc m-top"></div><div class="m-rd"></div>
+        </div>
+    </div>
+    `,
   },
 ];
 
@@ -386,6 +668,73 @@ const _TL_SYM = [
     key: 'tlsy019',
     data: `<div class='fn-tl_sy_19'><div class='m-tl'></div><div class='m-bd'><em><section><section>今日</section></section></em><em><section><section>看点</section></section></em></div></div>`,
   },
+  {
+    key: 'tlsy020',
+    data: 
+    `
+    <div class='fn-tl_sy_20'>
+      <div class='m-bk'>
+        清新春天风
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'tlsy021',
+    data: 
+    `
+    <div class='fn-tl_sy_21'>
+      <div class='m-m'>
+        <div class='m-lt'></div>
+        <div class='m-md'>Earth Hour</div>
+        <div class='m-lt'></div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlsy022',
+    data: 
+    `
+    <div class='fn-tl_sy_22'>
+
+      <div class="m-hd">
+        <div class="m-m">
+
+          <div class='m-lt'>
+            <div class='m-tri'></div>
+            <div class='m-tri'></div>
+            <div class='m-tri'></div>
+          </div>
+
+          <div class='m-rt'>
+            <div class='m-big'>机动车检验标志电子化</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'tlsy023',
+    data: 
+    `
+    <div class='fn-tl_sy_23'>
+
+      <div class="m-hd">
+        <div class="m-m">
+          <div class='m-lt'></div>
+          <div class='m-lt'></div>
+          <div class='m-md'>面对疫情 不必恐慌</div>
+          <div class='m-rt'></div>
+          <div class='m-rt'></div>
+        </div>
+      </div>
+    </div>
+    `,
+  },
 ];
 
 const _TL = [_TL_BASE, _TL_LINE, _TL_IMG, _TL_BCOL, _TL_SYM];
@@ -433,6 +782,44 @@ const _CD_BASE = [
     key: 'cdbs017',
     data: `<div class='fn-cd_bs_17 fn-cd_bs_16'><div><section>请输入文字</section></div></div>`,
   },
+  {
+    key: 'cdbs018',
+    data: `
+    <div class='fn-cd_bs_18'>
+      <div><section>蝉鸣是夏天的标志。少了它的鸣叫，就少了一份乐趣，就少了一场动人的音乐会。</section></div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdbs019',
+    data: `
+    <div class='fn-cd_bs_19'>
+      <div><section>虽然我们都认为，唯有天才方能造出伟大的作品，但今天我想说，无名的工人同样能够制造出毫不逊色的杰作。</section></div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdbs020',
+    data: `
+    <div class='fn-cd_bs_20'>
+      <div><section>虽然我们都认为，唯有天才方能造出伟大的作品，但今天我想说，无名的工人同样能够制造出毫不逊色的杰作。</section></div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdbs021',
+    data: `
+    <div class='fn-cd_bs_21'>
+
+      <div>
+          <div></div>
+          <section>不希望人手的技艺被封存，是因为手艺能培养对美的意识。在自身周围，在人与人的联结中，在这社会中，让我们思考何为美、何为丑。</section>
+          <div></div>
+    
+      </div>
+    </div>
+    `,
+  },
 ];
 
 // 框线卡片
@@ -477,13 +864,7 @@ const _CD_LINE = [
   },
   {
     key: 'tlli005',
-    data: `<div class="fn-cd_li_5">
-                <div class="m-lt">
-                  <em>目录/contents</em>
-                </div>
-                <div class="m-rt">
-                </div>
-              </div>`,
+    data: `<div class="fn-cd_li_5"><div class="m-lt"><em>目录/contents</em></div><div class="m-rt"></div></div>`,
   },
   {
     key: 'cdli010',
@@ -524,6 +905,138 @@ const _CD_LINE = [
   {
     key: 'cdli019',
     data: "<div class='fn-cd_li_19'><div><section>愚人节。节期为公历4月1日，是从19世纪开始在西方兴起流行的民间节日，并未被任何国家认定为法定节日。在这一天人们以各种方式互相欺骗和捉弄，往往在玩笑的最后才揭穿并宣告捉弄对象为“愚人”。</section></div></div>",
+  },
+  {
+    key: 'cdli020',
+    data: `
+    <div class="fn-cd_li_20">
+      <div class="m-bk">
+      <section><em>人生是一次旅行，在旅程中遇到的每一个人、每一件事，都有可能成为一生中难忘的风景。</em></section>
+
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdli021',
+    data: `
+    <div class="fn-cd_li_21">
+      <div class="m-bk">
+        <div class='m-lt'>
+          <div class='m-cir'><em>1</em></div>
+
+        </div>
+        <div class='m-rt'>
+          <div class='m-big'>世界地球日</div>
+          <div class='m-sml'>The World Earth Day</div>
+          
+        </div>
+
+      </div>
+      <div class='m-bt'>
+        <div class = 'm-txt'>
+          <section><em>世界地球日即每年的4月22日，是一个专为世界环境保护而设立的节日，旨在提高民众现有环境问题的意识。</em></section>
+        </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdli022',
+    data: `
+    <div class="fn-cd_li_22">
+      <div class="m-hd">
+        <div class="m-m">
+
+          <div class='m-lt'>
+            <div class='m-tr'></div>
+            <div class='m-tr'></div>
+            <div class='m-tr'></div>
+          </div>
+
+          <div class='m-rt'>
+            <div class='big'>今日要闻</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class='m-bd'>
+        <div class='m-tl'>
+          <section><em>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化。</em></section>
+        </div>
+        <div class = 'm-m'>
+          <div class='m-line'>
+            <div class='m-d'>
+              <div class = 'num'>1</div>
+              <div class = 'dot'>></div>
+              <section>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人。</section>
+            </div>
+            <div class='m-d'>
+              <div class = 'num'>2</div>
+              <div class = 'dot'>></div>
+              <section>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人。</section>
+            </div>
+          </div>
+          <div class='m-line'>
+            <div class='m-d'>
+              <div class = 'num'>3</div>
+              <div class = 'dot'>></div>
+              <section>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人。</section>            
+            </div>
+            <div class='m-d'>
+              <div class = 'num'>4</div>
+              <div class = 'dot'>></div>
+              <section>公安部在16个城市试点基础上，在全国分两批推广机动车检验标志电子化，为机动车所有人。</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdli023',
+    data: `
+    <div class="fn-cd_li_23">
+      <div class='fn-tl_li_24'>
+
+        <div class='m-lt'> 
+            <div class='m-dot'></div>
+        </div> 
+        <div class='m-md'> 
+          <section>SPACE DAY OF CHINA</section>
+        </div> 
+        <div class='m-lt'>
+            <div class='m-dot'></div>
+        </div>
+
+      </div>
+      <div class='m-bd'>
+        <div class='m-wd'><section>中国航天日，是为了纪念中国航天事业成就，发扬中国航天精神而计划设立的一个纪念日。首个航天日，习主席要求科学家帮助实现中国成为全球天空巨头的梦想。</section></div>
+        <div class='m-wd'><section>中国航天日，是为了纪念中国航天事业成就，发扬中国航天精神而计划设立的一个纪念日。首个航天日，习主席要求科学家帮助实现中国成为全球天空巨头的梦想。</section></div>
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'cdli024',
+    data: `
+    <div class="fn-cd_li_24">
+        <div class="m-tl">
+          <section>四</section>
+          <section>字</section>
+          <section>标</section>
+          <section>题</section>
+          <div></div>
+        </div>
+        <div class="m-bd">
+          <div class="txt">这些所谓的“兼职”信息往往是通过短视频、网络等媒介发布，兼职刷单100%为诈骗，求职者要通过正规渠道查询招聘单位的信息，查看是否有工商登记信息，避免上当受骗。</div>
+        </div>
+
+    </div>
+    `,
   },
 ];
 
@@ -585,6 +1098,200 @@ const _CD_BCOL = [
     key: 'cdbc018',
     data: `<div class='fn-cd_bc_18'><div class='m-bd'><section>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点,也是传统节日。</section></div></div>`,
   },
+  {
+    key: 'cdbc019',
+    data: `
+    <div class='fn-cd_bc_19'>
+      <div class='m-m'>
+        <div class='m-hd'>
+          <div class='m-cir'>世</div>
+          <div class='m-cir'>界</div>
+          <div class='m-cir'>读</div>
+          <div class='m-cir'>书</div>
+          <div class='m-cir'>日</div>
+
+        </div>
+        <div class='m-bd'>
+          <section>4月23日世界读书日全称“世界图书与版权日”，又称“世界图书日”。1995年11月15日正式确定每年4月23日为“世界图书日”。其设立目的是推动更多的人去阅读和写作，希望所有人都能尊重和感谢为人类文明做出过巨大贡献的文学、文化、科学、思想大师们，保护知识产权。</section>
+        </div>
+
+        <div class='m-ft'>读书使人进步</div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdbc020',
+    data: `
+    <div class='fn-cd_bc_20'>
+      <div class='m-m'>
+        <div class='m-bk'>
+
+          
+
+          <div class='m-bd'>
+            <div class='m-lt'>
+              <section class='m-big'>1.10</section>
+              <section class='m-sml'>Jan.</section>
+            </div>
+
+            <div class='m-rt'>
+                <div class='m-hd'>
+                  <section><em>2022.1.10</em></section>
+                </div> 
+                <div class='m-bd'>
+                  <section>
+                  <em>1986年1月10日，广州市公安局率先建立我国第一个110报警服务台，正式开展110接处警工作。1987年6月，公安部发文要求各大中城市公安局在一两年内普遍建立110报警服务台，尽快投入使用。自此，110报警电话正式发展成为110报警服务台。</em>
+                  </section>
+                </div>
+            </div>
+          </div>
+          
+
+          
+        </div>
+        
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdbc021',
+    data: `
+    <div class='fn-cd_bc_21'>
+      <div class='m-m'>
+          <div class='m-hd1'>
+
+          </div> 
+          <div class='m-hd'>
+            <section><em>如何申请法律援助</em></section>
+          </div> 
+
+          <div class='m-m'>
+            <div class='m-lt'>
+              <div class='m-tri'></div>
+            </div>
+            <div class='m-bd'>
+              
+              <section>
+              <em>由政府设立的法律援助机构或者非政府设立的合法律所组织法律援助的律师。为经济困难或特殊案件的人尤其是农村给予无偿提供法律服务的一项法律保障制度。</em>
+              </section>
+              
+            </div>
+            <div class='m-rt'>
+              <div class='m-tri'></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdbc022',
+    data: `
+    <div class='fn-cd_bc_22'>
+      <div class='m-m'>
+
+
+            <div class='m-bd'>
+              
+              <div class='m-txt'>
+              <section>
+              <em>中国航天日，是为了纪念中国航天事业成就，发扬中国航天精神而计划设立的一个纪念日。设立“中国航天日”，就是要铭记历史、传承精神，激发全民尤其是青少年崇尚科学、探索未知、敢于创新的热情。</em>
+              </section>
+              </div>
+            </div>
+
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'cdbc023',
+    data: `
+    <div class='fn-cd_bc_23'>
+      <div class="m-m">
+
+          <div class="m-hd">
+              <div class="m-lt">#3</div>
+              <div class="m-rt">
+                  <section>雨生百谷</section>
+              </div>
+          </div>
+          <div class="m-nk">
+              <section>Grain Rain, One of The Twenty-Four Solar Terms</section>
+          </div>
+          <div class="m-bd">
+
+              <section>谷雨是二十四节气的第六个节气，也是春季最后一个节气，每年4月19日～21日时太阳到达黄经30°时为谷雨，源自古人“雨生百谷”之说。同时也是播种移苗、埯瓜点豆的最佳时节。</section>
+          </div>
+
+
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'cdbc024',
+    data: `
+    <div class='fn-cd_bc_24'>
+      <div class="m-m">
+
+          <div class="m-hd">
+              <div class="m-lt">惊蛰</div>
+              <div class="m-rt">2022.03.05</div>
+          </div>
+
+          <div class="m-bd">
+
+              <section>
+                <div class='m-dot'></div>
+                ​时至惊蛰，阳气上升、气温回暖、春雷乍动、雨水增多，万物生机盎然。农耕生产与大自然的节律息息相关。
+              </section>
+              <section>
+                <div class='m-dot'></div>
+                惊蛰节气在农耕上有着相当重要的意义，它是古代农耕文化对于自然节令的反映。
+              </section>
+
+          </div>
+
+
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'cdbc025',
+    data: `
+    <div class='fn-cd_bc_25'>
+    <div class='fn-co_fo_16'>
+      <div class='m-lt'> 
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+      </div> 
+      <div class='m-md'> 
+        <section>惊蛰，又名“启蛰”，是二十四节气中的第三个节气。斗指丁，太阳到达黄经345°，于公历3月5－6日交节。惊蛰反映的是自然生物受节律变化影响而出现萌发生长的现象。</section>
+      </div> 
+      <div class='m-lt'>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+      </div>
+    </div>
+
+    </div>
+    `,
+  },
 ];
 
 // 底纹卡片
@@ -637,6 +1344,28 @@ const _CD_PATT = [
   {
     key: 'cdpa014',
     data: `<div class='fn-cd_pa_14 '><img src=${img3}><div><em>SUMMARY</em></div><section><section>时光荏苒，不知不觉中，紧张繁忙的半年即将过去，或颓废，或激情。过去半年的工作中，在公司领导的带领下，严格按照各项工作流程展开工作，恪尽职守，目标明确。</section></section></div>`,
+  },
+  {
+    key: 'cdpa015',
+    data: `
+    <div class='fn-cd_pa_15 '>
+      <div>
+        <div class='text'><li>任教高中语文，目前担任XX教育“十人课堂”语文老师，深受学生、家长的喜爱。任教高中语文，目前担任XX教育“十人课堂”语文老师，深受学生、家长的喜爱。</li></div>
+
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdpa016',
+    data: `
+    <div class='fn-cd_pa_16'>
+      <div>
+        <div class='text'><li>艾蒿一束，飘幸福清香，绕着你；香粽一串，携甜蜜相伴，围着你；香囊一个，表情意万千，粘着你；龙舟一盏，载顺利清风，念着你。端午节到了，愿你生活里粽有幸福和甜蜜，粽有情意和顺利。</li></div>
+
+      </div>
+    </div>
+    `,
   },
 ];
 
@@ -710,6 +1439,124 @@ const _CD_QUES = [
     key: 'cdqu014',
     data: `<div class='fn-cd_qu_14'><div><em>输入文字输入文字</em><em>输入文字输入文字</em></div></div>`,
   },
+  {
+    key: 'cdqu015',
+    data: `
+    <div class='fn-cd_qu_15'>
+      <div class="main">
+
+        <div class="head">
+          <div class="left">Q1</div>
+          <div class="right">什么是人口普查？</div>
+        </div>
+        <div class="neck">
+          <div class="triangle"></div>
+        </div>
+
+        <div class="body">
+        <section>人口普查是重大的国情国力调查，涉及每一个人、每一个家庭以及社会的各个方面。2020年11月1日零时，第七次全国人口普查开始。（人民日报）</section>
+        </div>
+      </div>
+
+
+    </div>
+    `,
+  },
+  {
+    key: 'cdqu016',
+    data: `
+    <div class='fn-cd_qu_16'>
+      <div class="main">
+
+          <div class="head">
+              <div class="left">A</div>
+              <div class='middle'>
+                  <div class='triangle'></div> 
+              </div>
+              <div class="right">
+                  <section>国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开。</section>
+              </div>
+          </div>
+      </div>
+
+      <div class="else">
+
+          <div class="head">
+              <div class="right">
+                  <section>国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开。</section>
+              </div>
+              <div class='middle'>
+                  <div class='triangle'></div> 
+              </div>
+              <div class="left">B</div>
+          </div>
+
+      </div>
+    </div>
+
+    
+    `,
+  },
+  {
+    key: 'cdqu017',
+    data: `
+    <div class='fn-cd_qu_17'>
+      <div class="main">
+
+          <div class="head">
+
+              <div class='middle'>
+                  <div class='triangle'></div> 
+              </div>
+              <div class="right">
+                  <section>输入文字输入文字</section>
+              </div>
+          </div>
+      </div>
+
+      <div class="else">
+
+          <div class="head">
+              <div class="right">
+                  <section>输入文字输入文字</section>
+              </div>
+              <div class='middle'>
+                  <div class='triangle'></div> 
+              </div>
+
+          </div>
+
+      </div>
+    </div>
+
+    
+    `,
+  },
+  {
+    key: 'cdqu018',
+    data: `
+    <div class='fn-cd_qu_18'>
+      <div class="main">
+
+          <div class="head">
+
+          </div>
+          <div class="body">
+
+              <div class='on'>
+                  <section>输入标题</section>
+              </div>
+              <div class="under">
+                  <section>输入文字</section>
+              </div>
+          </div>          
+
+      </div>
+    </div>
+    `,
+  },
+  
+  
 ];
 
 // 轴线卡片
@@ -752,6 +1599,144 @@ const _CD_AXIS = [
   {
     key: 'cdax015',
     data: `<div class='fn-cd_ax_15'><div><em><section>01</section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div><div><em><section>02</section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div><div><em><section>03</section></em><div><section>1986年，国际奥委会全会决定把冬季奥运会和夏季奥运会从1994年起分开，每两年间隔举行。</section></div></div></div>`,
+  },
+  {
+    key: 'cdax016',
+    data: `
+    <div class='fn-cd_ax_16'>
+      <div class="m-m">
+
+          <div class="m-hd">
+              <div class="m-lt">01</div>
+          </div>
+          <div class="m-nk">
+              <section>协会会员每年召开一次地区论坛</section>
+          </div>
+          <div class="m-bd">
+              <div class="m-lt">
+                  <section>通过采取发行刊物及举办会议的形式，协会提供法律领域发展的最新动态，并积极解决阻碍民主、和平发展的问题。</section>
+              </div>
+          </div>
+
+          <div class='m-ft'>
+          </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdax017',
+    data: `
+    <div class='fn-cd_ax_17'>
+      <div class="m-m">
+        <div class='m-hd'>
+          <div class='m-lt'></div>
+          <div class='m-md'>Earth Hour</div>
+          <div class='m-lt'></div>
+        </div>
+        <div class='m-bd'>
+          <section>地球一小时是世界自然基金会应对全球气候变化所提出的一项全球性节能活动，提倡于每年三月的最后一个星期六当地时间晚上20:30。</section>
+        </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdax018',
+    data: `
+    <div class='fn-cd_ax_18'>
+      <div class="m-m">
+        <div class='m-hd'>
+            <div class='m-hd'>
+                <div class='m-lt'></div>
+                <div class='m-rt'>01 聚焦时间点 </div>
+            </div>
+            <div class='m-bd'>
+                <div class='m-rt'>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</div>
+            </div>
+
+        </div>
+        <div class='m-hd'>
+            <div class='m-hd'>
+                <div class='m-lt'></div>
+                <div class='m-rt'>01 聚焦时间点 </div>
+            </div>
+            <div class='m-bd'>
+                <div class='m-rt'>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</div>
+            </div>
+        </div>
+        <div class='m-hd'>
+            <div class='m-hd'>
+                <div class='m-lt'></div>
+                <div class='m-rt'>01 聚焦时间点 </div>
+            </div>
+            <div class='m-bd'>
+                <div class='m-rt'>两会是对自1959年以来历年召开的中华人民共和国全国人民代表大会和中国人民政治协商会议的统称。</div>
+            </div>   
+        </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdax019',
+    data: `
+    <div class='fn-cd_ax_19'>
+      <div class="m-m">
+        <div class='m-hd'>
+            <div class='m-hd'>
+                <div class='m-lt'>五四青年节  为青春高歌</div>
+                <div class='m-rt'></div>
+                <div class='m-bt'></div>
+            </div>
+            <div class='m-bd'>
+                <div class='m-rt'>五四青年节源于中国1919年反帝爱国的“五四运动”，五四爱国运动是一次彻底的反对帝国主义和封建主义的爱国运动。</div>
+            </div>
+
+        </div>
+        <div class='m-hd'>
+            <div class='m-hd'>
+                <div class='m-lt'>五四青年节  为青春高歌</div>
+                <div class='m-rt'></div>
+                <div class='m-bt'></div>
+            </div>
+            <div class='m-bd'>
+                <div class='m-rt'>五四青年节源于中国1919年反帝爱国的“五四运动”，五四爱国运动是一次彻底的反对帝国主义和封建主义的爱国运动。</div>
+            </div>
+
+        </div>
+        <div class='m-hd'>
+            <div class='m-hd'>
+                <div class='m-lt'>五四青年节  为青春高歌</div>
+                <div class='m-rt'></div>
+                <div class='m-bt'></div>
+            </div>
+            <div class='m-bd'>
+                <div class='m-rt'>五四青年节源于中国1919年反帝爱国的“五四运动”，五四爱国运动是一次彻底的反对帝国主义和封建主义的爱国运动。</div>
+            </div>
+
+        </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cdax020',
+    data: `
+        <div class="fn-cd_ax_20">
+            <div class="m-bd">
+                <div class="m-tl"><section>做好疫情防控</section><div></div></div>
+                <div class="m-txt">我们相信前路光明，阴霾终会散去，我们定同舟共济,风雨共度一切都会好起来。我们相信前路光明，阴霾终会散去，我们定同舟共济,风雨共度一切都会好起来。</div>
+            </div>
+            <div class="m-bd">
+                <div class="m-tl"><section>做好疫情防控</section><div></div></div>
+                <div class="m-txt">我们相信前路光明，阴霾终会散去，我们定同舟共济,风雨共度一切都会好起来。我们相信前路光明，阴霾终会散去，我们定同舟共济,风雨共度一切都会好起来。</div>
+            </div>
+            <div class="m-bd">
+                <div class="m-tl"><section>做好疫情防控</section><div></div></div>
+                <div class="m-txt">我们相信前路光明，阴霾终会散去，我们定同舟共济,风雨共度一切都会好起来。我们相信前路光明，阴霾终会散去，我们定同舟共济,风雨共度一切都会好起来。</div>
+            </div>
+        </div>
+    `,
   },
 ];
 
@@ -839,13 +1824,114 @@ const _IM_ONE = [
     key: 'imon014',
     data: `<div class='fn-im_on_14'><div class='m-img'><img src=${img4} ></div></div>`,
   },
+  {
+    key: 'imon015',
+    data: `
+    <div class='fn-im_on_15'>
+      <div class='m-lt'>
+          <div class='m-lt'></div>
+      </div>
+      <div class="m-m">
+        <div class='m-hd'>
+          <div class='m-lt'></div>
+          <div class='m-md'>Earth Hour</div>
+          <div class='m-lt'></div>
+        </div>
+        <div class='m-bd'>
+            <div class='m-img'><img src=${img4} ></div>        
+        </div>
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'imon016',
+    data: `
+    <div class='fn-im_on_16'>
+
+      <div class="m-m">
+          <div class='m-bd'>
+              <div class='m-img'><img src=${img4} ></div>  
+          </div>
+          <div class='m-ft'>
+            <div class='m-lt'>中国航天日</div>
+            <div class='m-rt'>/ Space Day Of China</div>
+          
+          </div>
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'imon017',
+    data: `
+    <div class='fn-im_on_17'>
+
+      <div class="m-m">
+
+          <div class='m-hd'>
+            <div class='m-lt'> 
+                <div class='m-dot'></div>
+            </div> 
+            <div class='m-md'> 
+              <section>SPACE DAY OF CHINA</section>
+            </div> 
+            <div class='m-lt'>
+                <div class='m-dot'></div>
+            </div>
+          
+          </div>
+          <div class='m-bd'>
+              <div class='m-img'><img src=${img4} ></div>  
+          </div>
+      </div>
+
+    </div>
+    `,
+  },
+  {
+    key: 'imon018',
+    data: `
+    <div class='fn-im_on_18'>
+    <div class="fn-co_qr_16">
+      <div>
+          <div class="m-hd">黎明与黑暗</div>
+          <div class="m-img">
+              <img src="${img4}">
+          </div>
+          <div class="m-hd">Once we dreamt that we were strangers.
+
+          We wake up to find that we were dear to each other.</div>
+          <div></div>
+      </div>
+    </div>
+
+    </div>
+    `,
+  },
 ];
 
 // 双图
 const _IM_TWO = [
   {
     key: 'imtw001',
-    data: `<div class='fn-im_tw_1'><div class='fn-tl_sy_1'><i></i><em>1</em><i></i></div><div class="m-bd"><div class="m-img"><img src=${img4} ></div><div class="m-img"><img src=${img4} ></div></div></div>`,
+    data: `
+    <div class='fn-im_tw_1'>
+      <div class='fn-tl_sy_1'>
+        <i></i><em>1</em><i></i>
+      </div>
+      <div class="m-bd">
+          <div class="m-img">
+              <img src=${img4} >
+          </div>
+          <div class="m-img">
+              <img src=${img4} >
+          </div>
+      </div>
+    </div>
+    `,
   },
   {
     key: 'imtw002',
@@ -911,6 +1997,74 @@ const _IM_TWO = [
     key: 'imtw012',
     data: `<div class='fn-im_tw_12'><div class='m-img'><img src=${img3} ><img src=${img3}></div><div class='m-bd'><div><em><section>清</section></em><em><section>明</section></em></div><div><em><section>Qing</section></em><em><section>Ming</section></em><em><section>时</section></em><em><section>节</section></em></div></div></div>`,
   },
+  {
+    key: 'imtw013',
+    data: `
+    <div class='fn-im_tw_13'>
+      
+      <div class="m-m">
+        <div class='m-lt'>
+          <div class='m-bd'>
+            <div class='m-hd'>
+              <div class='m-lt'></div>
+              <div class='m-md'>Earth Hour</div>
+              <div class='m-lt'></div>
+            </div>
+
+            <div class='m-img'>
+              <img src=${img4} >
+            </div>
+            <div class='m-img'>
+              <img src=${img4} >
+            </div>
+          </div>
+        </div>
+        
+        <div class='m-rt'>
+            <div class='m-rt'></div>
+        </div>
+      </div>
+
+
+    </div>
+    `,
+  },
+  {
+    key: 'imtw014',
+    data: `
+    <div class='fn-im_tw_14'>
+      
+      <div class="m-m">
+          <div class='m-hd'>
+              <div class='fn-tl_li_24'>
+
+                <div class='m-lt'> 
+                    <div class='m-dot'></div>
+                </div> 
+                <div class='m-md'> 
+                  <section>SPACE DAY OF CHINA</section>
+                </div> 
+                <div class='m-lt'>
+                    <div class='m-dot'></div>
+                </div>
+
+              </div>
+          </div>
+
+          <div class='m-bd'>
+              <div class='m-img'>
+                  <img src=${img3} >
+              </div>
+              <div class='m-img'>
+                  <img src=${img3} >
+              </div>
+          </div>
+      </div>
+
+
+    </div>
+    `,
+  },
 ];
 
 // 三图
@@ -945,6 +2099,37 @@ const _IM_THR = [
               </div>
             </div>`,
   },
+  {
+    key: 'imth003',
+    data: `
+    <div class='fn-im_th_3'>
+      <div class="m-m">
+        <div class='m-lt'>
+          <div class='m-bd'>
+            <div class='m-img'>
+              <img src=${img3} >
+            </div>
+            <div class='m-img'>
+              <img src=${img3} >
+            </div>
+          </div>
+        </div>
+        
+        <div class='m-rt'>
+            <div class='m-hd'>
+              <div class='m-lt'></div>
+              <div class='m-md'>Earth Hour</div>
+              <div class='m-lt'></div>
+            </div>  
+            <div class='m-img'>
+              <img src=${img3} >
+            </div>
+
+        </div>
+      </div>
+    </div>
+    `,
+  },
 ];
 
 // 多图
@@ -952,6 +2137,42 @@ const _IM_MUL = [
   {
     key: 'immu001',
     data: `<div class='fn-im_mu_1'><em> 图标标题</em><div class="m-img"><img src=${img3} ><img src=${img3} ></div><div class="m-img"><img src=${img3} ><img src=${img3} ></div></div>`,
+  },
+  {
+    key: 'immu002',
+    data: `
+    <div class='fn-im_mu_2'>
+      <div class="m-m">
+          <div class='m-hd'>
+              <div class='fn-tl_li_24'>
+
+                <div class='m-lt'> 
+                    <div class='m-dot'></div>
+                </div> 
+                <div class='m-md'> 
+                  <section>SPACE DAY OF CHINA</section>
+                </div> 
+                <div class='m-lt'>
+                    <div class='m-dot'></div>
+                </div>
+
+              </div>
+          </div>
+
+          <div class='m-bd'>
+              <div class='m-img'>
+                  <img src=${img3} >
+                  <img src=${img3} >
+              </div>
+              <div class='m-img'>
+                  <img src=${img3} >
+                  <img src=${img3} >
+              </div>
+          </div>
+      </div>
+
+    </div>
+    `,
   },
 ];
 
@@ -968,6 +2189,50 @@ const _IM_CIR = [
   {
     key: 'imci011',
     data: `<div class='fn-im_ci_11'><img src=${img3} ><div class='m-bd'><div><em><section>清</section></em><em><section>明</section></em></div><div><em>Qing</em><em>Ming</em><em>时</em><em>节</em></div></div></div>`,
+  },
+  {
+    key: 'imci012',
+    data: `
+    <div class='fn-im_ci_12'>
+      <div class="m-m">
+          <div class='m-lt'>
+              <div class='m-img'>
+                  <img src=${img3} >
+              </div>
+          </div>
+          <div class='m-rt'>
+              <div class='fn-tl_li_24'>
+
+                <div class='m-lt'> 
+                    <div class='m-dot'></div>
+                </div> 
+                <div class='m-md'> 
+                  <section>SPACE DAY OF CHINA</section>
+                </div> 
+                <div class='m-lt'>
+                    <div class='m-dot'></div>
+                </div>
+
+              </div>
+          <div>
+      </div>
+    
+    </div>
+    `,
+  },
+  {
+    key: 'imci013',
+    data: `
+    <div class='fn-im_ci_13'>
+          <div class="m-img">
+              <img src="${img4}">
+          </div>
+          <div class='m-nk'><div></div></div>
+          <div class='m-wd'>黎明</div>
+
+    
+    </div>
+    `,
   },
 ];
 
@@ -1027,6 +2292,42 @@ const _LY_BASE = [
     key: 'lybs010',
     data: `<div class='fn-ly_ba_10'><div data='空白处输入文字'></div><div></div><div></div></div>`,
   },
+  {
+    key: 'lybs011',
+    data: `
+    <div class='fn-ly_ba_11'>
+      <div></div>
+    </div>
+    `,
+  },
+  {
+    key: 'lybs012',
+    data: `
+    <div class='fn-ly_ba_11'>
+      <div></div>
+      <div></div>
+    </div>`,
+  },
+  {
+    key: 'lybs013',
+    data: `
+    <div class='fn-ly_ba_11'>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>`,
+  },
+  {
+    key: 'lybs014',
+    data: `
+    <div class='fn-ly_ba_11'>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    `,
+  },
 ];
 
 // 表格
@@ -1083,6 +2384,104 @@ const _LY_TAB = [
     key: 'lyta012',
     data: `<div class='fn-ly_ta_1 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
   },
+  
+
+
+
+  {
+    key: 'lyta013',
+    data: `
+    <div class='fn-ly_ta_2 fn-ly_ta_sky'>
+        <div class="m-row">
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+        </div>
+        <div class="m-row">
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+        </div>
+        <div class="m-row">
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+        </div>
+                  
+    </div>
+    `,
+  },
+  {
+    key: 'lyta014',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_sky'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta015',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_sky'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta016',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta017',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta018',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_red'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta019',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta020',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta021',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_green'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta022',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div>
+              </div>`,
+  },
+  {
+    key: 'lyta023',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta024',
+    data: `<div class='fn-ly_ta_2 fn-ly_ta_blue'><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div><div class="m-row"><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div><div class="m-col"></div></div></div>`,
+  },
+  {
+    key: 'lyta025',
+    data: `
+    <div class='fn-ly_ta_3 fn-ly_ta_sky'>
+        <div class="m-row">
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+        </div>
+        <div class="m-row">
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+        </div>
+        <div class="m-row">
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+            <div class="m-col"></div>
+        </div>
+                  
+    </div>
+    `,
+  },
+
 ];
 
 // 上下滑动
@@ -1149,6 +2548,48 @@ const _CO_SPLL = [
   {
     key: 'cosl015',
     data: `<div class='fn-co_sp_15'><div><em>THE</em></div><div><em>END</em></div></div>`,
+  },
+  {
+    key: 'cosl016',
+    data: `<div class="fn-co_sp_16"><div></div></div>`,
+  },
+  {
+    key: 'cosl017',
+    data: `
+    <div class="fn-co_sp_17">
+        <div class='m-lt'></div>
+        <div class='m-md'></div>
+        <div class='m-lt'></div>
+    </div>
+    `,
+  },
+  {
+    key: 'cosl018',
+    data: `
+    <div class="fn-co_sp_18">
+        <div class='m-md'></div>
+        <div class='m-lt'></div>
+    </div>
+    `,
+  },
+  {
+    key: 'cosl019',
+    data: `
+    <div class="fn-co_sp_19">
+        <div class='m-lt'></div>
+        <div class='m-md'></div>
+        <div class='m-lt'></div>
+    </div>
+    `,
+  },
+  {
+    key: 'cosl020',
+    data: `
+    <div class="fn-co_sp_20">
+        <div class='m-md'></div>
+
+    </div>
+    `,
   },
 ];
 
@@ -1244,6 +2685,66 @@ const _CO_SPLS = [
     key: 'coss014',
     data: `<div class='fn-co_spls_14'><div></div></div>`,
   },
+  {
+    key: 'coss015',
+    data: `
+    <div class='fn-co_spls_15'>
+        <div class='m-hd'></div>
+        <div class='m-bd'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class='m-bd'>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    `,
+  },
+  {
+    key: 'coss016',
+    data: `
+    <div class='fn-co_spls_16'>
+            <div></div>
+            <div></div>
+    </div>
+    
+    `,
+  },
+  {
+    key: 'coss017',
+    data: `
+    <div class='fn-co_spls_17'>
+            <div><div></div></div>
+    </div>
+    
+    `,
+  },
+  {
+    key: 'coss018',
+    data: `
+    <div class='fn-co_spls_18'>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+    
+    `,
+  },
+  {
+    key: 'coss019',
+    data: `
+    <div class='fn-co_spls_19'>
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+    
+    `,
+  },
 ];
 
 // 关注原文
@@ -1325,7 +2826,109 @@ const _CO_FOC = [
   {
     key: 'cofc001',
     data: `<div class='fn-co_fo_14'><div>点击蓝字·关注我们</div></div>`,
+  },  
+  {
+    key: 'cofc015',
+    data: `
+    <div class='fn-co_fo_15'>
+      <div class='m-lt'> 
+        <section></section>
+      </div> 
+      <div class='m-md'> 
+        <section>点击蓝字 关注我们</section>
+      </div> 
+      <div class='m-rt'>
+          <div class='m-dt'></div>
+      </div>
+    </div>
+    `,
   },
+  {
+    key: 'cofc016',
+    data: `
+    <div class='fn-co_fo_16'>
+      <div class='m-lt'> 
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+      </div> 
+      <div class='m-md'> 
+        <section>点击蓝字 关注我们</section>
+      </div> 
+      <div class='m-lt'>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+          <div class='m-dt'></div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cofc017',
+    data: `
+    <div class='fn-co_fo_17'>
+        <div>
+          <section class="m-bf">
+              点击蓝字
+          </section>
+          <section class="m-af">
+              关注我们
+          </section>
+        </div>
+        <em></em>
+    </div>
+    `,
+  },
+  {
+    key: 'cofc018',
+    data: `
+    <div class='fn-co_fo_18'>
+      <div class="m-m">
+
+          <div class="m-hd">
+              <div class="m-lt">01</div>
+              <div class="m-nk">
+                  <section>点击蓝字，关注我们</section>
+              </div>
+          </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cofc019',
+    data: `
+    <div class='fn-co_fo_19'>
+      <div class="m-m">
+
+          <div class="m-lt">
+              <div></div>
+              <div></div>
+          </div>
+          <div class="m-rt">
+              <div class='m-lt'>点击蓝字 关注我们  </div>
+              <div class='m-rt'>//  World Health Day</div>
+          </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'cofc020',
+    data: `
+    <div class='fn-co_fo_20'>
+      <div class="m-m">
+
+          <div class="m-lt">点击蓝字 关注我们</div>
+          <div class="m-rt">
+              <div>✦</div>
+              <div>✦</div>
+          </div>
+      </div>
+    </div>
+    `,
+  },
+  
 ];
 
 // 二维码
@@ -1414,6 +3017,111 @@ const _CO_QRCO = [
       <div class='m-img'><img src=${img6}></div>
       <div class='m-bd'>
       <em>XIUMIUS</em><em>微信号 | xiumius</em><em>新浪微博 | 秀米XIUMI</em></div></div>`,
+  },
+  {
+    key: 'coqr015',
+    data: `
+    <div class="fn-co_qr_15">
+    <div>
+        <div class="m-img">
+            <img src="${img6}">
+        </div>
+        <div class="m-bd">
+            <em class="m-txt">创业资讯</em>
+            <em>微信号：xiumius</em>
+            <div>
+                <em>新浪微博：秀米XIUMI</em>
+            </div>
+        </div>
+        <div class="u-rd"></div>
+    </div>
+</div>
+    `,
+  },
+  {
+    key: 'coqr016',
+    data: `
+    <div class="fn-co_qr_16">
+      <div>
+          <div class="m-hd">秀米XIUMI</div>
+          <div class="m-img">
+              <img src="${img6}">
+          </div>
+          <div class="m-hd">DAWN & DARK</div>
+          <div></div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'coqr017',
+    data: `
+    <div class="fn-co_qr_17">
+      <div>
+
+          <div class="m-img">
+              <img src="${img6}">
+          </div>
+          <div class='fn-tl_bc_20'>
+                <div class='m-ft'>
+                  <div class='m-lt'>中国航天日</div>
+                  <div class='m-rt'>/ Space Day Of China</div>
+                
+                </div>
+          </div>
+
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'coqr018',
+    data: `
+    <div class="fn-co_qr_18">
+      <div class='fn-cd_bc_19'>
+        <div class='m-m'>
+          <div class='m-hd'>
+            <div class='m-cir'>秀</div>
+            <div class='m-cir'>米</div>
+
+          </div>
+          <div class='m-bd'>
+          <img src="${img6}">
+          </div>
+
+          <div class='m-ft'>读书使人进步</div>
+        </div>
+      </div>
+    </div>
+    `,
+  },
+  {
+    key: 'coqr019',
+    data: `
+    <div class="fn-co_qr_19">
+        <div class='m-hd'>
+            <div class='m-bd'>
+                <div class='m-lt'>
+                    <section>新浪微博｜秀米XIUMI</section>
+                    <section>微信号｜xiumius</section>
+                </div>
+                <div class='m-rt'>
+                    <img src="${img6}">
+                </div>
+            </div> 
+
+        </div>
+        <div class='m-ft'>
+            <div class='m-hd'>
+                <section>世界读书日</section>
+                
+            </div>
+            <div></div>
+            <div class='m-ft'>WORLD BOOK & COPYRIGHT DAY</div>
+        </div>
+
+    </div>
+    `,
   },
 ];
 
