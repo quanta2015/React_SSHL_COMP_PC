@@ -1901,9 +1901,9 @@ const _IM_ONE = [
           <div class="m-img">
               <img src="${img4}">
           </div>
-          <div class="m-hd">Once we dreamt that we were strangers.
+          <div class="m-hd"><section>Once we dreamt that we were strangers.
 
-          We wake up to find that we were dear to each other.</div>
+          We wake up to find that we were dear to each other.</section></div>
           <div></div>
       </div>
     </div>
@@ -3047,7 +3047,7 @@ const _CO_QRCO = [
           <div class="m-img">
               <img src="${img6}">
           </div>
-          <div class="m-hd">DAWN & DARK</div>
+          <div class="m-hd"><section>DAWN & DARK</section></div>
           <div></div>
       </div>
     </div>
@@ -3086,10 +3086,10 @@ const _CO_QRCO = [
 
           </div>
           <div class='m-bd'>
-          <img src="${img6}">
+              <img src="${img6}">
           </div>
 
-          <div class='m-ft'>读书使人进步</div>
+          <div class='m-ft'><section>读书使人进步</section></div>
         </div>
       </div>
     </div>
@@ -3117,7 +3117,7 @@ const _CO_QRCO = [
                 
             </div>
             <div></div>
-            <div class='m-ft'>WORLD BOOK & COPYRIGHT DAY</div>
+            <div class='m-ft'><section>WORLD BOOK & COPYRIGHT DAY</section></div>
         </div>
 
     </div>
