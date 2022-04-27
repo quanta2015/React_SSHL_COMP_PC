@@ -1,0 +1,102 @@
+{
+  "private": false,
+  "name": "suo-test",
+  "version": "0.0.185",
+  "scripts": {
+    "start": "cross-env BUILD_ENV=dev && dumi dev",
+    "docs:build": "cross-env BUILD_ENV=production && dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "cross-env BUILD_ENV=sit && father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm version patch && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src && npm run lint:style && npm run lint:prettier",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src && stylelint --fix 'src/**/*.less' --syntax less",
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged",
+    "lint-staged:js": "eslint --ext .js",
+    "tslint": "npm run tslint:fix",
+    "tslint:fix": "tslint --fix 'src/**/*.ts*'",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "files": [
+    "es",
+    "lib",
+    "data"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.1.0",
+    "@ant-design/pro-form": "1.18.3",
+    "@irim/saber": "^1.2.0",
+    "antd": "^4.14.0",
+    "antd-img-crop": "^4.0.2",
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "dayjs": "^1.8.33",
+    "immutability-helper": "^3.1.1",
+    "lodash": "^4.17.11",
+    "mockjs": "^1.1.0",
+    "moment": "^2.29.1",
+    "qs": "^6.10.1",
+    "react": "^16.12.0",
+    "react-lazy-load": "^3.1.13",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.5",
+    "select-ss-user": "^0.0.38",
+    "ss-images-upload": "^0.0.19",
+    "suo-image-upload": "^0.0.11",
+    "typescript": "^4.2.3",
+    "wangeditor": "^4.7.10"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.5",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@types/lodash": "^4.14.144",
+    "@types/qs": "^6.9.7",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/recompose": "^0.30.7",
+    "@umijs/plugin-locale": "^0.14.2",
+    "@umijs/test": "^3.0.5",
+    "antd-dayjs-webpack-plugin": "^1.0.6",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "dumi": "^1.0.16",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-compat": "^2.6.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-react": "^7.12.4",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0"
+  }
+}
